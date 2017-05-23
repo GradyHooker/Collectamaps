@@ -55,12 +55,34 @@ function CMMarker(icon, x, y, description, gfycat) {
 	var popupString = "";
 	popupString += "<b>" + this.icon.name + "</b><br/>";
 	popupString += "<i>" + this.description + "</i><br/>";
-	popupString+= "<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/" + "DelectableCompetentLcont" + " frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0'></iframe></div>";
+	if(this.gfycat != "") {
+		popupString+= "<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/" + "DelectableCompetentLcont" + " frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0'></iframe></div>";
+		this.marker.on('click', markerClickVid);
+	} else {
+		this.marker.on('click', markerClickNo);
+	}
 	this.marker.bindPopup(popupString);
-	this.marker.on('click', markerClick);
 }
 
-function markerClick(e) {
+function markerClickVid(e) {
+	markerClick(e, 0.000250);
+}
+
+function markerClickNo(e) {
+	markerClick(e, 0.000082);
+}
+
+function markerClick(e, offset) {
+	var markerCenter = e.target.getLatLng();
+	newCenter = new L.LatLng(
+		markerCenter.lat + offset,
+		markerCenter.lng
+	);
+	
+	map.setView(newCenter, clickZoom);
+}
+
+/*function markerClick(e) {
 	var popUpHeight = document.getElementsByClassName("leaflet-popup-content-wrapper")[0].clientHeight + 5;
 	var markerCenter = e.target.getLatLng();
 	var root = Math.max((clickZoom - map.getZoom()) + 1, 1);
@@ -80,5 +102,6 @@ function markerClick(e) {
 	var x = map.latLngToContainerPoint(markerCenter).x;
     var y = map.latLngToContainerPoint(markerCenter).y - popUpHeight/2;
     var newCenter = map.containerPointToLatLng([x, y]);
+	
 	map.setView(newCenter, clickZoom);
-}
+}*/
