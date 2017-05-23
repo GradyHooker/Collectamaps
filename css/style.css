@@ -1,0 +1,7 @@
+.leaflet-popup-tip {
+	height: 8px;
+}
+
+.leaflet-popup-content-wrapper {
+	min-width: 340px;
+}

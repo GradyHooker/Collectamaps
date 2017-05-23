@@ -3,9 +3,10 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <title>Pokemon FireRed and LeafGreen - Collectamaps</title>
-    <script type="text/javascript" src="leaflet/leaflet.js"></script>
-	<script type="text/javascript" src="js/map_functions.js"></script>
-	<link rel="stylesheet" href="leaflet/leaflet.css">
+    <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+	<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
     </head>
     <body style="height: 100%; margin: 0;">
         <div id="map" style="width: 100%; height: 100%;"></div>
@@ -15,6 +16,7 @@
 		var gamePublisher = "Game Freak & Nintendo";
 		var mapMinZoom = 16;
 		var mapMaxZoom = 20;
+		var clickZoom = 19;
 		var img_width = 8192;
 		var img_height = 8192;
 		var map;
@@ -22,54 +24,62 @@
         function init() {
 			map = make_map();
 
-			var iconPotion = make_icon('potion');
-			var iconEther = make_icon('ether');
-			var iconParalyzeHeal = make_icon('paralyzeheal');
-			var iconPokeball = make_icon('pokeball');
-			var iconOldAmber = make_icon('oldamber');
-			var iconOranBerry = make_icon('oranberry');
-			var iconPersimBerry = make_icon('persimberry');
-			var iconRazzBerry = make_icon('razzberry');
-			var iconGreatBall = make_icon('greatball');
-			var iconTM = make_icon('tm');
-			var iconLeppaBerry = make_icon('leppaberry');
-			var iconMaxEther = make_icon('maxether');
-			var iconUltraBall = make_icon('ultraball');
-			var iconAspearBerry = make_icon('aspearberry');
-			var iconFullRestore = make_icon('fullrestore');
-			var iconSitrusBerry = make_icon('sitrusberry');
-			var iconLumBerry = make_icon('lumberry');
-			var iconMaxElixir = make_icon('maxelixir');
+			//Recovery Items
+			var iconPotion = make_icon('Potion', 'potion', 'recovery');
+			var iconEther = make_icon('Ether', 'ether', 'recovery');
+			var iconParalyzeHeal = make_icon('Paralyze Heal', 'paralyzeheal', 'recovery');
+			var iconMaxEther = make_icon('Max Ether', 'maxether', 'recovery');
+			var iconFullRestore = make_icon('Full Restore', 'fullrestore', 'recovery');
+			var iconMaxElixir = make_icon('Max Elixir', 'maxelixir', 'recovery');
+			//Ability Enhancers
+			
+			//Hold Items
+			
+			//Miscellaneous
+			var iconOldAmber = make_icon('Old Amber', 'oldamber', 'miscellaneous');
+			var iconTM = make_icon('Technical Machine', 'tm', 'miscellaneous');
+			//Pokeballs
+			var iconPokeball = make_icon('Poke Ball', 'pokeball', 'pokeballs');
+			var iconGreatBall = make_icon('Great Ball', 'greatball', 'pokeballs');
+			var iconUltraBall = make_icon('Ultra Ball', 'ultraball', 'pokeballs');
+			//Berries
+			var iconOranBerry = make_icon('Oran Berry', 'oranberry', 'berries');
+			var iconPersimBerry = make_icon('Persim Berry', 'persimberry', 'berries');
+			var iconRazzBerry = make_icon('Razz Berry', 'razzberry', 'berries');
+			var iconLeppaBerry = make_icon('Leppa Berry', 'leppaberry', 'berries');
+			var iconAspearBerry = make_icon('Aspear Berry', 'aspearberry', 'berries');
+			var iconSitrusBerry = make_icon('Sitrus Berry', 'sitrusberry', 'berries');
+			var iconLumBerry = make_icon('Lum Berry', 'lumberry', 'berries');
 			
 			//Route 1
-			make_marker(iconPotion, 1896, 4870);
+			make_marker(iconPotion, 1896, 4870, "Obtained from Viridian Poké Mart employee", "");
 			//Viridian City
-			make_marker(iconPotion, 1877, 3865);
+			make_marker(iconPotion, 1877, 3865, "Next to the cuttable tree in the northwestern part of the city", "");
 			//Route 2
-			make_marker(iconParalyzeHeal, 2072, 3545);
-			make_marker(iconEther, 2074, 3370);
+			make_marker(iconParalyzeHeal, 2072, 3545, "South of the second western ledge south of the eastern gate", "");
+			make_marker(iconEther, 2074, 3370, "South of the first western ledge south of the eastern gate", "");
 			//Pewter City
-			make_marker(iconPokeball, 1674, 1943);
-			make_marker(iconOldAmber, 2008, 1893);
+			make_marker(iconPokeball, 1674, 1943, "West of the Pewter Museum of Science, in the center of the patch of light green grass", "");
+			make_marker(iconOldAmber, 2008, 1893, "From a scientist inside the back room of the Pewter Museum of Science (requires Cut)", "");
 			//Route 3
-			make_marker(iconOranBerry, 2791, 2168);
+			make_marker(iconOranBerry, 2791, 2168, "Between the ledges with Youngster Calvin, in the marked square", "");
 			//Route 4
-			make_marker(iconPersimBerry, 3415, 1768);
-			make_marker(iconGreatBall, 4020, 1736);
-			make_marker(iconTM, 4408, 1788);
-			make_marker(iconRazzBerry, 4408, 1976);
+			make_marker(iconPersimBerry, 3415, 1768, "Between the three rocks west of the Pokémon Center", "");
+			make_marker(iconGreatBall, 4020, 1736, "In the corner west of the hill east of the eastern Mt. Moon entrance", "");
+			make_marker(iconTM, 4408, 1788, "TM05 - Roar. On the second-highest hill in the northeast area of the map", "");
+			make_marker(iconRazzBerry, 4408, 1976, "South of the easternmost ledge south of the road near the center of the map", "");
 			//Cerulean City
 			//TBC
 			
 			//Route 23
-			make_marker(iconLeppaBerry, 888, 3433);
-			make_marker(iconMaxEther, 1015, 3000);
-			make_marker(iconUltraBall, 1160, 2552);
-			make_marker(iconAspearBerry, 1000, 2456);
-			make_marker(iconFullRestore, 1145, 2055);
-			make_marker(iconSitrusBerry, 873, 1848);
-			make_marker(iconLumBerry, 889, 1672);
-			make_marker(iconMaxElixir, 984, 1511);
+			make_marker(iconLeppaBerry, 888, 3433, "In the small clearing left of the lone building between the Thunder Badge and Rainbow Badge checkpoints", "");
+			make_marker(iconMaxEther, 1015, 3000, "Near the center of the island", "");
+			make_marker(iconUltraBall, 1160, 2552, "In the wall between the two statues northeast of the water", "");
+			make_marker(iconAspearBerry, 1000, 2456, "In the big clearing between the rocks just south of the Volcano Badge checkpoint ", "");
+			make_marker(iconFullRestore, 1145, 2055, "In the top right boulder of a group of rocks that are beside the northernmost patch of grass", "");
+			make_marker(iconSitrusBerry, 873, 1848, "West of the statue outside the Victory Road entrance", "");
+			make_marker(iconLumBerry, 889, 1672, "Near the pair of statues southwest of the maze of stones", "");
+			make_marker(iconMaxElixir, 984, 1511, "In the maze of stones at the northern end of the route, in the dead-end reached on the westward path", "");
 		}
 		
 		window.onload = init;
