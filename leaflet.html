@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Far Cry 3 - Collectamaps</title>
+    <script type="text/javascript" src="leaflet/leaflet.js"></script>
+	<link rel="stylesheet" href="leaflet/leaflet.css">
+    </head>
+    <body style="height: 100%; margin: 0;">
+        <div id="map" style="width: 100%; height: 100%;"></div>
+    </body>
+	    <script type="text/javascript">
+        function init() {
+			var mapMinZoom = 17;
+			var mapMaxZoom = 20;
+			var map = L.map('map', {
+				maxZoom: mapMaxZoom,
+				minZoom: mapMinZoom,
+				crs: L.CRS.Simple
+			}).setView([0, 0], 17);
+			
+			var southWest = map.unproject([0, 4096], mapMaxZoom);
+			var northEast = map.unproject([6144, 0], mapMaxZoom);
+			var mapBounds = new L.LatLngBounds(southWest, northEast);
+			map.fitBounds(mapBounds);
+			
+			L.tileLayer('far-cry-3/tiles/{z}/map_{x}_{y}.jpg', {
+				maxZoom: mapMaxZoom,
+				minZoom: mapMinZoom,
+				attribution: 'Map data &copy; Ubisoft',
+				noWrap: true,
+				bounds: mapBounds
+			}).addTo(map);
+			
+			var m = {
+				x: 500, 
+				y: 404
+			}
+			var marker = L.marker(map.unproject([m.x, m.y], map.getMaxZoom())).addTo(map);
+		}
+		
+		window.onload = init;
+    </script>
+</html>
