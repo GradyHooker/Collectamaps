@@ -62,7 +62,8 @@ function CMMarker(icon, x, y, description, gfycat) {
 	popupString += "<b>" + this.icon.name + "</b><br/>";
 	popupString += "<i>" + this.description + "</i><br/>";
 	if(this.gfycat != "") {
-		popupString+= "<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/" + "DelectableCompetentLcont" + "' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0'></iframe></div>";
+		popupString+= "<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/" + this.gfycat + "' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0'></iframe></div>";
+		//Non-repsonsive <iframe src='https://gfycat.com/ifr/CourteousColossalAntelope' frameborder='0' scrolling='no' width='640' height='428' allowfullscreen></iframe>
 		this.marker.on('click', markerClickVid);
 	} else {
 		this.marker.on('click', markerClickNo);
