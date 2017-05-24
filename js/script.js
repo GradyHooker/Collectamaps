@@ -21,6 +21,12 @@ function make_map() {
 		bounds: mapBounds
 	}).addTo(m);
 	
+	m.on('zoomend', function() {
+		if(map.getZoom() <= clickZoom-1) {
+			map.closePopup();
+		}
+	});
+	
 	return m;
 }
 
