@@ -26,18 +26,31 @@
 
 			//Recovery Items
 			var iconPotion = make_icon('Potion', 'potion', 'recovery');
-			var iconEther = make_icon('Ether', 'ether', 'recovery');
-			var iconParalyzeHeal = make_icon('Paralyze Heal', 'paralyzeheal', 'recovery');
-			var iconMaxEther = make_icon('Max Ether', 'maxether', 'recovery');
+			var iconSuperPotion = make_icon('Super Potion', 'superpotion', 'recovery');
+			var iconHyperPotion = make_icon('Hyper Potion', 'hyperpotion', 'recovery');
 			var iconFullRestore = make_icon('Full Restore', 'fullrestore', 'recovery');
+			var iconMaxRevive = make_icon('Max Revive', 'maxrevive', 'recovery');
+			var iconEther = make_icon('Ether', 'ether', 'recovery');
+			var iconMaxEther = make_icon('Max Ether', 'maxether', 'recovery');
+			var iconElixir = make_icon('Ether', 'elixir', 'recovery');
 			var iconMaxElixir = make_icon('Max Elixir', 'maxelixir', 'recovery');
-			//Ability Enhancers
-			
-			//Hold Items
-			
+			var iconParalyzeHeal = make_icon('Paralyze Heal', 'paralyzeheal', 'recovery');
+			var iconAwakening = make_icon('Awakening', 'awakening', 'recovery');
+			var iconBurnHeal = make_icon('Burn Heal', 'burnheal', 'recovery');
+			var iconXDefend = make_icon('X Defend', 'xdefend', 'recovery');
+			var iconPPUp = make_icon('PP Up', 'ppup', 'recovery');
+			var iconIron = make_icon('Iron', 'iron', 'recovery');
+			var iconZinc = make_icon('Zinc', 'zinc', 'recovery');
 			//Miscellaneous
 			var iconOldAmber = make_icon('Old Amber', 'oldamber', 'miscellaneous');
 			var iconTM = make_icon('Technical Machine', 'tm', 'miscellaneous');
+			var iconRareCandy = make_icon('Rare Candy', 'rarecandy', 'miscellaneous');
+			var iconLavaCookie = make_icon('Lava Cookie', 'lavacookie', 'miscellaneous');
+			var iconEscapeRope = make_icon('Escape Rope', 'escaperope', 'miscellaneous');
+			var iconNugget = make_icon('Nugget', 'nugget', 'miscellaneous');
+			var iconLeftovers = make_icon('Leftovers', 'leftovers', 'miscellaneous');
+			var iconStardust = make_icon('Stardust', 'stardust', 'miscellaneous');
+			var iconPearl = make_icon('Pearl', 'pearl', 'miscellaneous');
 			//Pokeballs
 			var iconPokeball = make_icon('Poke Ball', 'pokeball', 'pokeballs');
 			var iconGreatBall = make_icon('Great Ball', 'greatball', 'pokeballs');
@@ -50,6 +63,14 @@
 			var iconAspearBerry = make_icon('Aspear Berry', 'aspearberry', 'berries');
 			var iconSitrusBerry = make_icon('Sitrus Berry', 'sitrusberry', 'berries');
 			var iconLumBerry = make_icon('Lum Berry', 'lumberry', 'berries');
+			var iconPechaBerry = make_icon('Pecha Berry', 'pechaberry', 'berries');
+			var iconBlukBerry = make_icon('Bluk Berry', 'blukberry', 'berries');
+			var iconChestoBerry = make_icon('Chesto Berry', 'chestoberry', 'berries');
+			var iconCheriBerry = make_icon('Cheri Berry', 'cheriberry', 'berries');
+			var iconNanabBerry = make_icon('Nanab Berry', 'nanabberry', 'berries');
+			var iconRawstBerry = make_icon('Rawst Berry', 'rawstberry', 'berries');
+			var iconWepearBerry = make_icon('Wepear Berry', 'wepearberry', 'berries');
+			var iconPinapBerry = make_icon('Pinap Berry', 'pinapberry', 'berries');
 			
 			//Route 1
 			make_marker(iconPotion, 1896, 4870, "Obtained from Viridian Poke Mart employee", "");
@@ -69,8 +90,79 @@
 			make_marker(iconTM, 4408, 1788, "TM05 - Roar. On the second-highest hill in the northeast area of the map", "");
 			make_marker(iconRazzBerry, 4408, 1976, "South of the easternmost ledge south of the road near the center of the map", "");
 			//Cerulean City
-			//TBC
-			
+			make_marker(iconRareCandy, 5351, 1656, "In the backyard of the Gym Badge man's house", "");
+			//Route 24
+			make_marker(iconTM, 5436, 968, "TM45 - Attract. On the plateau at northern end", "");
+			make_marker(iconPechaBerry, 5560, 968, "West of the first Hiker of Route 25", "");
+			//Route 25
+			make_marker(iconElixir, 5864, 936, "In northwest corner of the tree maze, near the first Hiker", "");
+			make_marker(iconTM, 6055, 936, "TM43 - Secret Power. Behind cuttable tree (requires defeating Camper Flint or Cut)	", "");
+			make_marker(iconOranBerry, 6168, 1032, "Southwest of running Trainer", "");
+			make_marker(iconBlukBerry, 6279, 952, "Northeast of running Trainer", "");
+			make_marker(iconEther, 6568, 999, "Two steps east from the end of the path near Bill's house", "");
+			//Route 6
+			make_marker(iconSitrusBerry, 5335, 3545, "To the left of gate", "");
+			make_marker(iconRareCandy, 5559, 3545, "To the right of gate", "");
+			//Vermilion City
+			make_marker(iconMaxEther, 5286, 4280, "Five steps south and one step west of the Pokemon Center entrance", "");
+			make_marker(iconLavaCookie, 5846, 5175, "South of the truck in the harbor (requires Surf)", "");
+			//Route 11
+			make_marker(iconAwakening, 6040, 4312, "In the northwest corner of the route", "");
+			make_marker(iconXDefend, 6503, 4456, "In a grass patch in the center of the route", "");
+			make_marker(iconEscapeRope, 6760, 4344, "In a rock just above the gate", "");
+			make_marker(iconGreatBall, 6836, 4470, "Directly south of the gate", "");
+			//Route 9
+			make_marker(iconEther, 6071, 1815, "In rock in the northwest corner of the route", "");
+			make_marker(iconTM, 6022, 1976, "TM40 - Aerial Ace. In the southwest corner of the route", "");
+			make_marker(iconBurnHeal, 6870, 1975, "In the southeast corner of the route", "");
+			make_marker(iconChestoBerry, 6599, 1736, "Left of Hiker Brice", "");
+			make_marker(iconRareCandy, 6840, 1736, "In the northeast corner of the route", "");
+			//Route 10
+			make_marker(iconSuperPotion, 7142, 2007, "Next to Pokémon Center behind cuttable bush (requires Cut)", "");
+			make_marker(iconCheriBerry, 7079, 2120, "Left of Picnicker Heidi", "");
+			make_marker(iconPersimBerry, 7255, 2168, "To the right of Picnicker Heidi in a corner", "");
+			make_marker(iconNanabBerry, 7303, 2616, "Right of the south entrance of Rock Tunnel", "");
+			make_marker(iconEther, 7303, 2616, "West of the south exit of Rock Tunnel", "");
+			///////////////////////////////Ether - West of the south exit of Rock Tunnel
+			//Route 8
+			make_marker(iconLeppaBerry, 6503, 3144, "In grassy area", "");
+			make_marker(iconLumBerry, 6503, 3224, "In grassy area", "");
+			make_marker(iconRawstBerry, 6439, 3161, "In grassy area", "");
+			//Route 7
+			make_marker(iconWepearBerry, 4935, 3224, "Southeast of route", "");
+			//Celadon City 
+			make_marker(iconEther, 3798, 2871, "In the far northwest corner of the city, behind the buildings", "");
+			make_marker(iconPPUp, 4600, 3144, "At the end of the short path beyond the cuttable bush (requires Cut)", "");
+			//Saffron City
+			make_marker(iconNugget, 5262, 2907, "In Copycat's room, on her desk", "");
+			//Route 16
+			make_marker(iconLeftovers, 3448, 3193, "Where Snorlax was sleeping", "");
+			//Route 17 (Cycling Road)
+			make_marker(iconFullRestore, 3109, 4152, "Middle yellow path, near the center of the route", "");
+			make_marker(iconPPUp, 3015, 4391, "Left path, near the center of the route", "");
+			make_marker(iconRareCandy, 3239, 4631, "Right path, near the center of the route", "");
+			make_marker(iconMaxRevive, 3015, 5303, "Left path, near the southern end of the route", "");
+			make_marker(iconMaxElixir, 3176, 5816, "Southernmost end of the route, near the sign", "");
+			//Fuchsia City
+			make_marker(iconRareCandy, 4450, 6174, "In the Warden's house (requires Strength)", "");
+			make_marker(iconMaxRevive, 4439, 6120, "In the Warden's garden", "");
+			//Route 12
+			make_marker(iconTM, 7268, 3880, "TM48 - Skill Swap. On the island near the gate (requires Surf)", "");
+			make_marker(iconHyperPotion, 7271, 4216, "On the island near Fisherman Elliot", "");
+			make_marker(iconLeftovers, 7207, 4423, "Where Snorlax was sleeping", "");
+			make_marker(iconIron, 7127, 4921, "South of the Fishing Guru's house (requires Cut)", "");
+			make_marker(iconRareCandy, 7127, 5159, "In the tall grass near Route 13 (requires Cut)", "");
+			//Route 13
+			make_marker(iconPPUp, 6583, 5447, "In a gap in the fence, on the south side of the maze", "");
+			//Route 14
+			///////////////////////////////Zinc - In the tall grass patch (requires Cut)
+			make_marker(iconPinapBerry, 6135, 6073, "Southeast corner", "");
+			//Route 15
+			make_marker(iconTM, 4998, 5960, "TM18 - Rain Dance. West side of the upper level (requires Cut)", "");
+			//Route 20
+			make_marker(iconStardust, 2551, 7080, "On the large northwest sandbar (requires Surf)", "");
+			//Route 21
+			make_marker(iconPearl, 2071, 6055, "n the third island from the north (requires Surf)", "");
 			//Route 23
 			make_marker(iconLeppaBerry, 888, 3433, "In the small clearing left of the lone building between the Thunder Badge and Rainbow Badge checkpoints", "");
 			make_marker(iconMaxEther, 1015, 3000, "Near the center of the island", "");
