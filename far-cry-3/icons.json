@@ -1,0 +1,11 @@
+{
+	"letter": [
+		{	"name": "Letter"		}
+	],
+	"sdcard": [
+		{	"name": "SD Card"		}
+	],
+	"relic": [
+		{	"name": "Relic"			}
+	]
+}

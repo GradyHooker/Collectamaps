@@ -1,0 +1,492 @@
+[
+	{
+		"icon":	"potion",
+		"x":	1896,
+		"y":	4870,
+		"desc":	"Obtained from Viridian Poke Mart employee",
+		"gfy":	"BadGiddyEquestrian"
+	},
+	{
+		"icon":	"potion",
+		"x":	1877,
+		"y":	3865,
+		"desc":	"Next to the cuttable tree in the northwestern part of the city (requires Cut)",
+		"gfy":	"RedWideAsianelephant"
+	},
+	{
+		"icon":	"paralyzeheal",
+		"x":	2072,
+		"y":	3545,
+		"desc":	"South of the second western ledge south of the eastern gate",
+		"gfy":	"MealySkinnyHapuku"
+	},
+	{
+		"icon":	"ether",
+		"x":	2074,
+		"y":	3370,
+		"desc":	"South of the first western ledge south of the eastern gate",
+		"gfy":	"FrigidEminentBlackrussianterrier"
+	},
+	{
+		"icon":	"pokeball",
+		"x":	1705,
+		"y":	1911,
+		"desc":	"West of the Pewter Museum of Science, in the center of the patch of light green grass",
+		"gfy":	"CourteousColossalAntelope"
+	},
+	{
+		"icon":	"oldamber",
+		"x":	2008,
+		"y":	1893,
+		"desc":	"From a scientist inside the back room of the Pewter Museum of Science (requires Cut)",
+		"gfy":	"FatherlyHauntingIrishwaterspaniel"
+	},
+	{
+		"icon":	"oranberry",
+		"x":	2791,
+		"y":	2168,
+		"desc":	"Between the ledges with Youngster Calvin, in the marked square",
+		"gfy":	"PleasantAppropriateFoxhound"
+	},
+	{
+		"icon":	"persimberry",
+		"x":	3415,
+		"y":	1768,
+		"desc":	"Between the three rocks west of the Pokemon Center",
+		"gfy":	"BreakableLimpLarva"
+	},
+	{
+		"icon":	"greatball",
+		"x":	4020,
+		"y":	1736,
+		"desc":	"In the corner west of the hill east of the eastern Mt. Moon entrance",
+		"gfy":	"InsignificantDefiniteAmericancicada"
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	4408,
+		"y":	1788,
+		"desc":	"TM05 - Roar. On the second-highest hill in the northeast area of the map",
+		"gfy":	"CharmingSimpleBobwhite"
+	},
+	{
+		"icon":	"razzberry",
+		"x":	4408,
+		"y":	1976,
+		"desc":	"South of the easternmost ledge south of the road near the center of the map",
+		"gfy":	"PertinentDevotedEeve"
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	5351,
+		"y":	1656,
+		"desc":	"In the backyard of the Gym Badge man's house",
+		"gfy":	"EnviousHastyAmbushbug"
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	5436,
+		"y":	968,
+		"desc":	"TM45 - Attract. On the plateau at northern end",
+		"gfy":	""
+	},
+	{
+		"icon":	"pechaberry",
+		"x":	5560,
+		"y":	968,
+		"desc":	"West of the first Hiker of Route 25",
+		"gfy":	""
+	},
+	{
+		"icon":	"elixir",
+		"x":	5864,
+		"y":	936,
+		"desc":	"In northwest corner of the tree maze, near the first Hiker",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	6055,
+		"y":	936,
+		"desc":	"TM43 - Secret Power. Behind cuttable tree (requires defeating Camper Flint or Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"blukberry",
+		"x":	6279,
+		"y":	952,
+		"desc":	"Northeast of running Trainer",
+		"gfy":	""
+	},
+	{
+		"icon":	"ether",
+		"x":	6568,
+		"y":	999,
+		"desc":	"Two steps east from the end of the path near Bill's house",
+		"gfy":	""
+	},
+	{
+		"icon":	"sitrusberry",
+		"x":	5335,
+		"y":	3545,
+		"desc":	"To the left of gate",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	5559,
+		"y":	3545,
+		"desc":	"To the right of gate",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	5286,
+		"y":	4280,
+		"desc":	"Five steps south and one step west of the Pokemon Center entrance",
+		"gfy":	""
+	},
+	{
+		"icon":	"lavacookie",
+		"x":	5846,
+		"y":	5175,
+		"desc":	"South of the truck in the harbor (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"awakening",
+		"x":	6040,
+		"y":	4312,
+		"desc":	"In the northwest corner of the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"xdefend",
+		"x":	6503,
+		"y":	4456,
+		"desc":	"In a grass patch in the center of the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"escaperope",
+		"x":	6760,
+		"y":	4344,
+		"desc":	"In a rock just above the gate",
+		"gfy":	""
+	},
+	{
+		"icon":	"greatball",
+		"x":	6836,
+		"y":	4470,
+		"desc":	"Directly south of the gate",
+		"gfy":	""
+	},
+	{
+		"icon":	"ether",
+		"x":	6071,
+		"y":	1815,
+		"desc":	"In rock in the northwest corner of the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	6022,
+		"y":	1976,
+		"desc":	"TM40 - Aerial Ace. In the southwest corner of the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"burnheal",
+		"x":	6870,
+		"y":	1975,
+		"desc":	"In the southeast corner of the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"chestoberry",
+		"x":	6599,
+		"y":	1736,
+		"desc":	"Left of Hiker Brice",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	6840,
+		"y":	1736,
+		"desc":	"In the northeast corner of the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"superpotion",
+		"x":	7142,
+		"y":	2007,
+		"desc":	"Next to Pokémon Center behind cuttable bush (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"cheriberry",
+		"x":	7079,
+		"y":	2120,
+		"desc":	"Left of Picnicker Heidi",
+		"gfy":	""
+	},
+	{
+		"icon":	"persimberry",
+		"x":	7255,
+		"y":	2168,
+		"desc":	"To the right of Picnicker Heidi in a corner",
+		"gfy":	""
+	},
+	{
+		"icon":	"nanabberry",
+		"x":	7303,
+		"y":	2616,
+		"desc":	"Right of the south entrance of Rock Tunnel",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	7175,
+		"y":	2331,
+		"desc":	"East of the entrance to the Power Plant, near the rock wall",
+		"gfy":	""
+	},
+	{
+		"icon":	"leppaberry",
+		"x":	6503,
+		"y":	3144,
+		"desc":	"In grassy area",
+		"gfy":	""
+	},
+	{
+		"icon":	"lumberry",
+		"x":	6503,
+		"y":	3224,
+		"desc":	"In grassy area",
+		"gfy":	""
+	},
+	{
+		"icon":	"rawstberry",
+		"x":	6439,
+		"y":	3161,
+		"desc":	"In grassy area",
+		"gfy":	""
+	},
+	{
+		"icon":	"wepearberry",
+		"x":	4935,
+		"y":	3224,
+		"desc":	"Southeast of route",
+		"gfy":	""
+	},
+	{
+		"icon":	"ether",
+		"x":	3798,
+		"y":	2871,
+		"desc":	"In the far northwest corner of the city, behind the buildings",
+		"gfy":	""
+	},
+	{
+		"icon":	"ppup",
+		"x":	4600,
+		"y":	3144,
+		"desc":	"At the end of the short path beyond the cuttable bush (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	5262,
+		"y":	2907,
+		"desc":	"In Copycat's room, on her desk",
+		"gfy":	""
+	},
+	{
+		"icon":	"leftovers",
+		"x":	3448,
+		"y":	3193,
+		"desc":	"Where Snorlax was sleeping",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullrestore",
+		"x":	3109,
+		"y":	4152,
+		"desc":	"Middle yellow path, near the center of the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"ppup",
+		"x":	3015,
+		"y":	4391,
+		"desc":	"Left path, near the center of the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	3239,
+		"y":	4631,
+		"desc":	"Right path, near the center of the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxrevive",
+		"x":	3015,
+		"y":	5303,
+		"desc":	"Left path, near the southern end of the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxelixir",
+		"x":	3176,
+		"y":	5816,
+		"desc":	"Southernmost end of the route, near the sign",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	4450,
+		"y":	6174,
+		"desc":	"In the Warden's house (requires Strength)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxrevive",
+		"x":	4439,
+		"y":	6120,
+		"desc":	"In the Warden's garden",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	7268,
+		"y":	3880,
+		"desc":	"TM48 - Skill Swap. On the island near the gate (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"hyperpotion",
+		"x":	7271,
+		"y":	4216,
+		"desc":	"On the island near Fisherman Elliot",
+		"gfy":	""
+	},
+	{
+		"icon":	"leftovers",
+		"x":	7207,
+		"y":	4423,
+		"desc":	"Where Snorlax was sleeping",
+		"gfy":	""
+	},
+	{
+		"icon":	"iron",
+		"x":	7127,
+		"y":	4921,
+		"desc":	"South of the Fishing Guru's house (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	7127,
+		"y":	5159,
+		"desc":	"In the tall grass near Route 13 (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"ppup",
+		"x":	6583,
+		"y":	5447,
+		"desc":	"In a gap in the fence, on the south side of the maze",
+		"gfy":	""
+	},
+	{
+		"icon":	"zinc",
+		"x":	0,
+		"y":	0,
+		"desc":	"In the tall grass patch (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"pinapberry",
+		"x":	6135,
+		"y":	6073,
+		"desc":	"Southeast corner",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	4998,
+		"y":	5960,
+		"desc":	"TM18 - Rain Dance. West side of the upper level (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"stardust",
+		"x":	2551,
+		"y":	7080,
+		"desc":	"On the large northwest sandbar (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"pearl",
+		"x":	2071,
+		"y":	6055,
+		"desc":	"On the third island from the north (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"leppaberry",
+		"x":	888,
+		"y":	3433,
+		"desc":	"In the small clearing left of the lone building between the Thunder Badge and Rainbow Badge checkpoints",
+		"gfy":	"CostlyShockingIceblueredtopzebra"
+	},
+	{
+		"icon":	"maxether",
+		"x":	1015,
+		"y":	3000,
+		"desc":	"Near the center of the island",
+		"gfy":	"JoyfulFarAmericanpainthorse"
+	},
+	{
+		"icon":	"ultraball",
+		"x":	1160,
+		"y":	2552,
+		"desc":	"In the wall between the two statues northeast of the water",
+		"gfy":	"UncommonGracefulFrogmouth"
+	},
+	{
+		"icon":	"aspearberry",
+		"x":	1000,
+		"y":	2456,
+		"desc":	"In the big clearing between the rocks just south of the Volcano Badge checkpoint",
+		"gfy":	"OffbeatPotableBagworm"
+	},
+	{
+		"icon":	"fullrestore",
+		"x":	1145,
+		"y":	2055,
+		"desc":	"In the top right boulder of a group of rocks that are beside the northernmost patch of grass",
+		"gfy":	"ImmediateTotalHamadryas"
+	},
+	{
+		"icon":	"sitrusberry",
+		"x":	873,
+		"y":	1848,
+		"desc":	"West of the statue outside the Victory Road entrance",
+		"gfy":	"CloudyFatIchthyosaurs"
+	},
+	{
+		"icon":	"lumberry",
+		"x":	889,
+		"y":	1672,
+		"desc":	"Near the pair of statues southwest of the maze of stones",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxelixir",
+		"x":	984,
+		"y":	1511,
+		"desc":	"In the maze of stones at the northern end of the route, in the dead-end reached on the westward path",
+		"gfy":	""
+	}
+]

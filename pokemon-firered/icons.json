@@ -1,0 +1,53 @@
+{
+	"recovery": [
+		{	"name": "Potion"		},
+		{	"name": "Super Potion"	},
+		{	"name": "Hyper Potion"	},
+		{	"name": "Full Restore"	},
+		{	"name": "Max Revive"	},
+		{	"name": "Ether"			},
+		{	"name": "Max Ether"		},
+		{	"name": "Elixir"		},
+		{	"name": "Max Elixir"	},
+		{	"name": "Paralyze Heal"	},
+		{	"name": "Awakening"		},
+		{	"name": "Burn Heal"		},
+		{	"name": "X Defend"		},
+		{	"name": "PP Up"			},
+		{	"name": "Iron"			},
+		{	"name": "Zinc"			}
+	],
+	"miscellaneous": [
+		{	"name": "Old Amber"			},
+		{	"name": "Technical Machine"	},
+		{	"name": "Rare Candy"		},
+		{	"name": "Lava Cookie"		},
+		{	"name": "Escape Rope"		},
+		{	"name": "Nugget"			},
+		{	"name": "Leftovers"			},
+		{	"name": "Stardust"			},
+		{	"name": "Pearl"				}
+	],
+	"pokeballs": [
+		{	"name": "Poke Ball"		},
+		{	"name": "Great Ball"	},
+		{	"name": "Ultra Ball"	}
+	],
+	"berries": [
+		{	"name": "Oran Berry"	},
+		{	"name": "Persim Berry"	},
+		{	"name": "Razz Berry"	},
+		{	"name": "Leppa Berry"	},
+		{	"name": "Aspear Berry"	},
+		{	"name": "Sitrus Berry"	},
+		{	"name": "Lum Berry"		},
+		{	"name": "Pecha Berry"	},
+		{	"name": "Bluk Berry"	},
+		{	"name": "Chesto Berry"	},
+		{	"name": "Cheri Berry"	},
+		{	"name": "Nanab Berry"	},
+		{	"name": "Rawst Berry"	},
+		{	"name": "Wepear Berry"	},
+		{	"name": "Pinap Berry"	}
+	]
+}

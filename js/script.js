@@ -1,3 +1,14 @@
+var map;
+var icons = {};
+var markers = [];
+
+window.onload = init;
+
+function init() {
+	map = make_map();
+	loadJSON("icons", iconsLoaded);
+}
+
 function make_map() {
 	var m = L.map('map', {
 		maxZoom: mapMaxZoom,
@@ -29,6 +40,41 @@ function make_map() {
 	
 	return m;
 }
+		
+function loadJSON(file, callback) {   
+	var req = new XMLHttpRequest();
+	req.overrideMimeType("application/json");
+	req.open('GET', game + '/' + file + '.json', true);
+	req.onreadystatechange = function () {
+		if (req.readyState == 4 && req.status == "200") {
+		callback(req.responseText);
+		}
+	};
+	req.send(null);  
+}
+
+function iconsLoaded(response) {
+	var iconJSON = JSON.parse(response);
+	
+	for (var cat in iconJSON) {
+		for (var i = 0; i < iconJSON[cat].length; i++) {
+			var icon = iconJSON[cat][i];
+			var iconShort = icon.name.replace(/\s/g,'').toLowerCase();
+			icons[iconShort] = make_icon(icon.name, iconShort, cat);
+		}
+	}
+	
+	loadJSON("markers", markersLoaded);
+}
+
+function markersLoaded(response) {
+	var markerJSON = JSON.parse(response);
+	
+	for (var m in markerJSON) {
+		var marker = markerJSON[m];
+		markers[m] = make_marker(marker.icon, marker.x, marker.y, marker.desc, marker.gfy);
+	}
+}
 
 function make_icon(name, shortname, filter) {
 	return new CMIcon(name, shortname, filter);
@@ -48,8 +94,8 @@ function make_marker(icon, x, y, description, gfycat) {
 	return CMMarker(icon, x, y, description, gfycat);
 }
 
-function CMMarker(icon, x, y, description, gfycat) {
-	this.icon = icon;
+function CMMarker(ic, x, y, description, gfycat) {
+	this.icon = icons[ic];
 	this.marker = L.marker(
 		map.unproject([x, y], mapMaxZoom),
 		{icon: icon.icon}
@@ -88,27 +134,3 @@ function markerClick(e, offset) {
 	
 	map.setView(newCenter, clickZoom);
 }
-
-/*function markerClick(e) {
-	var popUpHeight = document.getElementsByClassName("leaflet-popup-content-wrapper")[0].clientHeight + 5;
-	var markerCenter = e.target.getLatLng();
-	var root = Math.max((clickZoom - map.getZoom()) + 1, 1);
-	switch(root) {
-		case 1:
-			break;
-		case 2:
-			popUpHeight = Math.sqrt(popUpHeight);
-			break;
-		case 3:
-			popUpHeight = Math.cbrt(popUpHeight);
-			break;
-		default:
-			popUpHeight = Math.pow(popUpHeight, 1/root);
-			break;
-	}
-	var x = map.latLngToContainerPoint(markerCenter).x;
-    var y = map.latLngToContainerPoint(markerCenter).y - popUpHeight/2;
-    var newCenter = map.containerPointToLatLng([x, y]);
-	
-	map.setView(newCenter, clickZoom);
-}*/
