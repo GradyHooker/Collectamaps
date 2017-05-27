@@ -1,5 +1,5 @@
 {
-	"recovery": [
+	"recoveryItems": [
 		{	"name": "Potion"		},
 		{	"name": "Super Potion"	},
 		{	"name": "Hyper Potion"	},
@@ -28,7 +28,7 @@
 		{	"name": "Stardust"			},
 		{	"name": "Pearl"				}
 	],
-	"pokeballs": [
+	"pokeBalls": [
 		{	"name": "Poke Ball"		},
 		{	"name": "Great Ball"	},
 		{	"name": "Ultra Ball"	}
