@@ -69,7 +69,7 @@ function loadJSON(file, callback) {
 }
 
 function sendHome() {
-	window.location = "/";
+	window.location = "./";
 }
 
 function infoLoaded(response) {
