@@ -16,7 +16,7 @@ window.onload = init;
 function init() {
 	game = getQueryVariable("g");
 	if(game == false) {
-		window.location = "Collectamaps/";
+		sendHome();
 	} else {
 		loadJSON("game_info", infoLoaded);
 	}
@@ -61,9 +61,15 @@ function loadJSON(file, callback) {
 	req.onreadystatechange = function () {
 		if (req.readyState == 4 && req.status == "200") {
 		callback(req.responseText);
+		} else if (req.status == "404") {
+			sendHome();
 		}
 	};
-	req.send(null);  
+	req.send(null); 
+}
+
+function sendHome() {
+	window.location = "/";
 }
 
 function infoLoaded(response) {
