@@ -2,11 +2,24 @@ var map;
 var icons = {};
 var markers = [];
 
+var game;
+var gameFull;
+var gamePublisher;
+var mapMinZoom;
+var mapMaxZoom;
+var clickZoom;
+var img_width;
+var img_height;
+
 window.onload = init;
 
 function init() {
-	map = make_map();
-	loadJSON("icons", iconsLoaded);
+	game = getQueryVariable("g");
+	if(game == false) {
+		window.location = "index.html";
+	} else {
+		loadJSON("game_info", infoLoaded);
+	}
 }
 
 function make_map() {
@@ -53,8 +66,27 @@ function loadJSON(file, callback) {
 	req.send(null);  
 }
 
+function infoLoaded(response) {
+	var infoJSON = JSON.parse(response);
+	gamePublisher = infoJSON["gamePublisher"];
+	mapMinZoom = infoJSON["mapMinZoom"];
+	mapMaxZoom = infoJSON["mapMaxZoom"];
+	clickZoom = infoJSON["clickZoom"];
+	img_width = infoJSON["img_width"];
+	img_height = infoJSON["img_height"];
+	gameFull = infoJSON["gameFull"];
+	
+	window.document.title = gameFull + " - Collectamaps"
+	map = make_map();
+	loadJSON("icons", iconsLoaded);
+}
+
 function iconsLoaded(response) {
 	var iconJSON = JSON.parse(response);
+	var table = document.getElementById("fab-table");
+	var row;
+	var cell;
+	var buttons;
 	
 	for (var cat in iconJSON) {
 		for (var i = 0; i < iconJSON[cat].length; i++) {
@@ -62,9 +94,36 @@ function iconsLoaded(response) {
 			var iconShort = icon.name.replace(/\s/g,'').toLowerCase();
 			icons[iconShort] = make_icon(icon.name, iconShort, cat);
 		}
+		//Create rows in the filter table
+		row = document.createElement("TR");
+		cell = document.createElement("TD");
+		cell.textContent = capitalize(cat);;
+		
+		row.appendChild(cell);
+		buttons = make_FilterButtons(cat);
+		row.appendChild(buttons[0]);
+		row.appendChild(buttons[1]);
+		table.appendChild(row);
 	}
 	
 	loadJSON("markers", markersLoaded);
+}
+
+function capitalize(string) {
+	string = string.replace(/([A-Z])/g, ' $1');
+    string = string.replace(/^./, function(str){ return str.toUpperCase(); });
+	return string;
+}
+
+function make_FilterButtons(cat) {
+	var buttons = [];
+	buttons[0] = document.createElement("TD");
+	buttons[0].className = "checkCell";
+	buttons[0].innerHTML = '<input type="checkbox" name="filterAdd" value="' + cat + '" checked>';
+	buttons[1] = document.createElement("TD");
+	buttons[1].className = "checkCell";
+	buttons[1].innerHTML = '<input type="radio" name="filterOnly" value="' + cat + '">';
+	return buttons;
 }
 
 function markersLoaded(response) {
@@ -133,4 +192,66 @@ function markerClick(e, offset) {
 	);
 	
 	map.setView(newCenter, clickZoom);
+}
+
+function expandFilters() {
+	var content = document.getElementById("fab-content");
+	if(content.style.opacity != "1") {
+		var close = document.getElementById("icon-close");
+		close.style.opacity = "1";
+		close.style.zIndex = "999";
+		close.style.cursor = "pointer";
+		close.style.transition = "opacity 0.75s ease-in-out 0.25s";
+
+		var open = document.getElementById("icon-filter");
+		open.style.opacity = "0";
+		open.style.zIndex = "997";
+		open.style.cursor = "default";
+		open.style.transition = "opacity 0.75s";
+
+		content.style.transition = "opacity 0.7s ease-in-out 0.3s";
+		content.style.opacity = "1";
+		content.style.padding = "15px";
+		
+		var fab = document.getElementById("fab");
+		fab.style.width = "280px";
+		fab.style.borderRadius = "10px";
+		fab.style.height = (content.clientHeight-20) + "px";
+	}
+}
+
+function closeFilters() {
+	var content = document.getElementById("fab-content");
+	if(content.style.opacity != "0") {
+		var close = document.getElementById("icon-close");
+		close.style.opacity = "0";
+		close.style.zIndex = "997";
+		close.style.cursor = "default";
+		close.style.transition = "opacity 0.75s";
+		
+		var open = document.getElementById("icon-filter");
+		open.style.opacity = "1";
+		open.style.zIndex = "999";
+		open.style.cursor = "pointer";
+		open.style.transition = "opacity 0.75s ease-in-out 0.25s";
+		
+		content.style.transition = "opacity 0.3s ease-in-out";
+		content.style.opacity = "0";
+		content.style.padding = "0px";
+		
+		var fab = document.getElementById("fab");
+		fab.style.width = "65px";
+		fab.style.borderRadius = "34px";
+		fab.style.height = "65px";
+	}
+}
+
+function getQueryVariable(variable) {
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i=0;i<vars.length;i++) {
+		var pair = vars[i].split("=");
+		if(pair[0] == variable){return pair[1];}
+	}
+	return(false);
 }

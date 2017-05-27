@@ -1,3 +1,14 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+}
+
 .leaflet-popup-tip {
 	height: 8px;
 }
@@ -5,3 +16,71 @@
 .leaflet-popup-content-wrapper {
 	min-width: 340px;
 }
+
+#fab {
+	height: 65px;
+	width: 65px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 34px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 998;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.65);
+	transition: 1s;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#fab:hover {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+}
+
+#fab img {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	transition: opacity 0.5s;
+}
+
+#icon-filter {
+	opacity: 1;
+	z-index: 999;
+	cursor: pointer;
+}
+
+#icon-close {
+	opacity: 0;
+	z-index: 997;
+	cursor: default;
+}
+
+#fab-content {
+	display: block;
+	opacity: 0;
+	width: 100%;
+	padding: 0px;
+	padding-top: 0px !important;
+}
+
+#fab-content h2 {
+	margin: 0;
+	margin-top: 11px;
+	width: 100%;
+	text-align: center;
+}
+
+#fab-table {
+	width: 100%;
+}
+
+.checkCell {
+	text-align: center;
+}
+
+/*400px is mobile*/
