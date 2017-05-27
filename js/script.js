@@ -16,7 +16,7 @@ window.onload = init;
 function init() {
 	game = getQueryVariable("g");
 	if(game == false) {
-		window.location = "index.html";
+		window.location = "Collectamaps/";
 	} else {
 		loadJSON("game_info", infoLoaded);
 	}
