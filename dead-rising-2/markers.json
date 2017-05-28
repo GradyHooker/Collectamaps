@@ -1,0 +1,51 @@
+[
+	{
+		"icon":	"magazine",
+		"x":	1627,
+		"y":	3272,
+		"desc":	"Building - On the scaffolding between the west and central statues",
+		"gfy":	"ClassicCorruptBoa"
+	},
+	{
+		"icon":	"magazine",
+		"x":	683,
+		"y":	2617,
+		"desc":	"Rescue - Fortune City Arena security room",
+		"gfy":	"WarmShamefulJavalina"
+	},
+	{
+		"icon":	"magazine",
+		"x":	575,
+		"y":	1962,
+		"desc":	"Combat 3 - Underground in Warehouse A (Closest entrance is from Americana Casino)",
+		"gfy":	"DishonestClosedBrahmanbull"
+	},
+	{
+		"icon":	"magazine",
+		"x":	1240,
+		"y":	1918,
+		"desc":	"Driving - Bennie Jack's BBQ Shack",
+		"gfy":	"TartUncommonDinosaur"
+	},
+	{
+		"icon":	"magazine",
+		"x":	1507,
+		"y":	1779,
+		"desc":	"Bargaining 1 - Accessed from second floor of Bennie Jack’s BBQ Shack, jump across light fixtures",
+		"gfy":	"PoorFatalKite"
+	},
+	{
+		"icon":	"magazine",
+		"x":	2173,
+		"y":	1665,
+		"desc":	"Health 1 - Yesterday, Today & Tomorrow",
+		"gfy":	"CloudyCleanLarva"
+	},
+	{
+		"icon":	"magazine",
+		"x":	2213,
+		"y":	1653,
+		"desc":	"Combat 2 - Yesterday, Today & Tomorrow",
+		"gfy":	"SpottedEntireBlackfootedferret"
+	}
+]
