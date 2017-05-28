@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <title>Collectamaps</title>
-    <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
-	<link rel="stylesheet" href="lib/leaflet/leaflet.css">
-	<script type="text/javascript" src="js/script.js"></script>
-	<link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div id="map"></div>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>Collectamaps</title>
+		<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+		<script type="text/javascript" src="js/maps.js"></script>
+		<link rel="stylesheet" href="css/maps.css">
+	</head>
+	<body>
+		<div id="map"></div>
 		<div id="fab">
 			<img id="icon-filter" src="icons/filter.png" onclick="expandFilters()"/>
 			<img id="icon-close" src="icons/cross.png" onclick="closeFilters()"/>
@@ -24,5 +24,10 @@
 				</table>
 			</div>
 		</div>
-    </body>
+		<div id="credit-cont">
+			<a href="" id="credit-link">
+				<img id="credit-logo"/>
+			</a>
+		</div>
+	</body>
 </html>

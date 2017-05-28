@@ -1,0 +1,22 @@
+body {
+    background: #444444;
+}
+
+.game-container {
+	display: flex;
+	max-width: 1200px;
+    width: 80%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
+.game-container img {
+	height: 150px;
+	width: 322px;
+}
+
+.game-container a {
+	text-decoration: none;
+	margin: 10px;
+}

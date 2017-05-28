@@ -82,6 +82,12 @@ function infoLoaded(response) {
 	img_height = infoJSON["img_height"];
 	gameFull = infoJSON["gameFull"];
 	
+	if(infoJSON["credit"] != null) {
+		document.getElementById("credit-cont").style.display = "block";
+		document.getElementById("credit-logo").src = "icons/" + infoJSON["credit"] + "-logo.png";
+		document.getElementById("credit-link").href = infoJSON["creditURL"];
+	}
+	
 	window.document.title = gameFull + " - Collectamaps"
 	map = make_map();
 	loadJSON("icons", iconsLoaded);
