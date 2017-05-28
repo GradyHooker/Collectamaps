@@ -41,7 +41,7 @@ body, html {
 	background: white;
 	border: 1px solid #ccc;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.65);
-	transition: 1s;
+	transition: 0.5s;
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
@@ -49,31 +49,59 @@ body, html {
 	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
 }
 
-#fab img {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	transition: opacity 0.5s;
+#fab.is-open {
+	width: 280px;
+	border-radius: 10px;
+}
+
+#fab.is-open #fab-content {
+	transition: opacity 0.35s ease-in-out 0.15s;
+	opacity: 1;
+	padding: 15px;
+}
+
+#fab-content {
+	display: block;
+	width: 100%;
+	padding-top: 0px !important;
+	transition: opacity 0.15s ease-in-out;
+	opacity: 0;
+	padding: 0px;
+}
+
+#fab.is-open #icon-filter {
+	opacity: 0;
+	z-index: 997;
+	cursor: default;
+	transition: opacity 0.38s;
 }
 
 #icon-filter {
 	opacity: 1;
 	z-index: 999;
 	cursor: pointer;
+	transition: opacity 0.38s ease-in-out 0.12s;
+}
+
+#fab.is-open #icon-close {
+	opacity: 1;
+	z-index: 999;
+	cursor: pointer;
+	transition: opacity 0.38s ease-in-out 0.12s;
 }
 
 #icon-close {
 	opacity: 0;
 	z-index: 997;
 	cursor: default;
+	transition: opacity 0.38s;
 }
 
-#fab-content {
-	display: block;
-	opacity: 0;
-	width: 100%;
-	padding: 0px;
-	padding-top: 0px !important;
+#fab img {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	transition: opacity 0.25s;
 }
 
 #fab-content h2 {

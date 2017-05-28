@@ -209,25 +209,8 @@ function markerClick(e, offset) {
 function expandFilters() {
 	var content = document.getElementById("fab-content");
 	if(content.style.opacity != "1") {
-		var close = document.getElementById("icon-close");
-		close.style.opacity = "1";
-		close.style.zIndex = "999";
-		close.style.cursor = "pointer";
-		close.style.transition = "opacity 0.75s ease-in-out 0.25s";
-
-		var open = document.getElementById("icon-filter");
-		open.style.opacity = "0";
-		open.style.zIndex = "997";
-		open.style.cursor = "default";
-		open.style.transition = "opacity 0.75s";
-
-		content.style.transition = "opacity 0.7s ease-in-out 0.3s";
-		content.style.opacity = "1";
-		content.style.padding = "15px";
-		
 		var fab = document.getElementById("fab");
-		fab.style.width = "280px";
-		fab.style.borderRadius = "10px";
+		fab.classList.add("is-open");
 		fab.style.height = (content.clientHeight-20) + "px";
 	}
 }
@@ -235,25 +218,8 @@ function expandFilters() {
 function closeFilters() {
 	var content = document.getElementById("fab-content");
 	if(content.style.opacity != "0") {
-		var close = document.getElementById("icon-close");
-		close.style.opacity = "0";
-		close.style.zIndex = "997";
-		close.style.cursor = "default";
-		close.style.transition = "opacity 0.75s";
-		
-		var open = document.getElementById("icon-filter");
-		open.style.opacity = "1";
-		open.style.zIndex = "999";
-		open.style.cursor = "pointer";
-		open.style.transition = "opacity 0.75s ease-in-out 0.25s";
-		
-		content.style.transition = "opacity 0.3s ease-in-out";
-		content.style.opacity = "0";
-		content.style.padding = "0px";
-		
 		var fab = document.getElementById("fab");
-		fab.style.width = "65px";
-		fab.style.borderRadius = "34px";
+		fab.classList.remove("is-open");
 		fab.style.height = "65px";
 	}
 }
