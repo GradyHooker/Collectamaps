@@ -15,8 +15,8 @@
 	},
 	{
 		"icon":	"magazine",
-		"x":	575,
-		"y":	1962,
+		"x":	708,
+		"y":	2241,
 		"desc":	"Combat 3 - Underground in Warehouse A (Closest entrance is from Americana Casino)",
 		"gfy":	"DishonestClosedBrahmanbull"
 	},
@@ -47,5 +47,236 @@
 		"y":	1653,
 		"desc":	"Combat 2 - Yesterday, Today & Tomorrow",
 		"gfy":	"SpottedEntireBlackfootedferret"
+	},
+	{
+		"icon":	"magazine",
+		"x":	3102,
+		"y":	2322,
+		"desc":	"Domestic - Maintenance Room 12",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	2312,
+		"y":	2302,
+		"desc":	"Psychos - On the roof of Paradise Platinum Screens",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	2515,
+		"y":	2612,
+		"desc":	"Skateboarding - Fortune City Hotel",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	2524,
+		"y":	808,
+		"desc":	"Hand to Hand - Ragazines Second Floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	2494,
+		"y":	842,
+		"desc":	"Gambling 1 - Ragazines second floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	2458,
+		"y":	811,
+		"desc":	"Horror 1 - Ragazines second floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	3231,
+		"y":	1254,
+		"desc":	"Bikes - Vault Area/North East Cashier",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	3866,
+		"y":	1088,
+		"desc":	"Bargaining 2 - Accessed by jumping on the Snack machines next to Lombardi's",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	2684,
+		"y":	300,
+		"desc":	"Health 2 - Baron Von Brathaus",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	4917,
+		"y":	310,
+		"desc":	"Blades - Underground in Warehouse D (Closest entrance is from Palisades Mall)",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	4477,
+		"y":	1412,
+		"desc":	"Juice Boost -  Luaii Wauwii on the counter of the restaurant’s outdoor bar near maintenance room",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	3683,
+		"y":	1415,
+		"desc":	"Leadership - One Little Duck Bingo",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	4344,
+		"y":	1569,
+		"desc":	"Gambling 3 - Shamrock Casino, behind counter along wall",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	4649,
+		"y":	1618,
+		"desc":	"Amusement - Ultimate Playhouse first floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	4873,
+		"y":	1618,
+		"desc":	"Playboy - First floor (On top of the central grotto)",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	3899,
+		"y":	2335,
+		"desc":	"Games - Poker Room",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	3829,
+		"y":	2435,
+		"desc":	"Drinking - Climb around the south giant clamshell, near the magic stage",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	4945,
+		"y":	2326,
+		"desc":	"Gambling 2 - Stan's Large Print Books & Magazines second floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	4996,
+		"y":	2283,
+		"desc":	"Combat 1 - Stan's Large Print Books & Magazines second floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	4967,
+		"y":	2294,
+		"desc":	"Horror 2 - Stan's Large Print Books & Magazines second floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"magazine",
+		"x":	4953,
+		"y":	2263,
+		"desc":	"Sports - Stan's Large Print Books & Magazines second floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"zombrex",
+		"x":	1540,
+		"y":	1769,
+		"desc":	"Bennie Jack's BBQ Shack second floor, jump along the casino’s light fixtures",
+		"gfy":	"ActiveBelovedInexpectatumpleco"
+	},
+	{
+		"icon":	"zombrex",
+		"x":	3234,
+		"y":	1330,
+		"desc":	"Climb onto the crates behind the north stage, then jump to the Zombrex",
+		"gfy":	"DecisiveHeavenlyHylaeosaurus"
+	},
+	{
+		"icon":	"zombrex",
+		"x":	3675,
+		"y":	2151,
+		"desc":	"Underground and just past Maintenance Room 32 on the platform (Closest entrance is from Silver Strip)",
+		"gfy":	"NeedyClassicBluebreastedkookaburra"
+	},
+	{
+		"icon":	"zombrex",
+		"x":	4734,
+		"y":	700,
+		"desc":	"Climb to the top of the Lucky Marble minigame, then jump to the Zombrex",
+		"gfy":	"FocusedQuerulousFirecrest"
+	},
+	{
+		"icon":	"combocard",
+		"x":	3795,
+		"y":	831,
+		"desc":	"Blambow - South side of Cucina Donnacci",
+		"gfy":	"WelltodoBabyishCowrie"
+	},
+	{
+		"icon":	"combocard",
+		"x":	3758,
+		"y":	1490,
+		"desc":	"Burning Skull - Purchase all fortunes ($1,200,000 total) offered by the fortune teller outside of One Little Duck Bingo",
+		"gfy":	""
+	},
+	{
+		"icon":	"combocard",
+		"x":	5022,
+		"y":	328,
+		"desc":	"Freedom Bear - Outside the men's bathroom",
+		"gfy":	"AlienatedSeriousGorilla"
+	},
+	{
+		"icon":	"combocard",
+		"x":	3598,
+		"y":	1827,
+		"desc":	"Paddlesaw - In front of Slot Ranch Casino",
+		"gfy":	"CheapDisguisedEarwig"
+	},
+	{
+		"icon":	"combocard",
+		"x":	1806,
+		"y":	1806,
+		"desc":	"Tenderizers - Outside of Casual Gals",
+		"gfy":	"GiddyParallelAphid"
+	},
+	{
+		"icon":	"combocard",
+		"x":	2268,
+		"y":	2210,
+		"desc":	"Laser Sword - Paradise Platinum Screens",
+		"gfy":	"UnfinishedShamefulAbalone"
+	},
+	{
+		"icon":	"combocard",
+		"x":	3610,
+		"y":	2744,
+		"desc":	"Holy Arms - Near the fortune park entrance",
+		"gfy":	"BoilingPerfectGroundbeetle"
+	},
+	{
+		"icon":	"combocard",
+		"x":	4806,
+		"y":	2490,
+		"desc":	"Snowball Cannon - Between Ned's Knicknackery and Brand New U",
+		"gfy":	"AlienatedCarefreeIrrawaddydolphin"
 	}
 ]

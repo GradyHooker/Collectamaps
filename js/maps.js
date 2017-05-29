@@ -109,7 +109,7 @@ function iconsLoaded(response) {
 		//Create rows in the filter table
 		row = document.createElement("TR");
 		cell = document.createElement("TD");
-		cell.textContent = capitalize(cat);;
+		cell.textContent = capitalize(cat);
 		
 		row.appendChild(cell);
 		buttons = make_FilterButtons(cat);
@@ -131,11 +131,27 @@ function make_FilterButtons(cat) {
 	var buttons = [];
 	buttons[0] = document.createElement("TD");
 	buttons[0].className = "checkCell";
-	buttons[0].innerHTML = '<input type="checkbox" name="filterAdd" value="' + cat + '" checked>';
+	buttons[0].innerHTML = '<input type="checkbox" name="filterAdd" value="' + cat + '" checked onclick="return false;">';
+	buttons[0].onclick = function() {
+		toggleFilter(buttons[0]);
+	};
 	buttons[1] = document.createElement("TD");
 	buttons[1].className = "checkCell";
-	buttons[1].innerHTML = '<input type="radio" name="filterOnly" value="' + cat + '">';
+	buttons[1].innerHTML = '<input type="radio" name="filterOnly" value="' + cat + '" onclick="return false;">';
+	buttons[1].onclick = function() {
+		onlyFilter(buttons[1]);
+	};
 	return buttons;
+}
+
+function markerClick(e, offset) {
+	var markerCenter = e.target.getLatLng();
+	newCenter = new L.LatLng(
+		markerCenter.lat + offset,
+		markerCenter.lng
+	);
+	
+	map.setView(newCenter, clickZoom);
 }
 
 function markersLoaded(response) {
@@ -166,26 +182,29 @@ function make_marker(icon, x, y, description, gfycat) {
 }
 
 function CMMarker(ic, x, y, description, gfycat) {
-	this.icon = icons[ic];
-	this.marker = L.marker(
-		map.unproject([x, y], mapMaxZoom),
-		{icon: icon.icon}
-	).addTo(map);
-	this.description = description;
-	this.gfycat = gfycat;
-	this.found = false;
+	var cmmarker = {
+		icon: icons[ic],
+		marker: L.marker(
+				map.unproject([x, y], mapMaxZoom),
+				{icon: icons[ic].icon}
+			).addTo(map),
+		description: description,
+		gfycat: gfycat,
+		found: false
+	};
 	
 	var popupString = "";
-	popupString += "<b>" + this.icon.name + "</b><br/>";
-	popupString += "<i>" + this.description + "</i><br/>";
-	if(this.gfycat != "") {
-		popupString+= "<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/" + this.gfycat + "' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0'></iframe></div>";
+	popupString += "<b>" + cmmarker.icon.name + "</b><br/>";
+	popupString += "<i>" + cmmarker.description + "</i><br/>";
+	if(cmmarker.gfycat != "") {
+		popupString+= "<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/" + cmmarker.gfycat + "' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0'></iframe></div>";
 		//Non-repsonsive <iframe src='https://gfycat.com/ifr/CourteousColossalAntelope' frameborder='0' scrolling='no' width='640' height='428' allowfullscreen></iframe>
-		this.marker.on('click', markerClickVid);
+		cmmarker.marker.on('click', markerClickVid);
 	} else {
-		this.marker.on('click', markerClickNo);
+		cmmarker.marker.on('click', markerClickNo);
 	}
-	this.marker.bindPopup(popupString);
+	cmmarker.marker.bindPopup(popupString);
+	return cmmarker;
 }
 
 function markerClickVid(e) {
@@ -232,4 +251,27 @@ function getQueryVariable(variable) {
 		if(pair[0] == variable){return pair[1];}
 	}
 	return(false);
+}
+
+function toggleFilter(cont) {
+	console.log(cont);
+	var button = cont.childNodes[0];
+	var cat = button.value;
+	console.log(button);
+	console.log(button.checked);
+	if(button.checked) {
+		button.checked = false;
+	} else {
+		button.checked = true;
+		for(var i = 0; i < markers.length; i++) {
+			if(markers[i].icon.filter == cat) {
+				console.log(markers[i]);
+				map.removeLayer(markers[i]);
+			}
+		}
+	}
+}
+
+function onlyFilter(cont) {
+	
 }
