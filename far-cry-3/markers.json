@@ -1,23 +1,282 @@
 [
-	{
-		"icon":	"letter",
-		"x":	500,
-		"y":	404,
-		"desc":	"",
-		"gfy":	""
-	},
-	{
-		"icon":	"sdcard",
-		"x":	800,
-		"y":	600,
-		"desc":	"",
-		"gfy":	""
-	},
-	{
-		"icon":	"relic",
-		"x":	1000,
-		"y":	1000,
-		"desc":	"",
-		"gfy":	""
-	}
+{
+	"icon":	"sdcard",
+	"x":	2986,
+	"y":	2963,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	3353,
+	"y":	1792,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	3978,
+	"y":	2353,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	4369,
+	"y":	2901,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	4770,
+	"y":	2243,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	5429,
+	"y":	2335,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	5820,
+	"y":	1876,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	6397,
+	"y":	1968,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	7034,
+	"y":	3209,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	6283,
+	"y":	3371,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	5511,
+	"y":	3286,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	3548,
+	"y":	3456,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	5339,
+	"y":	4418,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	1166,
+	"y":	5991,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	1775,
+	"y":	5411,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	2345,
+	"y":	5006,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	2756,
+	"y":	6472,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	3397,
+	"y":	5905,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	3875,
+	"y":	5476,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"sdcard",
+	"x":	4209,
+	"y":	5284,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	1358,
+	"y":	5477,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	2723,
+	"y":	6572,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	4252,
+	"y":	5739,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	3684,
+	"y":	5558,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	4996,
+	"y":	5152,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	3967,
+	"y":	4724,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	3108,
+	"y":	4750,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	2618,
+	"y":	2646,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	2776,
+	"y":	2331,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	3328,
+	"y":	3282,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	3599,
+	"y":	2070,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	4276,
+	"y":	2323,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	5746,
+	"y":	1631,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	7014,
+	"y":	2166,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	6945,
+	"y":	2241,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	6715,
+	"y":	3556,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	5992,
+	"y":	3983,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	5262,
+	"y":	3282,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	4972,
+	"y":	3525,
+	"desc":	"",
+	"gfy":	""
+},
+{
+	"icon":	"letter",
+	"x":	5292,
+	"y":	3724,
+	"desc":	"",
+	"gfy":	""
+}
 ]
