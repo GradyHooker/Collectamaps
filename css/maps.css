@@ -26,7 +26,7 @@ body, html {
 }
 
 .leaflet-tile {
-	filter: grayscale(50%);
+	filter: grayscale(60%) sepia(30%);
 }
 
 #fab {
