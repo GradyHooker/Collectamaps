@@ -1,6 +1,7 @@
 var map;
 var icons = {};
 var markers = [];
+var layers = {};
 
 var game;
 var gameFull;
@@ -65,7 +66,7 @@ function make_map() {
 					'	"gfy":	""\n' + 
 					'},');
     });
-	
+		
 	return m;
 }
 		
@@ -116,6 +117,7 @@ function iconsLoaded(response) {
 	var buttons;
 	
 	for (var cat in iconJSON) {
+		layers[cat] = new L.layerGroup().addTo(map);
 		for (var i = 0; i < iconJSON[cat].length; i++) {
 			var icon = iconJSON[cat][i];
 			var iconShort = icon.name.replace(/\s/g,'').toLowerCase();
@@ -133,6 +135,8 @@ function iconsLoaded(response) {
 		table.appendChild(row);
 	}
 	
+	//L.control.layers(null, layers).addTo(map);
+	
 	loadJSON("markers", markersLoaded);
 }
 
@@ -143,20 +147,41 @@ function capitalize(string) {
 }
 
 function make_FilterButtons(cat) {
+	var conts = [];
 	var buttons = [];
-	buttons[0] = document.createElement("TD");
-	buttons[0].className = "checkCell";
-	buttons[0].innerHTML = '<input type="checkbox" name="filterAdd" value="' + cat + '" checked onclick="return false;">';
-	buttons[0].onclick = function() {
-		toggleFilter(buttons[0]);
+	conts[0] = document.createElement("TD");
+	conts[0].className = "checkCell";
+	conts[0].innerHTML = '<input type="checkbox" name="filterToggle" value="' + cat + '" checked onclick="toggleFilter(this);">';
+	conts[0].onclick = function() {
+		toggleFilter(conts[0].childNodes[0]);
 	};
-	buttons[1] = document.createElement("TD");
-	buttons[1].className = "checkCell";
-	buttons[1].innerHTML = '<input type="radio" name="filterOnly" value="' + cat + '" onclick="return false;">';
-	buttons[1].onclick = function() {
-		onlyFilter(buttons[1]);
+	conts[1] = document.createElement("TD");
+	conts[1].className = "checkCell";
+	var button = document.createElement("INPUT");
+	button.type = "radio";
+	button.name = "filterOnly";
+	button.value = cat;
+	button.setAttribute('was-checked', false);
+	button.onclick = function(e) {
+		e.stopPropagation(); 
+		button.checked = (button.getAttribute('was-checked') == 'true');
+		onlyFilter(button);
+		var radios = document.getElementById("fab-table").querySelectorAll('[type=radio]');
+		for(var i = 0; i < radios.length; i++) {
+			radios[i].setAttribute('was-checked', 'false');
+		}
+		button.setAttribute('was-checked', button.checked);
+	}
+	conts[1].appendChild(button);
+	conts[1].onclick = function() {
+		onlyFilter(button);
+		var radios = document.getElementById("fab-table").querySelectorAll('[type=radio]');
+		for(var i = 0; i < radios.length; i++) {
+			radios[i].setAttribute('was-checked', 'false');
+		}
+		button.setAttribute('was-checked', button.checked);
 	};
-	return buttons;
+	return conts;
 }
 
 function markerClick(e, offset) {
@@ -175,7 +200,9 @@ function markersLoaded(response) {
 	for (var m in markerJSON) {
 		var marker = markerJSON[m];
 		markers[m] = make_marker(marker.icon, marker.x, marker.y, marker.desc, marker.gfy);
+		layers[icons[marker.icon].filter].addLayer(markers[m].marker);
 	}
+
 }
 
 function make_icon(name, shortname, filter) {
@@ -192,17 +219,17 @@ function CMIcon(name, shortname, filter) {
 	this.filter = filter;
 }
 
-function make_marker(icon, x, y, description, gfycat) {
-	return CMMarker(icon, x, y, description, gfycat);
+function make_marker(icon, x, y, description, gfycat, layer) {
+	return CMMarker(icon, x, y, description, gfycat, layer);
 }
 
-function CMMarker(ic, x, y, description, gfycat) {
+function CMMarker(ic, x, y, description, gfycat, layer) {
 	var cmmarker = {
 		icon: icons[ic],
 		marker: L.marker(
 				map.unproject([x, y], mapMaxZoom),
 				{icon: icons[ic].icon}
-			).addTo(map),
+			),
 		description: description,
 		gfycat: gfycat,
 		found: false
@@ -268,25 +295,40 @@ function getQueryVariable(variable) {
 	return(false);
 }
 
-function toggleFilter(cont) {
-	console.log(cont);
-	var button = cont.childNodes[0];
-	var cat = button.value;
-	console.log(button);
-	console.log(button.checked);
-	if(button.checked) {
-		button.checked = false;
-	} else {
-		button.checked = true;
-		for(var i = 0; i < markers.length; i++) {
-			if(markers[i].icon.filter == cat) {
-				console.log(markers[i]);
-				map.removeLayer(markers[i]);
-			}
+function toggleFilter(button) {
+	if(!button.disabled) {
+		var cat = button.value;
+		if(button.checked) {
+			button.checked = false;
+			map.removeLayer(layers[cat]);
+		} else {
+			button.checked = true;
+			map.addLayer(layers[cat]);
 		}
 	}
 }
 
-function onlyFilter(cont) {
-	
+function onlyFilter(button) {
+	var cat = button.value;
+	var table = document.getElementById("fab-table");
+	var checks = table.querySelectorAll('[type=checkbox]');
+	if(button.checked) {
+		map.removeLayer(layers[cat]);
+		for(var i = 0; i < checks.length; i++) {
+			checks[i].disabled = false;
+			if(checks[i].checked) {
+				map.addLayer(layers[checks[i].value]);
+			}
+		}
+		button.checked = false;
+	} else {
+		for(var l in layers) {
+			map.removeLayer(layers[l]);
+		}
+		for(var i = 0; i < checks.length; i++) {
+			checks[i].disabled = true;
+		}
+		map.addLayer(layers[cat]);
+		button.checked = true;
+	}
 }
