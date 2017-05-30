@@ -21,6 +21,10 @@ body, html {
     background: #AAAAAA;
 }
 
+.leaflet-marker-icon {
+	filter: drop-shadow(0px 0px 2px white);
+}
+
 .leaflet-marker-icon:hover {
 	filter: drop-shadow(0px 0px 5px white);
 }

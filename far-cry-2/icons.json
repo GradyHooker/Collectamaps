@@ -1,3 +1,12 @@
 {
-
+	"diamondBriefcases": [
+		{	"name": "Diamond"		},
+		{	"name": "First Diamond"	}
+	],
+	"goldenAK": [
+		{	"name": "Golden AK"		}
+	],
+	"jackalTapes": [
+		{	"name": "Jackal Tape"	}
+	]
 }

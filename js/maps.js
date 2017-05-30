@@ -52,8 +52,8 @@ function make_map() {
 	});
 	
 	//DEBUG PRINT ONLY
-	/*m.on('click', function(e) {  
-		var item = "relic";
+	m.on('click', function(e) {  
+		var item = "diamond";
 		var crs = map.options.crs;
 		var zoom = map.getZoom();
 		var layerPoint = crs.latLngToPoint(e.latlng, zoom).floor()
@@ -64,7 +64,7 @@ function make_map() {
 					'	"desc":	"",\n' + 
 					'	"gfy":	""\n' + 
 					'},');
-    });*/
+    });
 	
 	return m;
 }
