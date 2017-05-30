@@ -51,6 +51,21 @@ function make_map() {
 		}
 	});
 	
+	//DEBUG PRINT ONLY
+	/*m.on('click', function(e) {  
+		var item = "giftforkatey";
+		var crs = map.options.crs;
+		var zoom = map.getZoom();
+		var layerPoint = crs.latLngToPoint(e.latlng, zoom).floor()
+        console.log('{\n' + 
+					'	"icon":	"' + item + '",\n' + 
+					'	"x":	' + layerPoint.x + ',\n' +  
+					'	"y":	' + layerPoint.y + ',\n' +  
+					'	"desc":	"",\n' + 
+					'	"gfy":	""\n' + 
+					'},');
+    });*/
+	
 	return m;
 }
 		
