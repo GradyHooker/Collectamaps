@@ -4,6 +4,7 @@ var markers = [];
 var layers = {};
 
 var game;
+var level;
 var gameFull;
 var gamePublisher;
 var mapMinZoom;
@@ -16,11 +17,20 @@ window.onload = init;
 
 function init() {
 	game = getQueryVariable("g");
+	level = getQueryVariable("l");
 	if(game == false) {
 		sendHome();
 	} else {
-		loadJSON("game_info", infoLoaded);
+		loadJSON("game_info", game, infoLoaded);
 	}
+}
+
+function reset_map(newGame, newLevel) {
+	game = newGame;
+	level = newLevel;
+	//TODO: Update URL g?=game&m=map
+	map.remove();
+	loadJSON("game_info", game, infoLoaded);
 }
 
 function make_map() {
@@ -38,7 +48,7 @@ function make_map() {
 	);
 	m.setMaxBounds(mapBounds);
 	
-	L.tileLayer(game + '/tiles/{z}/map_{x}_{y}.png', {
+	L.tileLayer(game + '/' + level + '/tiles/{z}/map_{x}_{y}.png', {
 		maxZoom: mapMaxZoom,
 		minZoom: mapMinZoom,
 		attribution: 'Game Map & Icons &copy; ' + gamePublisher,
@@ -53,7 +63,7 @@ function make_map() {
 	});
 	
 	//DEBUG PRINT ONLY
-	m.on('click', function(e) {  
+	/*m.on('click', function(e) {  
 		var item = "diamond";
 		var crs = map.options.crs;
 		var zoom = map.getZoom();
@@ -65,15 +75,15 @@ function make_map() {
 					'	"desc":	"",\n' + 
 					'	"gfy":	""\n' + 
 					'},');
-    });
+    });*/
 		
 	return m;
 }
 		
-function loadJSON(file, callback) {   
+function loadJSON(file, folder, callback) {   
 	var req = new XMLHttpRequest();
 	req.overrideMimeType("application/json");
-	req.open('GET', game + '/' + file + '.json', true);
+	req.open('GET', folder + '/' + file + '.json', true);
 	req.onreadystatechange = function () {
 		if (req.readyState == 4 && req.status == "200") {
 		callback(req.responseText);
@@ -91,22 +101,37 @@ function sendHome() {
 function infoLoaded(response) {
 	var infoJSON = JSON.parse(response);
 	gamePublisher = infoJSON["gamePublisher"];
+	gameFull = infoJSON["gameFull"];
+	if(level == false) {
+		if(infoJSON["defaultLevel"] != null) {
+			level = infoJSON["defaultLevel"];
+		} else {
+			level = "";
+		}
+	}
+	
+	window.document.title = gameFull + " - Collectamaps"
+	loadJSON("map_info", game + "/" + level, infoMapLoaded);
+}
+
+function infoMapLoaded(response) {
+	var infoJSON = JSON.parse(response);
 	mapMinZoom = infoJSON["mapMinZoom"];
 	mapMaxZoom = infoJSON["mapMaxZoom"];
 	clickZoom = infoJSON["clickZoom"];
 	img_width = infoJSON["img_width"];
 	img_height = infoJSON["img_height"];
-	gameFull = infoJSON["gameFull"];
 	
 	if(infoJSON["credit"] != null) {
 		document.getElementById("credit-cont").style.display = "block";
 		document.getElementById("credit-logo").src = "icons/" + infoJSON["credit"] + "-logo.png";
 		document.getElementById("credit-link").href = infoJSON["creditURL"];
+	} else {
+		document.getElementById("credit-cont").style.display = "none";
 	}
 	
-	window.document.title = gameFull + " - Collectamaps"
 	map = make_map();
-	loadJSON("icons", iconsLoaded);
+	loadJSON("icons", game, iconsLoaded);
 }
 
 function iconsLoaded(response) {
@@ -134,10 +159,8 @@ function iconsLoaded(response) {
 		row.appendChild(buttons[1]);
 		table.appendChild(row);
 	}
-	
-	//L.control.layers(null, layers).addTo(map);
-	
-	loadJSON("markers", markersLoaded);
+		
+	loadJSON("markers", game + "/" + level, markersLoaded);
 }
 
 function capitalize(string) {

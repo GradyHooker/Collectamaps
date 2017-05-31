@@ -1,9 +1,4 @@
 {
 	"gameFull": "Far Cry 2",
-	"gamePublisher": "Ubisoft",
-	"mapMinZoom": 16,
-	"mapMaxZoom": 20,
-	"clickZoom": 20,
-	"img_width": 4096,
-	"img_height": 8192
+	"gamePublisher": "Ubisoft"
 }
