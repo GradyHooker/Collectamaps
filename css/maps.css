@@ -63,7 +63,7 @@ body, html {
 }
 
 #fab.is-open #fab-content {
-	transition: opacity 0.35s ease-in-out 0.15s;
+	transition: 0.35s ease-in-out 0.15s;
 	opacity: 1;
 	padding: 15px;
 }
@@ -71,10 +71,11 @@ body, html {
 #fab-content {
 	display: block;
 	width: 100%;
-	padding-top: 0px !important;
-	transition: opacity 0.15s ease-in-out;
+	padding-top: 5px !important;
+	transition: 0.15s ease-in-out;
 	opacity: 0;
-	padding: 0px;
+	padding: 15px;
+	white-space: nowrap;
 }
 
 #fab.is-open #icon-filter {
