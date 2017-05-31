@@ -33,42 +33,55 @@ body, html {
 	filter: grayscale(60%) sepia(30%);
 }
 
-#fab {
+#fab-cont {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.fab {
+	position: relative;
 	height: 65px;
 	width: 65px;
 	margin-top: 10px;
 	margin-right: 10px;
 	border-radius: 34px;
-	position: absolute;
-	top: 0px;
-	right: 0px;
 	z-index: 998;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	background: white;
 	border: 1px solid #ccc;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.65);
 	transition: 0.5s;
-	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-#fab:hover {
+.fab:hover {
 	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
 }
 
-#fab.is-open {
+.fab.is-open {
 	width: 280px;
 	border-radius: 10px;
 }
 
-#fab.is-open #fab-content {
+#fab-select.is-open {
+	height: 300px;
+	max-height: 50%;
+}
+
+.fab.is-open .fab-content {
 	transition: 0.35s ease-in-out 0.15s;
 	opacity: 1;
 	padding: 15px;
 }
 
-#fab-content {
+.fab-content {
 	display: block;
 	width: 100%;
 	padding-top: 5px !important;
@@ -78,42 +91,42 @@ body, html {
 	white-space: nowrap;
 }
 
-#fab.is-open #icon-filter {
+.fab.is-open #icon-filter, .fab.is-open #icon-select {
 	opacity: 0;
 	z-index: 997;
 	cursor: default;
 	transition: opacity 0.38s;
 }
 
-#icon-filter {
+#icon-filter , #icon-select{
 	opacity: 1;
 	z-index: 999;
 	cursor: pointer;
 	transition: opacity 0.38s ease-in-out 0.12s;
 }
 
-#fab.is-open #icon-close {
+.fab.is-open .icon-close {
 	opacity: 1;
 	z-index: 999;
 	cursor: pointer;
 	transition: opacity 0.38s ease-in-out 0.12s;
 }
 
-#icon-close {
+.icon-close {
 	opacity: 0;
 	z-index: 997;
 	cursor: default;
 	transition: opacity 0.38s;
 }
 
-#icon-close, #icon-filter {
+.fab-icon {
 	position: absolute;
 	top: 0px;
 	right: 0px;
 	transition: opacity 0.25s;
 }
 
-#fab-content h2 {
+.fab-content h2 {
 	margin: 0;
 	margin-top: 11px;
 	width: 100%;

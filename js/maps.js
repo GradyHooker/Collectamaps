@@ -268,20 +268,38 @@ function markerClick(e, offset) {
 }
 
 function expandFilters() {
-	var content = document.getElementById("fab-content");
+	closeSelect();
+	var content = document.getElementById("fab-content-filter");
 	if(content.style.opacity != "1") {
-		var fab = document.getElementById("fab");
+		var fab = document.getElementById("fab-filter");
 		fab.classList.add("is-open");
-		fab.style.height = (content.clientHeight-20) + "px";
+		fab.style.height = (content.clientHeight-5) + "px";
 	}
 }
 
 function closeFilters() {
-	var content = document.getElementById("fab-content");
+	var content = document.getElementById("fab-content-filter");
 	if(content.style.opacity != "0") {
-		var fab = document.getElementById("fab");
+		var fab = document.getElementById("fab-filter");
 		fab.classList.remove("is-open");
 		fab.style.height = "65px";
+	}
+}
+
+function expandSelect() {
+	closeFilters();
+	var content = document.getElementById("fab-content-select");
+	if(content.style.opacity != "1") {
+		var fab = document.getElementById("fab-select");
+		fab.classList.add("is-open");
+	}
+}
+
+function closeSelect() {
+	var content = document.getElementById("fab-content-select");
+	if(content.style.opacity != "0") {
+		var fab = document.getElementById("fab-select");
+		fab.classList.remove("is-open");
 	}
 }
 

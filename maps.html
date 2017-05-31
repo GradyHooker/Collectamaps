@@ -10,18 +10,27 @@
 	</head>
 	<body>
 		<div id="map"></div>
-		<div id="fab">
-			<img id="icon-filter" src="icons/filter.png" onclick="expandFilters()"/>
-			<img id="icon-close" src="icons/cross.png" onclick="closeFilters()"/>
-			<div id="fab-content">
-				<h2>Filters:</h2>
-				<table id="fab-table">
-					<tr>
-						<th>Category</th>
-						<th>Incl.</th>
-						<th>Only</th>
-					</tr>
-				</table>
+		<div id="fab-cont">
+			<div class="fab" id="fab-filter">
+				<img class="fab-icon" id="icon-filter" src="icons/filter.png" onclick="expandFilters()"/>
+				<img class="fab-icon icon-close" id="icon-close-filler" src="icons/cross.png" onclick="closeFilters()"/>
+				<div class="fab-content" id="fab-content-filter">
+					<h2>Filters:</h2>
+					<table id="fab-table">
+						<tr>
+							<th>Category</th>
+							<th>Incl.</th>
+							<th>Only</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="fab" id="fab-select">
+				<img class="fab-icon" id="icon-select" src="icons/select.png" onclick="expandSelect()"/>
+				<img class="fab-icon icon-close" id="icon-close-select" src="icons/cross.png" onclick="closeSelect()"/>
+				<div class="fab-content" id="fab-content-select">
+					<h2>Level Select:</h2>
+				</div>
 			</div>
 		</div>
 		<div id="credit-cont">
