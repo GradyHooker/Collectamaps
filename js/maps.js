@@ -28,7 +28,7 @@ function init() {
 function reset_map(newGame, newLevel) {
 	game = newGame;
 	level = newLevel;
-	//TODO: Update URL g?=game&m=map
+	//TODO: Update URL g?=game&l=level
 	map.remove();
 	loadJSON("game_info", game, infoLoaded);
 }
@@ -109,9 +109,27 @@ function infoLoaded(response) {
 			level = "";
 		}
 	}
+	var levelCont = document.getElementById("select-img-cont");
+	while (levelCont.firstChild) {
+		levelCont.removeChild(levelCont.firstChild);
+	}
+	for(l in infoJSON["mapList"]) {
+		var lev = infoJSON["mapList"][l];
+		levelCont.appendChild(make_SelectImage(lev));
+	}
 	
 	window.document.title = gameFull + " - Collectamaps"
 	loadJSON("map_info", game + "/" + level, infoMapLoaded);
+}
+
+function make_SelectImage(l) {
+	var ele = document.createElement("IMG");
+	ele.className = "select-img";
+	ele.src = game + "/" + l + "/icon.png";
+	ele.onclick = function() {
+		reset_map(game, l);
+	}
+	return ele;
 }
 
 function infoMapLoaded(response) {

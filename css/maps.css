@@ -160,4 +160,25 @@ body, html {
 	width: 100%;
 }
 
+#fab-content-select {
+	padding-right: 0px;
+	height: 100%;
+}
+
+.select-img {
+	width: 75px;
+	height: 75px;
+	padding-top: 5px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.select-img-cont {
+	height: calc(100% - 60px);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	overflow-y: scroll;
+}
+
 /*400px is mobile*/
