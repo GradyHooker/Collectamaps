@@ -4,7 +4,17 @@
 	"defaultLevel": "overworld",
 	"mapList": [
 		"overworld",
+		"viridian-forest",
+		"mt-moon",
+		"underground-pass",
+		"diglett-cave",
+		"ss-anne",
+		"rock-tunnel",
+		"pokemon-tower",
+		"rocket-hideout",
+		"silph-co",
+		"safari-zone",
 		"seafoam-islands",
-		"silph-co"
+		"pokemon-mansion"
 	]
 }
