@@ -1,0 +1,142 @@
+[
+	{
+		"icon":	"technicalmachine",
+		"x":	388,
+		"y":	1608,
+		"desc":	"TM09 (Bullet Seed) - To the west of the Route 4 entrance",
+		"gfy":	""
+	},
+	{
+		"icon":	"paralyzeheal",
+		"x":	246,
+		"y":	1397,
+		"desc":	"To the northwest of Bug Catcher Kent",
+		"gfy":	""
+	},
+	{
+		"icon":	"potion",
+		"x":	630,
+		"y":	1557,
+		"desc":	"Near Super Nerd Jovan",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	891,
+		"y":	1609,
+		"desc":	"On the southeast corner of the first floor, east of Super Nerd Jovan",
+		"gfy":	""
+	},
+	{
+		"icon":	"escaperope",
+		"x":	917,
+		"y":	1390,
+		"desc":	"To the east of Super Nerd Jovan, on the east wall, north of the Rare Candy",
+		"gfy":	""
+	},
+	{
+		"icon":	"moonstone",
+		"x":	270,
+		"y":	1078,
+		"desc":	"To the north of a Hiker",
+		"gfy":	""
+	},
+	{
+		"icon":	"bigmushroom",
+		"x":	998,
+		"y":	940,
+		"desc":	"Two are found in the adjacent rocks down the first ladder",
+		"gfy":	""
+	},
+	{
+		"icon":	"bigmushroom",
+		"x":	1015,
+		"y":	925,
+		"desc":	"Two are found in the adjacent rocks down the first ladder",
+		"gfy":	""
+	},
+	{
+		"icon":	"tinymushroom",
+		"x":	1239,
+		"y":	924,
+		"desc":	"In a rock down the first ladder",
+		"gfy":	""
+	},
+	{
+		"icon":	"tinymushroom",
+		"x":	1350,
+		"y":	411,
+		"desc":	"In a rock just before the exit",
+		"gfy":	""
+	},
+	{
+		"icon":	"tinymushroom",
+		"x":	1030,
+		"y":	411,
+		"desc":	"In a rock down the second ladder",
+		"gfy":	""
+	},
+	{
+		"icon":	"bigmushroom",
+		"x":	711,
+		"y":	572,
+		"desc":	"",
+		"gfy":	"In a rock down the third ladder"
+	},
+	{
+		"icon":	"antidote",
+		"x":	1126,
+		"y":	1223,
+		"desc":	"Next to the ladder west of Fossils",
+		"gfy":	""
+	},
+	{
+		"icon":	"starpiece",
+		"x":	1559,
+		"y":	1460,
+		"desc":	"Near the Team Rocket Grunt in a closed-off room",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	1640,
+		"y":	1123,
+		"desc":	"TM46 (Thief) - In another closed-off room with a Team Rocket Grunt",
+		"gfy":	""
+	},
+	{
+		"icon":	"ether",
+		"x":	1705,
+		"y":	1221,
+		"desc":	"To the right of a Team Rocket Grunt in closed-off room",
+		"gfy":	""
+	},
+	{
+		"icon":	"revive",
+		"x":	1464,
+		"y":	1139,
+		"desc":	"To the north of the ladder leading into B2F",
+		"gfy":	""
+	},
+	{
+		"icon":	"moonstone",
+		"x":	1402,
+		"y":	1300,
+		"desc":	"Under a rock near Super Nerd Miguel",
+		"gfy":	""
+	},
+	{
+		"icon":	"domefossil",
+		"x":	1305,
+		"y":	1157,
+		"desc":	"One Fossil chosen after defeating the Super Nerd",
+		"gfy":	""
+	},
+	{
+		"icon":	"helixfossil",
+		"x":	1289,
+		"y":	1156,
+		"desc":	"One Fossil chosen after defeating the Super Nerd #PraiseHelix",
+		"gfy":	""
+	}
+]

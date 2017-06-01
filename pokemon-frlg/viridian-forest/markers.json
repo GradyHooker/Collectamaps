@@ -1,0 +1,44 @@
+[
+	{
+		"icon":	"antidote",
+		"x":	1052,
+		"y":	1393,
+		"desc":	"Left side of the tree near the first NPC",
+		"gfy":	""
+	},
+	{
+		"icon":	"potion",
+		"x":	1386,
+		"y":	1441,
+		"desc":	"In path of grass east of Route 2 entrance",
+		"gfy":	""
+	},
+	{
+		"icon":	"pokeball",
+		"x":	681,
+		"y":	1137,
+		"desc":	"On a grassy dead-end path north and west of the entrance",
+		"gfy":	""
+	},
+	{
+		"icon":	"antidote",
+		"x":	1241,
+		"y":	817,
+		"desc":	"In the northeast area of the forest, past a Trainer Tips sign",
+		"gfy":	""
+	},
+	{
+		"icon":	"potion",
+		"x":	936,
+		"y":	1026,
+		"desc":	"In a small area southeast of the final Trainer Tips sign",
+		"gfy":	""
+	},
+	{
+		"icon":	"potion",
+		"x":	648,
+		"y":	833,
+		"desc":	"In the west area of the forest, across from the final Bug Catcher",
+		"gfy":	""
+	}
+]

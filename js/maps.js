@@ -68,7 +68,7 @@ function make_map() {
 	});
 	
 	//DEBUG PRINT ONLY
-	/*m.on('click', function(e) {  
+	m.on('click', function(e) {  
 		var item = "diamond";
 		var crs = map.options.crs;
 		var zoom = map.getZoom();
@@ -80,7 +80,7 @@ function make_map() {
 					'	"desc":	"",\n' + 
 					'	"gfy":	""\n' + 
 					'},');
-    });*/
+    });
 					
 	return m;
 }
