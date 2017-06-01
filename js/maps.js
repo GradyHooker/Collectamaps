@@ -12,6 +12,7 @@ var mapMaxZoom;
 var clickZoom;
 var img_width;
 var img_height;
+var reset = false;
 
 window.onload = init;
 
@@ -26,6 +27,7 @@ function init() {
 }
 
 function reset_map(newGame, newLevel) {
+	reset = true;
 	game = newGame;
 	level = newLevel;
 	//TODO: Update URL g?=game&l=level
@@ -40,13 +42,16 @@ function make_map() {
 		maxBounds: [img_height, img_width],
 		maxBoundsViscosity: 0.75,
 		crs: L.CRS.Simple
-	}).setView([0, 0], mapMinZoom+1);
+	});
 	
 	var mapBounds = new L.LatLngBounds(
 		m.unproject([0, img_height], mapMaxZoom),
 		m.unproject([img_width, 0], mapMaxZoom)
 	);
 	m.setMaxBounds(mapBounds);
+	
+	m.fitBounds(mapBounds);
+	m.setZoom(mapMinZoom+1);
 	
 	L.tileLayer(game + '/' + level + '/tiles/{z}/map_{x}_{y}.png', {
 		maxZoom: mapMaxZoom,
@@ -55,7 +60,7 @@ function make_map() {
 		noWrap: true,
 		bounds: mapBounds
 	}).addTo(m);
-	
+		
 	m.on('zoomend', function() {
 		if(map.getZoom() <= clickZoom-1) {
 			map.closePopup();
@@ -76,7 +81,7 @@ function make_map() {
 					'	"gfy":	""\n' + 
 					'},');
     });*/
-		
+					
 	return m;
 }
 		
@@ -166,16 +171,18 @@ function iconsLoaded(response) {
 			var iconShort = icon.name.replace(/\s/g,'').toLowerCase();
 			icons[iconShort] = make_icon(icon.name, iconShort, cat);
 		}
-		//Create rows in the filter table
-		row = document.createElement("TR");
-		cell = document.createElement("TD");
-		cell.textContent = capitalize(cat);
-		
-		row.appendChild(cell);
-		buttons = make_FilterButtons(cat);
-		row.appendChild(buttons[0]);
-		row.appendChild(buttons[1]);
-		table.appendChild(row);
+		if(!reset) {
+			//Create rows in the filter table
+			row = document.createElement("TR");
+			cell = document.createElement("TD");
+			cell.textContent = capitalize(cat);
+			
+			row.appendChild(cell);
+			buttons = make_FilterButtons(cat);
+			row.appendChild(buttons[0]);
+			row.appendChild(buttons[1]);
+			table.appendChild(row);
+		}
 	}
 		
 	loadJSON("markers", game + "/" + level, markersLoaded);
@@ -243,7 +250,13 @@ function markersLoaded(response) {
 		markers[m] = make_marker(marker.icon, marker.x, marker.y, marker.desc, marker.gfy);
 		layers[icons[marker.icon].filter].addLayer(markers[m].marker);
 	}
-
+	
+	if(reset) {
+		if(!applyOnlyFilters()) {
+			applyToggleFilters();
+		}
+		reset = false;
+	}
 }
 
 function make_icon(name, shortname, filter) {
@@ -369,18 +382,12 @@ function toggleFilter(button) {
 
 function onlyFilter(button) {
 	var cat = button.value;
-	var table = document.getElementById("fab-table");
-	var checks = table.querySelectorAll('[type=checkbox]');
 	if(button.checked) {
-		map.removeLayer(layers[cat]);
-		for(var i = 0; i < checks.length; i++) {
-			checks[i].disabled = false;
-			if(checks[i].checked) {
-				map.addLayer(layers[checks[i].value]);
-			}
-		}
+		applyToggleFilters();
 		button.checked = false;
 	} else {
+		var table = document.getElementById("fab-table");
+		var checks = table.querySelectorAll('[type=checkbox]');
 		for(var l in layers) {
 			map.removeLayer(layers[l]);
 		}
@@ -390,4 +397,32 @@ function onlyFilter(button) {
 		map.addLayer(layers[cat]);
 		button.checked = true;
 	}
+}
+
+function applyToggleFilters() {
+	var checks = document.getElementById("fab-table").querySelectorAll('[type=checkbox]');
+	for(var l in layers) {
+		map.removeLayer(layers[l]);
+	}
+	for(var i = 0; i < checks.length; i++) {
+		checks[i].disabled = false;
+		if(checks[i].checked) {
+			map.addLayer(layers[checks[i].value]);
+		}
+	}
+}
+
+function applyOnlyFilters() {
+	var checked = false;
+	var radios = document.getElementById("fab-table").querySelectorAll('[type=radio]');
+	for(var l in layers) {
+		map.removeLayer(layers[l]);
+	}
+	for(var i = 0; i < radios.length; i++) {
+		if(radios[i].checked) {
+			map.addLayer(layers[radios[i].value]);
+			checked  = true;
+		}
+	}
+	return checked;
 }
