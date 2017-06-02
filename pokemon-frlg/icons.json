@@ -16,9 +16,13 @@
 		{	"name": "Ice Heal"		},
 		{	"name": "Antidote"		},
 		{	"name": "X Defend"		},
+		{	"name": "X Attack"		},
+		{	"name": "X Accuracy"	},
+		{	"name": "X Speed"		},
 		{	"name": "PP Up"			},
 		{	"name": "Iron"			},
-		{	"name": "Zinc"			}
+		{	"name": "Zinc"			},
+		{	"name": "Calcium"		}
 	],
 	"miscellaneous": [
 		{	"name": "Old Amber"			},
@@ -26,6 +30,7 @@
 		{	"name": "Rare Candy"		},
 		{	"name": "Lava Cookie"		},
 		{	"name": "Escape Rope"		},
+		{	"name": "Repel"				},
 		{	"name": "Nugget"			},
 		{	"name": "Leftovers"			},
 		{	"name": "Stardust"			},
@@ -35,12 +40,19 @@
 		{	"name": "Tiny Mushroom"		},
 		{	"name": "Star Piece"		},
 		{	"name": "Helix Fossil"		},
-		{	"name": "Dome Fossil"		}
+		{	"name": "Dome Fossil"		},
+		{	"name": "Cleanse Tag"		},
+		{	"name": "Soothe Bell"		},
+		{	"name": "Black Glasses"		},
+		{	"name": "Lift Key"			},
+		{	"name": "Silph Scope"		}
 	],
 	"pokeBalls": [
 		{	"name": "Poke Ball"		},
 		{	"name": "Great Ball"	},
-		{	"name": "Ultra Ball"	}
+		{	"name": "Ultra Ball"	},
+		{	"name": "Nest Ball"		},
+		{	"name": "Net Ball"		}
 	],
 	"berries": [
 		{	"name": "Oran Berry"	},

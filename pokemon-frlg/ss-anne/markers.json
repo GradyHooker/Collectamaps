@@ -1,3 +1,79 @@
-{
-
-}
+[
+	{
+		"icon":	"hyperpotion",
+		"x":	1950,
+		"y":	1048,
+		"desc":	"In the trash can",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	1659,
+		"y":	659,
+		"desc":	"TM44 (Rest) - In room 2",
+		"gfy":	""
+	},
+	{
+		"icon":	"ether",
+		"x":	1727,
+		"y":	709,
+		"desc":	"In room 3",
+		"gfy":	""
+	},
+	{
+		"icon":	"superpotion",
+		"x":	1946,
+		"y":	659,
+		"desc":	"In room 5",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	1137,
+		"y":	1334,
+		"desc":	"TM31 (Brick Break) - In room 2 on main deck",
+		"gfy":	""
+	},
+	{
+		"icon":	"pechaberry",
+		"x":	929,
+		"y":	1288,
+		"desc":	"In the first trash can in the galley",
+		"gfy":	""
+	},
+	{
+		"icon":	"cheriberry",
+		"x":	927,
+		"y":	1320,
+		"desc":	"In the second trash can in the galley",
+		"gfy":	""
+	},
+	{
+		"icon":	"chestoberry",
+		"x":	928,
+		"y":	1352,
+		"desc":	"In the third trash can in the galley",
+		"gfy":	""
+	},
+	{
+		"icon":	"greatball",
+		"x":	721,
+		"y":	1386,
+		"desc":	"In the galley",
+		"gfy":	""
+	},
+	{
+		"icon":	"stardust",
+		"x":	518,
+		"y":	674,
+		"desc":	"In room 2",
+		"gfy":	""
+	},
+	{
+		"icon":	"xattack",
+		"x":	774,
+		"y":	691,
+		"desc":	"In room 4",
+		"gfy":	""
+	}
+]

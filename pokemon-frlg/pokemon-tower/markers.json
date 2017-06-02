@@ -1,3 +1,72 @@
-{
-
-}
+[
+	{
+		"icon":	"escaperope",
+		"x":	864,
+		"y":	751,
+		"desc":	"3F, north side",
+		"gfy":	""
+	},
+	{
+		"icon":	"awakening",
+		"x":	1167,
+		"y":	896,
+		"desc":	"4F, in the center of the floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"elixir",
+		"x":	1231,
+		"y":	896,
+		"desc":	"4F, near the staircase leading to the third floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"greatball",
+		"x":	1216,
+		"y":	978,
+		"desc":	"4F, south side",
+		"gfy":	""
+	},
+	{
+		"icon":	"bigmushroom",
+		"x":	768,
+		"y":	1130,
+		"desc":	"5F, northwest of the northernmost Channeler",
+		"gfy":	""
+	},
+	{
+		"icon":	"cleansetag",
+		"x":	833,
+		"y":	1227,
+		"desc":	"5F, in the center of the healing spot",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	752,
+		"y":	1340,
+		"desc":	"5F, south side, near the healing spot",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	1121,
+		"y":	1324,
+		"desc":	"6F, south side",
+		"gfy":	""
+	},
+	{
+		"icon":	"xaccuracy",
+		"x":	1280,
+		"y":	1323,
+		"desc":	"6F, near the staircase from the fifth floor",
+		"gfy":	""
+	},
+	{
+		"icon":	"soothebell",
+		"x":	1026,
+		"y":	1511,
+		"desc":	"7F, where Mr. Fuji was standing",
+		"gfy":	""
+	}
+]

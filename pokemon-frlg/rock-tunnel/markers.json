@@ -1,3 +1,37 @@
-{
-
-}
+[
+	{
+		"icon":	"pearl",
+		"x":	798,
+		"y":	1069,
+		"desc":	"North of Picnicker Dana",
+		"gfy":	""
+	},
+	{
+		"icon":	"escaperope",
+		"x":	621,
+		"y":	1064,
+		"desc":	"Southeast of Hiker Lucas",
+		"gfy":	""
+	},
+	{
+		"icon":	"repel",
+		"x":	861,
+		"y":	791,
+		"desc":	"Northeast corner",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	1247,
+		"y":	745,
+		"desc":	"North of Picnicker Sofia and Hiker Dudley",
+		"gfy":	""
+	},
+	{
+		"icon":	"revive",
+		"x":	1135,
+		"y":	1305,
+		"desc":	"Southwest corner",
+		"gfy":	""
+	}
+]

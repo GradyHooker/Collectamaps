@@ -1,3 +1,128 @@
-{
-
-}
+[
+	{
+		"icon":	"escaperope",
+		"x":	566,
+		"y":	741,
+		"desc":	"In the room west of the entrance",
+		"gfy":	""
+	},
+	{
+		"icon":	"hyperpotion",
+		"x":	501,
+		"y":	833,
+		"desc":	"In the room reached from the B2F",
+		"gfy":	""
+	},
+	{
+		"icon":	"ppup",
+		"x":	743,
+		"y":	754,
+		"desc":	"In the bottom right plant pot in the entrance hall",
+		"gfy":	""
+	},
+	{
+		"icon":	"moonstone",
+		"x":	1099,
+		"y":	659,
+		"desc":	"On the west wall of the spinner maze",
+		"gfy":	""
+	},
+	{
+		"icon":	"xspeed",
+		"x":	1307,
+		"y":	627,
+		"desc":	"Northeast part of maze",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	1146,
+		"y":	691,
+		"desc":	"TM12 (Taunt) - Near the Moon Stone",
+		"gfy":	""
+	},
+	{
+		"icon":	"superpotion",
+		"x":	1066,
+		"y":	802,
+		"desc":	"Near the southwest corner of the spinner maze",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	549,
+		"y":	1198,
+		"desc":	"At the west end of the northern hallway",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	725,
+		"y":	1343,
+		"desc":	"On the east wall of the spinner maze",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	838,
+		"y":	1373,
+		"desc":	"TM21 (Frustration) - In the center-east room",
+		"gfy":	""
+	},
+	{
+		"icon":	"blackglasses",
+		"x":	758,
+		"y":	1534,
+		"desc":	"South of stairs to B4F",
+		"gfy":	""
+	},
+	{
+		"icon":	"liftkey",
+		"x":	1179,
+		"y":	1191,
+		"desc":	"Talk to the Team Rocket Grunt in the northwest room after defeat",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	1147,
+		"y":	1255,
+		"desc":	"TM49 (Snatch) - In northwest room",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	1194,
+		"y":	1384,
+		"desc":	"On table in western part",
+		"gfy":	""
+	},
+	{
+		"icon":	"calcium",
+		"x":	1227,
+		"y":	1526,
+		"desc":	"On table in southwest part",
+		"gfy":	""
+	},
+	{
+		"icon":	"netball",
+		"x":	1387,
+		"y":	1255,
+		"desc":	"Between the plant pots west of Giovanni's seat",
+		"gfy":	""
+	},
+	{
+		"icon":	"nestball",
+		"x":	1482,
+		"y":	1254,
+		"desc":	"Between the plant pots east of Giovanni's seat",
+		"gfy":	""
+	},
+	{
+		"icon":	"silphscope",
+		"x":	1451,
+		"y":	1238,
+		"desc":	"Dropped by Giovanni after his defeat",
+		"gfy":	""
+	}
+]
