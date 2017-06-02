@@ -3,6 +3,7 @@
 		{	"name": "Potion"		},
 		{	"name": "Super Potion"	},
 		{	"name": "Hyper Potion"	},
+		{	"name": "Max Potion"	},
 		{	"name": "Full Restore"	},
 		{	"name": "Revive"		},
 		{	"name": "Max Revive"	},
@@ -14,15 +15,23 @@
 		{	"name": "Awakening"		},
 		{	"name": "Burn Heal"		},
 		{	"name": "Ice Heal"		},
-		{	"name": "Antidote"		},
+		{	"name": "Antidote"		}
+	],
+	"supplements": [
 		{	"name": "X Defend"		},
 		{	"name": "X Attack"		},
 		{	"name": "X Accuracy"	},
 		{	"name": "X Speed"		},
+		{	"name": "X Special"		},
+		{	"name": "PP Up"			},
+		{	"name": "HP Up"			},
+		{	"name": "PP Up"			},
 		{	"name": "PP Up"			},
 		{	"name": "Iron"			},
 		{	"name": "Zinc"			},
-		{	"name": "Calcium"		}
+		{	"name": "Carbos"		},
+		{	"name": "Calcium"		},
+		{	"name": "Protein"		}
 	],
 	"miscellaneous": [
 		{	"name": "Old Amber"			},
@@ -35,7 +44,10 @@
 		{	"name": "Leftovers"			},
 		{	"name": "Stardust"			},
 		{	"name": "Pearl"				},
+		{	"name": "Big Pearl"			},
 		{	"name": "Moon Stone"		},
+		{	"name": "Leaf Stone"		},
+		{	"name": "Water Stone"		},
 		{	"name": "Big Mushroom"		},
 		{	"name": "Tiny Mushroom"		},
 		{	"name": "Star Piece"		},
@@ -45,12 +57,17 @@
 		{	"name": "Soothe Bell"		},
 		{	"name": "Black Glasses"		},
 		{	"name": "Lift Key"			},
-		{	"name": "Silph Scope"		}
+		{	"name": "Silph Scope"		},
+		{	"name": "Card Key"			},
+		{	"name": "Gold Teeth"		},
+		{	"name": "Quick Claw"		},
+		{	"name": "Secret Key"		}
 	],
 	"pokeBalls": [
 		{	"name": "Poke Ball"		},
 		{	"name": "Great Ball"	},
 		{	"name": "Ultra Ball"	},
+		{	"name": "Master Ball"	},
 		{	"name": "Nest Ball"		},
 		{	"name": "Net Ball"		}
 	],
