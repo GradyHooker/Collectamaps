@@ -1,3 +1,100 @@
-{
-
-}
+[
+	{
+		"icon":	"antidote",
+		"x":	1050,
+		"y":	705,
+		"desc":	"Near the northern stairs",
+		"gfy":	""
+	},
+	{
+		"icon":	"paralyzeheal",
+		"x":	1013,
+		"y":	848,
+		"desc":	"North side were the blue tiles go into the brown tiles",
+		"gfy":	""
+	},
+	{
+		"icon":	"awakening",
+		"x":	990,
+		"y":	1001,
+		"desc":	"Left side in the middle of the blue tiles",
+		"gfy":	""
+	},
+	{
+		"icon":	"potion",
+		"x":	1042,
+		"y":	1088,
+		"desc":	"Where the blue tiles go into the red tiles",
+		"gfy":	""
+	},
+	{
+		"icon":	"ether",
+		"x":	1013,
+		"y":	1242,
+		"desc":	"Middle of the red tiles, in the center of the path",
+		"gfy":	""
+	},
+	{
+		"icon":	"iceheal",
+		"x":	1062,
+		"y":	1464,
+		"desc":	"Southern brown tiles near the Burn Heal",
+		"gfy":	""
+	},
+	{
+		"icon":	"burnheal",
+		"x":	1004,
+		"y":	1519,
+		"desc":	"Two tiles up from the lower stairs, two tiles right from the left wall",
+		"gfy":	""
+	},
+	{
+		"icon":	"potion",
+		"x":	511,
+		"y":	495,
+		"desc":	"Five steps to the east from the first window (from west to east) one step south from the northern wall",
+		"gfy":	""
+	},
+	{
+		"icon":	"paralyzeheal",
+		"x":	667,
+		"y":	528,
+		"desc":	"Four steps to the west from the third window (from west to east) one step north from the southern wall",
+		"gfy":	""
+	},
+	{
+		"icon":	"awakening",
+		"x":	877,
+		"y":	510,
+		"desc":	"One step to the west from the fourth window (from west to east) one step north from the southern wall",
+		"gfy":	""
+	},
+	{
+		"icon":	"burnheal",
+		"x":	1108,
+		"y":	495,
+		"desc":	"Two steps to the west from the fourth window (from east to west) one step south from the northern wall",
+		"gfy":	""
+	},
+	{
+		"icon":	"ether",
+		"x":	1271,
+		"y":	478,
+		"desc":	"Two steps to the west from the third window (from east to west) next to the northern wall",
+		"gfy":	""
+	},
+	{
+		"icon":	"antidote",
+		"x":	1388,
+		"y":	530,
+		"desc":	"Five steps to the west from the second window (from east to west) next to the southern wall",
+		"gfy":	""
+	},
+	{
+		"icon":	"iceheal",
+		"x":	1513,
+		"y":	494,
+		"desc":	"Three steps to the east from the second window (from east to west) one step south from the northern wall",
+		"gfy":	""
+	}
+]
