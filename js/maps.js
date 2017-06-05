@@ -51,7 +51,7 @@ function make_map() {
 	m.setMaxBounds(mapBounds);
 	
 	m.fitBounds(mapBounds);
-	m.setZoom(mapMinZoom+1);
+	//m.setZoom(mapMinZoom+1);
 	
 	L.tileLayer(game + '/' + level + '/tiles/{z}/map_{x}_{y}.png', {
 		maxZoom: mapMaxZoom,
@@ -68,7 +68,7 @@ function make_map() {
 	});
 	
 	//DEBUG PRINT ONLY
-	m.on('click', function(e) {  
+	/*m.on('click', function(e) {  
 		var item = "diamond";
 		var crs = map.options.crs;
 		var zoom = map.getZoom();
@@ -80,7 +80,7 @@ function make_map() {
 					'	"desc":	"",\n' + 
 					'	"gfy":	""\n' + 
 					'},');
-    });
+    });*/
 					
 	return m;
 }
@@ -105,8 +105,10 @@ function sendHome() {
 
 function infoLoaded(response) {
 	var infoJSON = JSON.parse(response);
+	var levels = infoJSON["mapList"];
 	gamePublisher = infoJSON["gamePublisher"];
 	gameFull = infoJSON["gameFull"];
+	
 	if(level == false) {
 		if(infoJSON["defaultLevel"] != null) {
 			level = infoJSON["defaultLevel"];
@@ -115,12 +117,18 @@ function infoLoaded(response) {
 		}
 	}
 	var levelCont = document.getElementById("select-img-cont");
+	var levelFab = document.getElementById("fab-select");
 	while (levelCont.firstChild) {
 		levelCont.removeChild(levelCont.firstChild);
 	}
-	for(l in infoJSON["mapList"]) {
-		var lev = infoJSON["mapList"][l];
-		levelCont.appendChild(make_SelectImage(lev));
+	if(levels != null) {
+		levelFab.style.display = "flex";
+		for(l in levels) {
+			var lev = levels[l];
+			levelCont.appendChild(make_SelectImage(lev));
+		}
+	} else {
+		levelFab.style.display = "none";
 	}
 	
 	window.document.title = gameFull + " - Collectamaps"
