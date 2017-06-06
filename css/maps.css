@@ -208,14 +208,13 @@ body, html {
 		z-index: 999;
 		border-radius: 0px;
 		margin: 0;
+		display: flex;
+		justify-content: center;
 	}
 	
 	.logo-cont img {
 		padding: 5px;
 		width: 180px;
-		display: absolute;
-		left: 50%;
-		margin-left: 90px;
 	}
 	
 	#map {
