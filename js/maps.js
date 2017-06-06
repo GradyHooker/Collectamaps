@@ -30,7 +30,7 @@ function reset_map(newGame, newLevel) {
 	reset = true;
 	game = newGame;
 	level = newLevel;
-	//TODO: Update URL g?=game&l=level
+	window.history.replaceState({}, game + " ( " + level + ") - Collectamaps", 'maps.html?g=' + game + "&l=" + level);
 	map.remove();
 	loadJSON("game_info", game, infoLoaded);
 }
