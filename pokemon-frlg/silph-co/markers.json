@@ -1,3 +1,212 @@
-{
-
-}
+[
+	{
+		"icon":	"ultraball",
+		"x":	921,
+		"y":	593,
+		"desc":	"Southwest room, in a potted plant",
+		"gfy":	""
+	},
+	{
+		"icon":	"hyperpotion",
+		"x":	1535,
+		"y":	416,
+		"desc":	"West-central room, near the Scientist (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"protein",
+		"x":	1951,
+		"y":	545,
+		"desc":	"Southeast corner, in a potted plant",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	560,
+		"y":	954,
+		"desc":	"TM41 (Torment) - Southeast room",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxrevive",
+		"x":	128,
+		"y":	840,
+		"desc":	"Western room (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"escaperope",
+		"x":	146,
+		"y":	855,
+		"desc":	"Western room (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullheal",
+		"x":	112,
+		"y":	872,
+		"desc":	"Western room (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"iron",
+		"x":	643,
+		"y":	983,
+		"desc":	"",
+		"gfy":	"Southeast room, in a potted plant"
+	},
+	{
+		"icon":	"ppup",
+		"x":	1256,
+		"y":	807,
+		"desc":	"Larger central room, in a potted plant",
+		"gfy":	""
+	},
+	{
+		"icon":	"elixir",
+		"x":	952,
+		"y":	920,
+		"desc":	"Smaller central room, in a potted plant (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"protein",
+		"x":	808,
+		"y":	808,
+		"desc":	"Northwest room (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	759,
+		"y":	952,
+		"desc":	"TM01 (Focus Punch) - Southwest room",
+		"gfy":	""
+	},
+	{
+		"icon":	"cardkey",
+		"x":	1095,
+		"y":	999,
+		"desc":	"Southern hallway",
+		"gfy":	""
+	},
+	{
+		"icon":	"carbos",
+		"x":	1463,
+		"y":	814,
+		"desc":	"Northwest room, in a potted plant",
+		"gfy":	""
+	},
+	{
+		"icon":	"xspecial",
+		"x":	1462,
+		"y":	960,
+		"desc":	"Southwest room (requires Card Key",
+		"gfy":	""
+	},
+	{
+		"icon":	"hpup",
+		"x":	1479,
+		"y":	911,
+		"desc":	"Southwest room (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"calcium",
+		"x":	121,
+		"y":	1288,
+		"desc":	"Southwest room",
+		"gfy":	""
+	},
+	{
+		"icon":	"zinc",
+		"x":	474,
+		"y":	1273,
+		"desc":	"East-central room, in a potted plant (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	603,
+		"y":	1273,
+		"desc":	"TM08 (Bulk Up) - East-central room (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"iron",
+		"x":	1169,
+		"y":	1224,
+		"desc":	"Eastern room",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	1248,
+		"y":	1256,
+		"desc":	"Eastern room, in a potted plant",
+		"gfy":	""
+	},
+	{
+		"icon":	"calcium",
+		"x":	1529,
+		"y":	1226,
+		"desc":	"Larger southwest room, in a potted plant (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxpotion",
+		"x":	1623,
+		"y":	1318,
+		"desc":	"Smaller southwest room (requires Card Key)",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	638,
+		"y":	1766,
+		"desc":	"Southwest room",
+		"gfy":	""
+	},
+	{
+		"icon":	"ultraball",
+		"x":	623,
+		"y":	1736,
+		"desc":	"Southwest room",
+		"gfy":	""
+	},
+	{
+		"icon":	"carbos",
+		"x":	670,
+		"y":	1734,
+		"desc":	"Southwest room",
+		"gfy":	""
+	},
+	{
+		"icon":	"hpup",
+		"x":	735,
+		"y":	1638,
+		"desc":	"Northeast room, in a potted plant",
+		"gfy":	""
+	},
+	{
+		"icon":	"zinc",
+		"x":	1460,
+		"y":	1770,
+		"desc":	"Southeast corner",
+		"gfy":	""
+	},
+	{
+		"icon":	"revive",
+		"x":	1363,
+		"y":	1772,
+		"desc":	"In a potted plant outside the president's office",
+		"gfy":	""
+	},
+	{
+		"icon":	"masterball",
+		"x":	1348,
+		"y":	1625,
+		"desc":	"From the president, after defeating Giovanni",
+		"gfy":	""
+	}
+]

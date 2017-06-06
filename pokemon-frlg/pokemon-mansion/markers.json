@@ -1,3 +1,107 @@
-{
-
-}
+[
+	{
+		"icon":	"secretkey",
+		"x":	452,
+		"y":	494,
+		"desc":	"On the table in the northwest room",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	740,
+		"y":	445,
+		"desc":	"TM14 (Blizzard) - In the north-central room",
+		"gfy":	""
+	},
+	{
+		"icon":	"elixir",
+		"x":	934,
+		"y":	464,
+		"desc":	"In the northeast room",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	468,
+		"y":	720,
+		"desc":	"TM22 (Solar Beam) - In the room with the potted plants",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullrestore",
+		"x":	402,
+		"y":	854,
+		"desc":	"In the southwest corner",
+		"gfy":	""
+	},
+	{
+		"icon":	"protein",
+		"x":	1514,
+		"y":	627,
+		"desc":	"In a locked room, alongside a barrier of rubble",
+		"gfy":	""
+	},
+	{
+		"icon":	"moonstone",
+		"x":	1118,
+		"y":	728,
+		"desc":	"West side of the entryway",
+		"gfy":	""
+	},
+	{
+		"icon":	"carbos",
+		"x":	1299,
+		"y":	903,
+		"desc":	"South-central room, accessed from 3F",
+		"gfy":	""
+	},
+	{
+		"icon":	"escaperope",
+		"x":	0,
+		"y":	0,
+		"desc":	"Near the north wall",
+		"gfy":	""
+	},
+	{
+		"icon":	"zinc",
+		"x":	657,
+		"y":	1441,
+		"desc":	"Southern balcony",
+		"gfy":	""
+	},
+	{
+		"icon":	"hpup",
+		"x":	930,
+		"y":	1343,
+		"desc":	"Southeast hallway, accessed from 3F",
+		"gfy":	""
+	},
+	{
+		"icon":	"calcium",
+		"x":	946,
+		"y":	1204,
+		"desc":	"Northeast room, behind a pile of rubble",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxpotion",
+		"x":	1233,
+		"y":	1375,
+		"desc":	"Southwest area, accessed from 2F",
+		"gfy":	""
+	},
+	{
+		"icon":	"iron",
+		"x":	1600,
+		"y":	1170,
+		"desc":	"Northeast room",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	1661,
+		"y":	1281,
+		"desc":	"Dead-end hallway near the southeast stairs",
+		"gfy":	""
+	}
+]

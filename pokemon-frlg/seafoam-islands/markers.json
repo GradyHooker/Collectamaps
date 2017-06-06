@@ -1,3 +1,51 @@
-{
-
-}
+[
+	{
+		"icon":	"iceheal",
+		"x":	573,
+		"y":	535,
+		"desc":	"Near the northwest ladder",
+		"gfy":	""
+	},
+	{
+		"icon":	"revive",
+		"x":	1445,
+		"y":	630,
+		"desc":	"On the center platform",
+		"gfy":	""
+	},
+	{
+		"icon":	"waterstone",
+		"x":	1349,
+		"y":	713,
+		"desc":	"South-central area, accessed from B2F",
+		"gfy":	""
+	},
+	{
+		"icon":	"bigpearl",
+		"x":	686,
+		"y":	1081,
+		"desc":	"South of the central platform",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	1138,
+		"y":	1033,
+		"desc":	"On a rock, on the western platform",
+		"gfy":	""
+	},
+	{
+		"icon":	"waterstone",
+		"x":	934,
+		"y":	1401,
+		"desc":	"On a rock, near the western ladder",
+		"gfy":	""
+	},
+	{
+		"icon":	"ultraball",
+		"x":	1079,
+		"y":	1576,
+		"desc":	"East of the southern sign",
+		"gfy":	""
+	}
+]

@@ -1,3 +1,100 @@
-{
-
-}
+[
+	{
+		"icon":	"nugget",
+		"x":	979,
+		"y":	1456,
+		"desc":	"On the island",
+		"gfy":	""
+	},
+	{
+		"icon":	"leafstone",
+		"x":	1027,
+		"y":	1456,
+		"desc":	"On the island",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	1729,
+		"y":	1327,
+		"desc":	"TM11 (Sunny Day) - On the edge of the pond",
+		"gfy":	""
+	},
+	{
+		"icon":	"leafstone",
+		"x":	1806,
+		"y":	1312,
+		"desc":	"Southern platform",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullrestore",
+		"x":	1826,
+		"y":	1282,
+		"desc":	"Northwest of the rest house",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxpotion",
+		"x":	1440,
+		"y":	1233,
+		"desc":	"Northwest of the pond",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	961,
+		"y":	418,
+		"desc":	"TM47 (Steel Wing) - Southwest of the rest house",
+		"gfy":	""
+	},
+	{
+		"icon":	"protein",
+		"x":	1041,
+		"y":	350,
+		"desc":	"Northwest of the rest house",
+		"gfy":	""
+	},
+	{
+		"icon":	"quickclaw",
+		"x":	976,
+		"y":	544,
+		"desc":	"Bare patch of land in the center",
+		"gfy":	""
+	},
+	{
+		"icon":	"goldteeth",
+		"x":	453,
+		"y":	1300,
+		"desc":	"South of the entrance from Area 2",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	273,
+		"y":	1280,
+		"desc":	"TM32 (Double Team) - Southeast of the Secret House",
+		"gfy":	""
+	},
+	{
+		"icon":	"revive",
+		"x":	211,
+		"y":	1250,
+		"desc":	"Outside the Secret House",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxpotion",
+		"x":	257,
+		"y":	1504,
+		"desc":	"In the tall grass",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxrevive",
+		"x":	429,
+		"y":	1456,
+		"desc":	"Southeast of the platform",
+		"gfy":	""
+	}
+]
