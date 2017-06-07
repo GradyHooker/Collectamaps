@@ -2,21 +2,89 @@ body {
     background: #444444;
 }
 
-.game-container {
-	display: flex;
+.page-cont {
 	max-width: 1200px;
     width: 80%;
-	flex-wrap: wrap;
-	justify-content: space-around;
 	margin: 0 auto;
 }
 
-.game-container img {
-	height: 150px;
-	width: 322px;
+.banner-logo {
+	width: 80%;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
-.game-container a {
+.banner-logo img {
+	width: 100%;
+}
+
+.games-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.game {
+	height: calc(100% - 15px);
+	max-width: 240px;
+	background: white;
+    border-radius: 10px;
+	margin: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.4);
+	color: #66757f;
+	font-family: 'roboto_condensed', Arial, sans-serif;
+	text-align: center;
+	opacity: 0.8;
+	transition: opacity 0.4s;
+}
+
+.game:hover {
+	opacity: 1;
+}
+
+.games-container a {
 	text-decoration: none;
-	margin: 10px;
+	flex: 1 1 180px;
+	max-width: 240px;
+}
+
+.game img {
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.game span {
+	padding: 5px;
+}
+
+h1 {
+	font-size: 1em;
+	margin: 0.2em;
+}
+
+@media screen and (max-width: 482px) {
+    .page-cont {
+		width: 100%;
+	}
+	
+	.game-description {
+		display: none;
+	}
+	
+	.game {
+		padding: 0px;
+	}
+	
+	.game img {
+		border-radius: 10px;
+	}
+	
+	.games-container a {
+		flex: 1 1 120px;
+		max-width: 170px;
+	}
 }
