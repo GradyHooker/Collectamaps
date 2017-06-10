@@ -490,14 +490,14 @@
 		"gfy":	""
 	},
 	{
-		"icon":	"ppup",
+		"icon":	"rarecandy",
 		"x":	6053,
 		"y":	4233,
 		"desc":	"On the land northwest of the water (requires Surf)",
 		"gfy":	""
 	},
 	{
-		"icon":	"rarecandy",
+		"icon":	"ppup",
 		"x":	5557,
 		"y":	4170,
 		"desc":	"On the land east of the water (requires Surf)",
@@ -596,8 +596,8 @@
 	},
 	{
 		"icon":	"softsand",
-		"x":	4648,
-		"y":	6410,
+		"x":	4633,
+		"y":	6409,
 		"desc":	"Reward for defeating Cooltrainer Kate (requires Surf)",
 		"gfy":	""
 	},
@@ -700,10 +700,10 @@
 		"gfy":	""
 	},
 	{
-		"icon":	"redapricorn",
+		"icon":	"blackapricorn",
 		"x":	5098,
 		"y":	3980,
-		"desc":	"Northwestern tree in the clearing (daily)",
+		"desc":	"Southern tree in the clearing (daily)",
 		"gfy":	""
 	},
 	{
@@ -714,10 +714,10 @@
 		"gfy":	""
 	},
 	{
-		"icon":	"blackapricorn",
+		"icon":	"redapricorn",
 		"x":	5066,
 		"y":	3945,
-		"desc":	"Southern tree in the clearing (daily)",
+		"desc":	"Northwestern tree in the clearing (daily)",
 		"gfy":	""
 	},
 	{
@@ -735,7 +735,7 @@
 		"gfy":	""
 	},
 	{
-		"icon":	"technicalmachine",
+		"icon":	"hiddenmachine",
 		"x":	2454,
 		"y":	5624,
 		"desc":	"HM02 (Fly) - Gift from Chuck's wife outside of the Gym after earning the Storm Badge",
@@ -770,7 +770,7 @@
 		"gfy":	""
 	},
 	{
-		"icon":	"technicalmachine",
+		"icon":	"hiddenmachine",
 		"x":	3695,
 		"y":	4334,
 		"desc":	"HM04 (Strength) - From a Sailor in Olivine Café",
@@ -778,8 +778,8 @@
 	},
 	{
 		"icon":	"goodrod",
-		"x":	4048,
-		"y":	4192,
+		"x":	3792,
+		"y":	4255,
 		"desc":	"From the Fishing Guru in the house north of the Pokémon Center",
 		"gfy":	""
 	},
@@ -791,7 +791,7 @@
 		"gfy":	""
 	},
 	{
-		"icon":	"technicalmachine",
+		"icon":	"hiddenmachine",
 		"x":	5072,
 		"y":	3614,
 		"desc":	"HM03 (Surf) - Reward from old man for defeating the Kimono Girls",
@@ -854,17 +854,17 @@
 		"gfy":	""
 	},
 	{
-		"icon":	"greenapricorn",
+		"icon":	"pinkapricorn",
 		"x":	5765,
 		"y":	3833,
-		"desc":	"In the middle Apricorn tree in the middle of the route (requires Surf and Cut) (daily)",
+		"desc":	"In the left Apricorn tree in the middle of the route (requires Surf and Cut) (daily)",
 		"gfy":	""
 	},
 	{
-		"icon":	"pinkapricorn",
+		"icon":	"greenapricorn",
 		"x":	5782,
 		"y":	3833,
-		"desc":	"In the left Apricorn tree in the middle of the route (requires Surf and Cut) (daily)",
+		"desc":	"In the middle Apricorn tree in the middle of the route (requires Surf and Cut) (daily)",
 		"gfy":	""
 	},
 	{
@@ -897,8 +897,8 @@
 	},
 	{
 		"icon":	"technicalmachine",
-		"x":	6246,
-		"y":	2296,
+		"x":	6696,
+		"y":	2168,
 		"desc":	"TM43 (Detect) - Northeast corner of the maze",
 		"gfy":	""
 	},
@@ -911,8 +911,8 @@
 	},
 	{
 		"icon":	"maxether",
-		"x":	6696,
-		"y":	2168,
+		"x":	6246,
+		"y":	2296,
 		"desc":	"Within the maze, west of the lake",
 		"gfy":	""
 	},
@@ -960,8 +960,8 @@
 	},
 	{
 		"icon":	"ultraball",
-		"x":	7336,
-		"y":	3641,
+		"x":	7306,
+		"y":	3608,
 		"desc":	"Northeast of the ponds",
 		"gfy":	""
 	},
@@ -969,7 +969,7 @@
 		"icon":	"maxrepel",
 		"x":	6840,
 		"y":	3723,
-		"desc":	"Directly east of the Mahogany Town entrance",
+		"desc":	"[Crystal Only] Directly east of the Mahogany Town entrance",
 		"gfy":	""
 	},
 	{

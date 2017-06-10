@@ -59,6 +59,7 @@
 	],
 	"miscellaneous": [
 		{	"name": "Technical Machine"	},
+		{	"name": "Hidden Machine"	},
 		{	"name": "Nugget"			},		
 		{	"name": "Rare Candy"		},
 		{	"name": "Max Repel"			}
