@@ -1,0 +1,91 @@
+{
+	"recoveryItems": [
+		{	"name": "Potion"		},
+		{	"name": "Super Potion"	},
+		{	"name": "Hyper Potion"	},
+		{	"name": "Beserk Gene"	},
+		{	"name": "Antidote"		},
+		{	"name": "Full Restore"	},
+		{	"name": "Ether"			},
+		{	"name": "Max Ether"		},
+		{	"name": "Elixir"		},
+		{	"name": "Max Elixir"	},
+		{	"name": "Revive"		},
+		{	"name": "Max Revive"	},
+		{	"name": "Full Heal"		},
+		{	"name": "Max Potion"	}
+	],
+	"supplements": [
+		{	"name": "Dire Hit"		},
+		{	"name": "X Speed"		},
+		{	"name": "X Special"		},
+		{	"name": "Protein"		},
+		{	"name": "Iron"			},
+		{	"name": "Calcium"		},
+		{	"name": "Carbos"		},
+		{	"name": "HP Up"			},
+		{	"name": "PP Up"			}
+	],
+	"heldItems": [
+		{	"name": "Focus Band"		},
+		{	"name": "Cleanse Tag"		},
+		{	"name": "Mystic Water"		},
+		{	"name": "EXP Share"			},
+		{	"name": "Poison Barb"		},
+		{	"name": "Miracle Seed"		},
+		{	"name": "Charcoal"			},
+		{	"name": "Soft Sand"			},
+		{	"name": "Hard Stone"		},
+		{	"name": "Magnet"			},
+		{	"name": "Sharp Beak"		},
+		{	"name": "Black Belt"		}
+	],
+	"keyItems": [
+		{	"name": "Legendary Wing"	},
+		{	"name": "Machine Part"		},
+		{	"name": "Pass"				},
+		{	"name": "Lost Item"			},
+		{	"name": "Super Rod"			},
+		{	"name": "Map Card"			},
+		{	"name": "Mystery Egg"		},
+		{	"name": "Old Rod"			},
+		{	"name": "Squirt Bottle"		},
+		{	"name": "Bicycle"			},
+		{	"name": "Secret Potion"		},
+		{	"name": "Good Rod"			},
+		{	"name": "Itemfinder"		},
+		{	"name": "Red Scale"			},
+		{	"name": "Spell Tag"			}
+	],
+	"miscellaneous": [
+		{	"name": "Technical Machine"	},
+		{	"name": "Nugget"			},		
+		{	"name": "Rare Candy"		},
+		{	"name": "Max Repel"			}
+	],
+	"pokeBalls": [
+		{	"name": "Poke Ball"		},
+		{	"name": "Great Ball"	},
+		{	"name": "Ultra Ball"	},
+		{	"name": "Lure Ball"		}
+	],
+	"berries": [
+		{	"name": "Bitter Berry"		},
+		{	"name": "Poison Cure Berry"	},
+		{	"name": "Paralyze Cure Berry"	},
+		{	"name": "Ice Berry"			},
+		{	"name": "Mint Berry"		},
+		{	"name": "Berry"				},
+		{	"name": "Burnt Berry"		},
+		{	"name": "Mystery Berry"		}
+	],
+	"apricorns": [
+		{	"name": "White Apricorn"	},
+		{	"name": "Black Apricorn"	},
+		{	"name": "Blue Apricorn"		},
+		{	"name": "Red Apricorn"		},
+		{	"name": "Pink Apricorn"		},
+		{	"name": "Green Apricorn"	},
+		{	"name": "Yellow Apricorn"	}
+	]
+}
