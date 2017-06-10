@@ -375,21 +375,21 @@
 		"x":	7127,
 		"y":	5625,
 		"desc":	"North of where the route turns south near Cherrygrove (daily)",
-		"gfy":	""
+		"gfy":	"RemorsefulWetAnhinga"
 	},
 	{
 		"icon":	"potion",
 		"x":	7706,
 		"y":	5626,
 		"desc":	"East of the gate past the pair of grass patches",
-		"gfy":	""
+		"gfy":	"BlueIdolizedBoutu"
 	},
 	{
 		"icon":	"mapcard",
 		"x":	6807,
 		"y":	5686,
 		"desc":	"Gift from Guide Gent after giving a tour around the town",
-		"gfy":	""
+		"gfy":	"GaseousGregariousHerculesbeetle"
 	},
 	{
 		"icon":	"mysticwater",
@@ -403,14 +403,14 @@
 		"x":	6576,
 		"y":	5343,
 		"desc":	"Given by the man in the house near the branch in the path",
-		"gfy":	""
+		"gfy":	"InsidiousBrokenBabirusa"
 	},
 	{
 		"icon":	"berry",
 		"x":	6539,
 		"y":	5351,
 		"desc":	"On the tree outside the house near the branch in the path (daily)",
-		"gfy":	""
+		"gfy":	"BriskGleefulCatfish"
 	},
 	{
 		"icon":	"antidote",
@@ -424,21 +424,21 @@
 		"x":	6679,
 		"y":	4874,
 		"desc":	"In the flower bed southwest of Mr. Pokémon's house (hidden)",
-		"gfy":	""
+		"gfy":	"HandsomeSilkyAztecant"
 	},
 	{
 		"icon":	"poisoncureberry",
 		"x":	6631,
 		"y":	4808,
 		"desc":	"West of Mr. Pokémon's house",
-		"gfy":	""
+		"gfy":	"DampWarpedCassowary"
 	},
 	{
 		"icon":	"mysteryegg",
 		"x":	6720,
 		"y":	4800,
 		"desc":	"Given by Mr. Pokémon in his house at the north end of the east branch",
-		"gfy":	""
+		"gfy":	"MixedGiftedAnophelesmosquito"
 	},
 	{
 		"icon":	"expshare",
@@ -452,14 +452,14 @@
 		"x":	6597,
 		"y":	4520,
 		"desc":	"[Potion in Crystal] Left of the entrance to the Dark Cave",
-		"gfy":	""
+		"gfy":	"ExemplaryPeacefulFlicker"
 	},
 	{
 		"icon":	"bitterberry",
 		"x":	6392,
 		"y":	4551,
 		"desc":	"From the tree right next to the sleeping man (daily)",
-		"gfy":	""
+		"gfy":	"ShabbyLightKagu"
 	},
 	{
 		"icon":	"technicalmachine",
@@ -473,14 +473,14 @@
 		"x":	6471,
 		"y":	4649,
 		"desc":	"Near Bug Catcher Wade",
-		"gfy":	""
+		"gfy":	"GloriousSinfulChevrotain"
 	},
 	{
 		"icon":	"paralyzecureberry",
 		"x":	5719,
 		"y":	4618,
 		"desc":	"From the Berry tree near the exit to Route 32 (daily)",
-		"gfy":	""
+		"gfy":	"InfamousDeficientHeron"
 	},
 	{
 		"icon":	"hyperpotion",
@@ -508,7 +508,7 @@
 		"x":	5801,
 		"y":	4856,
 		"desc":	"From an old man south of Violet City entrance after getting the Zephyr Badge",
-		"gfy":	""
+		"gfy":	"IllCloseFishingcat"
 	},
 	{
 		"icon":	"technicalmachine",
@@ -522,35 +522,35 @@
 		"x":	5541,
 		"y":	5208,
 		"desc":	"[Repel in Crystal] In the tall grass, west of Picnicker Liz",
-		"gfy":	""
+		"gfy":	"DeepMiserlyBarracuda"
 	},
 	{
 		"icon":	"superpotion",
 		"x":	5671,
 		"y":	5370,
 		"desc":	"In the patch of grass directly north of the pier (hidden)",
-		"gfy":	""
+		"gfy":	"EthicalGlamorousCock"
 	},
 	{
 		"icon":	"greatball",
 		"x":	5591,
 		"y":	5578,
 		"desc":	"Southwest of the pier, in a patch of grass",
-		"gfy":	""
+		"gfy":	"ObeseRepulsiveGenet"
 	},
 	{
 		"icon":	"greatball",
 		"x":	5688,
 		"y":	5803,
 		"desc":	"In the dead end north of the Pokémon Center not on a Friday (hidden)",
-		"gfy":	""
+		"gfy":	"ParallelFelineBumblebee"
 	},
 	{
 		"icon":	"oldrod",
 		"x":	5681,
 		"y":	5872,
 		"desc":	"From the Fishing Guru inside the Pokémon Center",
-		"gfy":	""
+		"gfy":	"DefiniteColorlessEuropeanpolecat"
 	},
 	{
 		"icon":	"poisonbarb",
@@ -564,14 +564,14 @@
 		"x":	5722,
 		"y":	6425,
 		"desc":	"From the Berry tree just outside of Union Cave (daily)",
-		"gfy":	""
+		"gfy":	"WaterloggedFrankAngelfish"
 	},
 	{
 		"icon":	"fullheal",
 		"x":	5351,
 		"y":	6265,
 		"desc":	"On the north wall surrounding Slowpoke Well (hidden)",
-		"gfy":	""
+		"gfy":	"AlienatedFirmAfricanaugurbuzzard"
 	},
 	{
 		"icon":	"charcoal",
@@ -585,14 +585,14 @@
 		"x":	4983,
 		"y":	6202,
 		"desc":	"Apricorn tree outside of Kurt's House (daily)",
-		"gfy":	""
+		"gfy":	"DefensiveScaryEuropeanfiresalamander"
 	},
 	{
 		"icon":	"lureball",
 		"x":	5007,
 		"y":	6239,
 		"desc":	"Gift from Kurt after Team Rocket is driven out of Slowpoke Well",
-		"gfy":	""
+		"gfy":	"UnfitZanyAcornwoodpecker"
 	},
 	{
 		"icon":	"softsand",
