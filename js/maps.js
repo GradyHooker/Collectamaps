@@ -240,16 +240,6 @@ function make_FilterButtons(cat) {
 	return conts;
 }
 
-function markerClick(e, offset) {
-	var markerCenter = e.target.getLatLng();
-	newCenter = new L.LatLng(
-		markerCenter.lat + offset,
-		markerCenter.lng
-	);
-	
-	map.setView(newCenter, clickZoom);
-}
-
 function markersLoaded(response) {
 	var markerJSON = JSON.parse(response);
 	
@@ -326,7 +316,11 @@ function markerClick(e, offset) {
 		markerCenter.lng
 	);
 	
-	map.setView(newCenter, clickZoom);
+	if(map.getZoom() >= clickZoom) {
+		map.setView(newCenter, map.getZoom());
+	} else {
+		map.setView(newCenter, clickZoom);
+	}
 }
 
 function expandFilters() {
