@@ -1,6 +1,7 @@
 var map;
 var icons = {};
 var markers = [];
+var indices = [];
 var layers = {};
 
 var game;
@@ -245,8 +246,11 @@ function markersLoaded(response) {
 	
 	for (var m in markerJSON) {
 		var marker = markerJSON[m];
-		markers[m] = make_marker(marker.icon, marker.x, marker.y, marker.desc, marker.gfy);
+		markers[m] = make_marker(marker.icon, marker.x, marker.y, marker.desc, marker.gfy, m);
+		//If found, lower the opacity
+		//markers[m].marker.setOpacity(0.4);
 		layers[icons[marker.icon].filter].addLayer(markers[m].marker);
+		indices[markers[m].marker._leaflet_id] = parseInt(m);
 	}
 	
 	if(reset) {
@@ -255,6 +259,7 @@ function markersLoaded(response) {
 		}
 		reset = false;
 	}
+	console.log(indices);
 }
 
 function make_icon(name, shortname, filter) {
@@ -271,11 +276,11 @@ function CMIcon(name, shortname, filter) {
 	this.filter = filter;
 }
 
-function make_marker(icon, x, y, description, gfycat, layer) {
-	return CMMarker(icon, x, y, description, gfycat, layer);
+function make_marker(icon, x, y, description, gfycat, id) {
+	return CMMarker(icon, x, y, description, gfycat, id);
 }
 
-function CMMarker(ic, x, y, description, gfycat, layer) {
+function CMMarker(ic, x, y, description, gfycat, id) {
 	var cmmarker = {
 		icon: icons[ic],
 		marker: L.marker(
@@ -284,7 +289,8 @@ function CMMarker(ic, x, y, description, gfycat, layer) {
 			),
 		description: description,
 		gfycat: gfycat,
-		found: false
+		found: false,
+		id: id,
 	};
 	
 	var popupString = "";
@@ -297,7 +303,13 @@ function CMMarker(ic, x, y, description, gfycat, layer) {
 	} else {
 		cmmarker.marker.on('click', markerClickNo);
 	}
-	cmmarker.marker.bindPopup(popupString);
+	popupString+= "<div class='found-check'><input type='checkbox' checked id='marker-" + cmmarker.id + "' onclick='fadeMarker(this, " + cmmarker.id + ")'></input><label for='marker-" + cmmarker.id + "'> I have found this</label></div>";
+	var popup = L.popup({
+		className: "popup-" + cmmarker.id
+	})
+	popup.setContent(popupString)
+	cmmarker.marker.bindPopup(popup);
+	
 	return cmmarker;
 }
 
@@ -310,6 +322,14 @@ function markerClickNo(e) {
 }
 
 function markerClick(e, offset) {
+	var marker = e.target;
+	var popup = marker.getPopup();
+	var content = popup.getContent();
+	if(!markers[indices[marker._leaflet_id]].found) {
+		popup.setContent(content.replace("checked", ""));
+	} else {
+		popup.setContent(content.replace("checkbox'", "checkbox' checked"));
+	}
 	var markerCenter = e.target.getLatLng();
 	newCenter = new L.LatLng(
 		markerCenter.lat + offset,
@@ -320,6 +340,17 @@ function markerClick(e, offset) {
 		map.setView(newCenter, map.getZoom());
 	} else {
 		map.setView(newCenter, clickZoom);
+	}
+	
+}
+
+function fadeMarker(checkbox, id) {
+	if(checkbox.checked) {
+		markers[id].marker.setOpacity(0.4);
+		markers[id].found = true;
+	} else {
+		markers[id].marker.setOpacity(1.0);
+		markers[id].found = false;
 	}
 }
 
