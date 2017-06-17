@@ -2,6 +2,7 @@ var map;
 var icons = {};
 var markers = [];
 var indices = [];
+var founds = [];
 var layers = {};
 
 var game;
@@ -13,6 +14,7 @@ var mapMaxZoom;
 var clickZoom;
 var img_width;
 var img_height;
+var storageID;
 var reset = false;
 
 window.onload = init;
@@ -127,10 +129,14 @@ function infoLoaded(response) {
 		for(l in levels) {
 			var lev = levels[l];
 			levelCont.appendChild(make_SelectImage(lev));
+			storageID = game + "-" + level;
 		}
 	} else {
 		levelFab.style.display = "none";
+		storageID = game;
 	}
+	
+	founds = JSON.parse(localStorage.getItem(storageID));
 	
 	window.document.title = gameFull + " - Collectamaps"
 	loadJSON("map_info", game + "/" + level, infoMapLoaded);
@@ -244,11 +250,23 @@ function make_FilterButtons(cat) {
 function markersLoaded(response) {
 	var markerJSON = JSON.parse(response);
 	
+	var new_found = false;
+	if(founds == null) {
+		founds = [];
+		new_found = true;
+	}
+	
 	for (var m in markerJSON) {
 		var marker = markerJSON[m];
 		markers[m] = make_marker(marker.icon, marker.x, marker.y, marker.desc, marker.gfy, m);
-		//If found, lower the opacity
-		//markers[m].marker.setOpacity(0.4);
+		if(new_found) {
+			founds[m] = false;
+		} else {
+			if(founds[m]) {
+				markers[m].marker.setOpacity(0.4);
+				markers[m].found = true;
+			}
+		}
 		layers[icons[marker.icon].filter].addLayer(markers[m].marker);
 		indices[markers[m].marker._leaflet_id] = parseInt(m);
 	}
@@ -259,7 +277,8 @@ function markersLoaded(response) {
 		}
 		reset = false;
 	}
-	console.log(indices);
+	
+	localStorage.setItem(storageID, JSON.stringify(founds));
 }
 
 function make_icon(name, shortname, filter) {
@@ -348,10 +367,13 @@ function fadeMarker(checkbox, id) {
 	if(checkbox.checked) {
 		markers[id].marker.setOpacity(0.4);
 		markers[id].found = true;
+		founds[id] = true;
 	} else {
 		markers[id].marker.setOpacity(1.0);
 		markers[id].found = false;
+		founds[id] = false;
 	}
+	localStorage.setItem(storageID, JSON.stringify(founds));
 }
 
 function expandFilters() {
