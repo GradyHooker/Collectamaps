@@ -35,8 +35,8 @@ body, html {
 
 #fab-cont {
 	position: absolute;
-	max-width: calc(100% - 20px);
-	max-height: calc(100% - 10px);
+	max-width: calc(100vw - 20px);
+	max-height: calc(100vh - 10px);
 	top: 0px;
 	right: 0px;
 	display: flex;
@@ -246,5 +246,10 @@ body, html {
 	
 	#fab-cont {
 		top: 60px;
+		max-height: calc(100vh - 70px);
+	}
+	
+	#fab-select.is-open {
+		max-height: calc(100vh - 160px);
 	}
 }
