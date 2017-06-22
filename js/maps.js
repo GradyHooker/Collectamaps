@@ -411,6 +411,7 @@ function closeSelect() {
 	if(content.style.opacity != "0") {
 		var fab = document.getElementById("fab-select");
 		fab.classList.remove("is-open");
+		fab.style.height = "65px";
 	}
 }
 
