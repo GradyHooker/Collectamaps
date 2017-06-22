@@ -35,6 +35,8 @@ body, html {
 
 #fab-cont {
 	position: absolute;
+	max-width: calc(100% - 20px);
+	max-height: calc(100% - 10px);
 	top: 0px;
 	right: 0px;
 	display: flex;
@@ -48,6 +50,8 @@ body, html {
 	position: relative;
 	height: 65px;
 	width: 65px;
+	max-width: 65px;
+	flex-shrink: 0;
 	margin-top: 10px;
 	margin-right: 10px;
 	border-radius: 34px;
@@ -67,12 +71,17 @@ body, html {
 
 .fab.is-open {
 	width: 280px;
+	max-width: 100%;
 	border-radius: 10px;
 }
 
+#fab-select {
+    max-height: 65px;
+}
+
 #fab-select.is-open {
-	height: 300px;
-	max-height: 50%;
+	height: auto;
+	max-height: calc(100vh - 100px);
 }
 
 .fab.is-open .fab-content {
@@ -166,11 +175,12 @@ body, html {
 }
 
 .select-img {
-	width: 75px;
+	max-width: 75px;
 	height: 75px;
 	padding-top: 5px;
 	cursor: pointer;
 	border-radius: 10px;
+	width: 30%;
 }
 
 .select-img-cont {
@@ -178,6 +188,7 @@ body, html {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	align-items: center;
 	overflow-y: scroll;
 }
 

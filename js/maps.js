@@ -401,6 +401,8 @@ function expandSelect() {
 	if(content.style.opacity != "1") {
 		var fab = document.getElementById("fab-select");
 		fab.classList.add("is-open");
+		var rows = Math.ceil(document.getElementById("select-img-cont").childNodes.length/3);
+		fab.style.height = (rows*80 + 80) + "px";
 	}
 }
 
