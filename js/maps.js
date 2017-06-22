@@ -324,7 +324,8 @@ function CMMarker(ic, x, y, description, gfycat, id) {
 	}
 	popupString+= "<div class='found-check'><input type='checkbox' checked id='marker-" + cmmarker.id + "' onclick='fadeMarker(this, " + cmmarker.id + ")'></input><label for='marker-" + cmmarker.id + "'> I have found this</label></div>";
 	var popup = L.popup({
-		className: "popup-" + cmmarker.id
+		className: "popup-" + cmmarker.id,
+		minWidth : 340
 	})
 	popup.setContent(popupString)
 	cmmarker.marker.bindPopup(popup);

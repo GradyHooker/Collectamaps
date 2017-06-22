@@ -13,8 +13,12 @@ body, html {
 	height: 8px;
 }
 
-.leaflet-popup-content-wrapper {
-	min-width: 340px;
+.leaflet-popup {
+	max-width: calc(100vw - 10px);
+}
+
+.leaflet-popup-content {
+	max-width: calc(100vw - 50px);
 }
 
 .leaflet-container {
