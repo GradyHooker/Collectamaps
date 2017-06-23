@@ -1,0 +1,1080 @@
+[
+	{
+		"icon":	"bitterberry",
+		"x":	10635,
+		"y":	4426,
+		"desc":	"South of the first ledge on west side of route (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	10359,
+		"y":	4107,
+		"desc":	"TM42 (Dream Eater) - Received from the sleeping male in the southwestern part of the city (requires Cut or Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"elixir",
+		"x":	10647,
+		"y":	3674,
+		"desc":	"Southernmost point of the eastern section",
+		"gfy":	""
+	},
+	{
+		"icon":	"direhit",
+		"x":	10422,
+		"y":	3337,
+		"desc":	"Near south opening of tree maze",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxpotion",
+		"x":	10455,
+		"y":	3240,
+		"desc":	"Near north opening of tree maze",
+		"gfy":	""
+	},
+	{
+		"icon":	"poisoncureberry",
+		"x":	10580,
+		"y":	3097,
+		"desc":	"Middle of the tree maze, in the northeast",
+		"gfy":	""
+	},
+	{
+		"icon":	"carbos",
+		"x":	10727,
+		"y":	2905,
+		"desc":	"Northeast of Diglett's Cave",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	10671,
+		"y":	3101,
+		"desc":	"Obtained from the man in the first house south of Diglett's Cave",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullheal",
+		"x":	10486,
+		"y":	3099,
+		"desc":	"In the tree maze, in the space northeast of the Max Potion (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	10535,
+		"y":	3241,
+		"desc":	"In the tree maze, four trees east of the Max Potion (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"revive",
+		"x":	10599,
+		"y":	3353,
+		"desc":	"In the tree maze, at the bottom right corner (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullrestore",
+		"x":	10486,
+		"y":	3304,
+		"desc":	"In the tree maze, on the top left tree of the second cluster (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"legendarywing",
+		"x":	10728,
+		"y":	2571,
+		"desc":	"Silver Wing (Gold/Crystal) & Rainbow Wing (Silver)<br/>Received from an old man near the entrance to Route 3",
+		"gfy":	""
+	},
+	{
+		"icon":	"mintberry",
+		"x":	10743,
+		"y":	2346,
+		"desc":	"East of the closed Pewter Museum of Science (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"iceberry",
+		"x":	10776,
+		"y":	2346,
+		"desc":	"East of the closed Pewter Museum of Science (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"ultraball",
+		"x":	12021,
+		"y":	2503,
+		"desc":	"Northeast of Picnicker Hope (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"hpup",
+		"x":	12280,
+		"y":	2504,
+		"desc":	"On the highest hill",
+		"gfy":	""
+	},
+	{
+		"icon":	"beserkgene",
+		"x":	12534,
+		"y":	2488,
+		"desc":	"Near where the entrance to Cerulean Cave would have been (requires Surf) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"machinepart",
+		"x":	12944,
+		"y":	2634,
+		"desc":	"In water in the middle of the Gym, after visiting the Power Plant (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"potion",
+		"x":	12759,
+		"y":	1801,
+		"desc":	"In the lone western tree (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"protein",
+		"x":	13206,
+		"y":	1785,
+		"desc":	"",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	13306,
+		"y":	1848,
+		"desc":	"From Ace Trainer Kevin before battling him",
+		"gfy":	""
+	},
+	{
+		"icon":	"ether",
+		"x":	13302,
+		"y":	2665,
+		"desc":	"[Gold/Silver Only] In leftmost of four trees",
+		"gfy":	""
+	},
+	{
+		"icon":	"ether",
+		"x":	13800,
+		"y":	2824,
+		"desc":	"[Crystal Only] In the right corner of the bottom passage, near Hiker Sidney",
+		"gfy":	""
+	},
+	{
+		"icon":	"paralyzecureberry",
+		"x":	13671,
+		"y":	3524,
+		"desc":	"Northwest of the east terminal (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"pass",
+		"x":	12656,
+		"y":	3310,
+		"desc":	"Thank-you gift from Copycat for finding her doll",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	12944,
+		"y":	3598,
+		"desc":	"TM29 (Psychic) - Gift from Mr. Psychic",
+		"gfy":	""
+	},
+	{
+		"icon":	"focusband",
+		"x":	12897,
+		"y":	3182,
+		"desc":	"Between two statues at the back of the Fighting Dojo",
+		"gfy":	""
+	},
+	{
+		"icon":	"cleansetag",
+		"x":	12816,
+		"y":	3028,
+		"desc":	"From the old woman in the former Pokémon Day Care building",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullheal",
+		"x":	12697,
+		"y":	4328,
+		"desc":	"In the bush next to the Vermilion Gym (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"lostitem",
+		"x":	12611,
+		"y":	4207,
+		"desc":	"Received from a member of the Pokémon Fan Club after hearing about Copycat's missing doll",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	12639,
+		"y":	4207,
+		"desc":	"Received from the Pokémon Fan Club Chairman",
+		"gfy":	""
+	},
+	{
+		"icon":	"iron",
+		"x":	12818,
+		"y":	4544,
+		"desc":	"In the Vermilion Harbor, on a northern buoy on Mondays or Fridays (requires Surf) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"revive",
+		"x":	13656,
+		"y":	4104,
+		"desc":	"In the tree south of the Berry tree (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"berry",
+		"x":	13656,
+		"y":	4050,
+		"desc":	"From the Berry tree in the northeast corner of the route (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"elixir",
+		"x":	14007,
+		"y":	3946,
+		"desc":	"On the island near the Lavender gate (requires Surf) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"superrod",
+		"x":	13967,
+		"y":	4255,
+		"desc":	"From the Fishing Guru's younger brother in a house near Route 11",
+		"gfy":	""
+	},
+	{
+		"icon":	"calcium",
+		"x":	13864,
+		"y":	4425,
+		"desc":	"In the forested area near Route 13 (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	13866,
+		"y":	4553,
+		"desc":	"In the former grassy area location just north of Route 13 (requires Surf and Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"calcium",
+		"x":	13623,
+		"y":	4777,
+		"desc":	"Right of the Trainer Tips sign (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"ppup",
+		"x":	12696,
+		"y":	5226,
+		"desc":	"Western portion of the northern half (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"burntberry",
+		"x":	11991,
+		"y":	4872,
+		"desc":	"From a Berry tree located in the northern area (requires Cut) (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxelixir",
+		"x":	11352,
+		"y":	5097,
+		"desc":	"Left side of the fence on the south end of the Cycling Road (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	11367,
+		"y":	4727,
+		"desc":	"[Crystal Only] On west bridge segment (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	11416,
+		"y":	3946,
+		"desc":	"[Gold/Silver Only] In the northeastern patch of grass (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	10727,
+		"y":	5738,
+		"desc":	"In the upper/middle accessible corner of the island (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	9383,
+		"y":	3898,
+		"desc":	"In the northeast corner (hidden) (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	9102,
+		"y":	3903,
+		"desc":	"TM47 (Steel Wing) - From the Idol in her house (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxelixir",
+		"x":	9642,
+		"y":	4395,
+		"desc":	"On the northern express path after the second ledge",
+		"gfy":	""
+	},
+	{
+		"icon":	"iceberry",
+		"x":	9719,
+		"y":	5016,
+		"desc":	"North of rest stop (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	9175,
+		"y":	5784,
+		"desc":	"TM22 (SolarBeam) - On an isolated area of land south of the bridge (requires Surf and Whirlpool)",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	9066,
+		"y":	5785,
+		"desc":	"On a tiny area southeast of the Tohjo Falls (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	8750,
+		"y":	5694,
+		"desc":	"TM37 (Sandstorm) - From a woman in the house if the player's lead Pokémon has high enough friendship",
+		"gfy":	""
+	},
+	{
+		"icon":	"berry",
+		"x":	7127,
+		"y":	5625,
+		"desc":	"North of where the route turns south near Cherrygrove (daily)",
+		"gfy":	"RemorsefulWetAnhinga"
+	},
+	{
+		"icon":	"potion",
+		"x":	7706,
+		"y":	5626,
+		"desc":	"East of the gate past the pair of grass patches",
+		"gfy":	"BlueIdolizedBoutu"
+	},
+	{
+		"icon":	"mapcard",
+		"x":	6807,
+		"y":	5686,
+		"desc":	"Gift from Guide Gent after giving a tour around the town",
+		"gfy":	"GaseousGregariousHerculesbeetle"
+	},
+	{
+		"icon":	"mysticwater",
+		"x":	6411,
+		"y":	5784,
+		"desc":	"Gift from the man on the island in the water (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"berry",
+		"x":	6576,
+		"y":	5343,
+		"desc":	"Given by the man in the house near the branch in the path",
+		"gfy":	"InsidiousBrokenBabirusa"
+	},
+	{
+		"icon":	"berry",
+		"x":	6539,
+		"y":	5351,
+		"desc":	"On the tree outside the house near the branch in the path (daily)",
+		"gfy":	"BriskGleefulCatfish"
+	},
+	{
+		"icon":	"antidote",
+		"x":	6583,
+		"y":	5290,
+		"desc":	"[Crystal Only] North of the house near the split in the route",
+		"gfy":	""
+	},
+	{
+		"icon":	"potion",
+		"x":	6679,
+		"y":	4874,
+		"desc":	"In the flower bed southwest of Mr. Pokémon's house (hidden)",
+		"gfy":	"HandsomeSilkyAztecant"
+	},
+	{
+		"icon":	"poisoncureberry",
+		"x":	6631,
+		"y":	4808,
+		"desc":	"West of Mr. Pokémon's house",
+		"gfy":	"DampWarpedCassowary"
+	},
+	{
+		"icon":	"mysteryegg",
+		"x":	6720,
+		"y":	4800,
+		"desc":	"Given by Mr. Pokémon in his house at the north end of the east branch",
+		"gfy":	"MixedGiftedAnophelesmosquito"
+	},
+	{
+		"icon":	"expshare",
+		"x":	6750,
+		"y":	4800,
+		"desc":	"Given by Mr. Pokémon in exchange for the Red Scale",
+		"gfy":	""
+	},
+	{
+		"icon":	"antidote",
+		"x":	6597,
+		"y":	4520,
+		"desc":	"[Potion in Crystal] Left of the entrance to the Dark Cave",
+		"gfy":	"ExemplaryPeacefulFlicker"
+	},
+	{
+		"icon":	"bitterberry",
+		"x":	6392,
+		"y":	4551,
+		"desc":	"From the tree right next to the sleeping man (daily)",
+		"gfy":	"ShabbyLightKagu"
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	6406,
+		"y":	4553,
+		"desc":	"TM50 (Nightmare) - From the man after delivering him a Spearow from his friend on Route 35",
+		"gfy":	""
+	},
+	{
+		"icon":	"pokeball",
+		"x":	6471,
+		"y":	4649,
+		"desc":	"Near Bug Catcher Wade",
+		"gfy":	"GloriousSinfulChevrotain"
+	},
+	{
+		"icon":	"paralyzecureberry",
+		"x":	5719,
+		"y":	4618,
+		"desc":	"From the Berry tree near the exit to Route 32 (daily)",
+		"gfy":	"InfamousDeficientHeron"
+	},
+	{
+		"icon":	"hyperpotion",
+		"x":	6087,
+		"y":	4376,
+		"desc":	"At the end of the path between the Pokémon Center and the School (requires Cut) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	6053,
+		"y":	4233,
+		"desc":	"On the land northwest of the water (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"ppup",
+		"x":	5557,
+		"y":	4170,
+		"desc":	"On the land east of the water (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"miracleseed",
+		"x":	5801,
+		"y":	4856,
+		"desc":	"From an old man south of Violet City entrance after getting the Zephyr Badge",
+		"gfy":	"IllCloseFishingcat"
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	5735,
+		"y":	4937,
+		"desc":	"TM05 (Roar) - From the man on the ledge on the northern side of the route (requires Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"potion",
+		"x":	5541,
+		"y":	5208,
+		"desc":	"[Repel in Crystal] In the tall grass, west of Picnicker Liz",
+		"gfy":	"DeepMiserlyBarracuda"
+	},
+	{
+		"icon":	"superpotion",
+		"x":	5671,
+		"y":	5370,
+		"desc":	"In the patch of grass directly north of the pier (hidden)",
+		"gfy":	"EthicalGlamorousCock"
+	},
+	{
+		"icon":	"greatball",
+		"x":	5591,
+		"y":	5578,
+		"desc":	"Southwest of the pier, in a patch of grass",
+		"gfy":	"ObeseRepulsiveGenet"
+	},
+	{
+		"icon":	"greatball",
+		"x":	5688,
+		"y":	5803,
+		"desc":	"In the dead end north of the Pokémon Center not on a Friday (hidden)",
+		"gfy":	"ParallelFelineBumblebee"
+	},
+	{
+		"icon":	"oldrod",
+		"x":	5681,
+		"y":	5872,
+		"desc":	"From the Fishing Guru inside the Pokémon Center",
+		"gfy":	"DefiniteColorlessEuropeanpolecat"
+	},
+	{
+		"icon":	"poisonbarb",
+		"x":	5671,
+		"y":	5801,
+		"desc":	"From Frieda only on a Friday",
+		"gfy":	""
+	},
+	{
+		"icon":	"poisoncureberry",
+		"x":	5722,
+		"y":	6425,
+		"desc":	"From the Berry tree just outside of Union Cave (daily)",
+		"gfy":	"WaterloggedFrankAngelfish"
+	},
+	{
+		"icon":	"fullheal",
+		"x":	5351,
+		"y":	6265,
+		"desc":	"On the north wall surrounding Slowpoke Well (hidden)",
+		"gfy":	"AlienatedFirmAfricanaugurbuzzard"
+	},
+	{
+		"icon":	"charcoal",
+		"x":	5199,
+		"y":	6366,
+		"desc":	"Gift from the charcoal maker's assistant after obtaining HM01 (Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"whiteapricorn",
+		"x":	4983,
+		"y":	6202,
+		"desc":	"Apricorn tree outside of Kurt's House (daily)",
+		"gfy":	"DefensiveScaryEuropeanfiresalamander"
+	},
+	{
+		"icon":	"lureball",
+		"x":	5007,
+		"y":	6239,
+		"desc":	"Gift from Kurt after Team Rocket is driven out of Slowpoke Well",
+		"gfy":	"UnfitZanyAcornwoodpecker"
+	},
+	{
+		"icon":	"softsand",
+		"x":	4633,
+		"y":	6409,
+		"desc":	"Reward for defeating Cooltrainer Kate (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	4662,
+		"y":	6105,
+		"desc":	"On the tree in the fenced area west of Picnicker Gina (requires Surf) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	4645,
+		"y":	6071,
+		"desc":	"[Crystal Only] In the fenced area west of Picnicker Gina (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"superpotion",
+		"x":	4807,
+		"y":	5898,
+		"desc":	"In the Pokémon Day Care, where Pokémon given to the Day-Care Lady stand (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	4753,
+		"y":	6223,
+		"desc":	"TM12 (Sweet Scent) - Received from the woman behind the counter in the gate",
+		"gfy":	""
+	},
+	{
+		"icon":	"squirtbottle",
+		"x":	4913,
+		"y":	5088,
+		"desc":	"Given by the Flower Shop lady after winning the Plain Badge",
+		"gfy":	""
+	},
+	{
+		"icon":	"bicycle",
+		"x":	4849,
+		"y":	5455,
+		"desc":	"",
+		"gfy":	""
+	},
+	{
+		"icon":	"hpup",
+		"x":	4688,
+		"y":	5005,
+		"desc":	"Given by the guard in the southern gate after delivering the Spearow to Route 31",
+		"gfy":	""
+	},
+	{
+		"icon":	"mysteryberry",
+		"x":	4567,
+		"y":	4839,
+		"desc":	"Across the small pond (requires Surf) (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	4743,
+		"y":	4698,
+		"desc":	"TM04 (Rollout) - In the southern part of the grass patch",
+		"gfy":	""
+	},
+	{
+		"icon":	"iceberry",
+		"x":	4873,
+		"y":	4212,
+		"desc":	"Next to the National Park gate (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	5241,
+		"y":	4298,
+		"desc":	"TM08 (Rock Smash) - From the man near the Sudowoodo as a reward for getting rid of it",
+		"gfy":	""
+	},
+	{
+		"icon":	"hardstone",
+		"x":	5270,
+		"y":	4249,
+		"desc":	"From Arthur on Thursday",
+		"gfy":	""
+	},
+	{
+		"icon":	"magnet",
+		"x":	5111,
+		"y":	3994,
+		"desc":	"From Sunny on Sunday",
+		"gfy":	""
+	},
+	{
+		"icon":	"ether",
+		"x":	4918,
+		"y":	3898,
+		"desc":	"Northwest of the Route 37 sign (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"blackapricorn",
+		"x":	5098,
+		"y":	3980,
+		"desc":	"Southern tree in the clearing (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"blueapricorn",
+		"x":	5111,
+		"y":	3947,
+		"desc":	"Northeastern tree in the clearing (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"redapricorn",
+		"x":	5066,
+		"y":	3945,
+		"desc":	"Northwestern tree in the clearing (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"revive",
+		"x":	2401,
+		"y":	5160,
+		"desc":	"Under rock in north area, near Pokémon Seer's house (requires Rock Smash) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	2379,
+		"y":	5353,
+		"desc":	"Northwest of the Photo Studio (requires Rock Smash) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"hiddenmachine",
+		"x":	2454,
+		"y":	5624,
+		"desc":	"HM02 (Fly) - Gift from Chuck's wife outside of the Gym after earning the Storm Badge",
+		"gfy":	""
+	},
+	{
+		"icon":	"secretpotion",
+		"x":	2543,
+		"y":	5631,
+		"desc":	"From the Cianwood City Pharmacy after talking with Jasmine at the Glitter Lighthouse",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	2920,
+		"y":	5448,
+		"desc":	"On the beach on the southwest island (requires Whirlpool) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"sharpbeak",
+		"x":	3383,
+		"y":	4473,
+		"desc":	"From Monica on Mondays",
+		"gfy":	""
+	},
+	{
+		"icon":	"hyperpotion",
+		"x":	3366,
+		"y":	4441,
+		"desc":	"Under a smashable rock (requires Rock Smash) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"hiddenmachine",
+		"x":	3695,
+		"y":	4334,
+		"desc":	"HM04 (Strength) - From a Sailor in Olivine Café",
+		"gfy":	""
+	},
+	{
+		"icon":	"goodrod",
+		"x":	3792,
+		"y":	4255,
+		"desc":	"From the Fishing Guru in the house north of the Pokémon Center",
+		"gfy":	""
+	},
+	{
+		"icon":	"hyperpotion",
+		"x":	5064,
+		"y":	3511,
+		"desc":	"In the corner by water in the northeast (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"hiddenmachine",
+		"x":	5072,
+		"y":	3614,
+		"desc":	"HM03 (Surf) - Reward from old man for defeating the Kimono Girls",
+		"gfy":	""
+	},
+	{
+		"icon":	"itemfinder",
+		"x":	4912,
+		"y":	3710,
+		"desc":	"Gift from the Cooltrainer in the house to the right of the Gym",
+		"gfy":	""
+	},
+	{
+		"icon":	"berry",
+		"x":	4249,
+		"y":	3608,
+		"desc":	"West of the fenced section on the lower middle path (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"mintberry",
+		"x":	3880,
+		"y":	3497,
+		"desc":	"From the tree next to MooMoo Farm (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	3824,
+		"y":	3469,
+		"desc":	"TM13 (Snore) - From the farm owner for healing Miltank",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	3810,
+		"y":	3659,
+		"desc":	"Between the Miltank (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxpotion",
+		"x":	5590,
+		"y":	3754,
+		"desc":	"Lower left corner of rock in center of water between Ecruteak City exit and Apricorn grove (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"ultraball",
+		"x":	5429,
+		"y":	3640,
+		"desc":	"Near the Ecruteak City gate",
+		"gfy":	""
+	},
+	{
+		"icon":	"superpotion",
+		"x":	5866,
+		"y":	3703,
+		"desc":	"Northeast of the Apricorn grove",
+		"gfy":	""
+	},
+	{
+		"icon":	"pinkapricorn",
+		"x":	5765,
+		"y":	3833,
+		"desc":	"In the left Apricorn tree in the middle of the route (requires Surf and Cut) (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"greenapricorn",
+		"x":	5782,
+		"y":	3833,
+		"desc":	"In the middle Apricorn tree in the middle of the route (requires Surf and Cut) (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"yellowapricorn",
+		"x":	5803,
+		"y":	3833,
+		"desc":	"In the right Apricorn tree in the middle of the route (requires Surf and Cut) (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"bitterberry",
+		"x":	6311,
+		"y":	3130,
+		"desc":	"Across the big lake, in the Cut-accessible area (requires Surf and Cut)",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	6576,
+		"y":	3246,
+		"desc":	"TM36 (Sludge Bomb) - Given by the guard in the toll building after defeating Team Rocket",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	6486,
+		"y":	3229,
+		"desc":	"West of the toll gate",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	6696,
+		"y":	2168,
+		"desc":	"TM43 (Detect) - Northeast corner of the maze",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	6254,
+		"y":	2174,
+		"desc":	"TM10 (Hidden Power) - From the man in the northwestern house",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxether",
+		"x":	6246,
+		"y":	2296,
+		"desc":	"Within the maze, west of the lake",
+		"gfy":	""
+	},
+	{
+		"icon":	"redscale",
+		"x":	6416,
+		"y":	2487,
+		"desc":	"Obtained after defeating, capturing, or fleeing from the Red Gyarados",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullrestore",
+		"x":	6309,
+		"y":	2587,
+		"desc":	"On the south-west side of the lake, between two ledges (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	6200,
+		"y":	2202,
+		"desc":	"Northwestern corner of the maze, west of the Hidden Power house (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"blackbelt",
+		"x":	6201,
+		"y":	2220,
+		"desc":	"From Wesley, found in the northwestern corner on Wednesday",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxpotion",
+		"x":	6696,
+		"y":	2217,
+		"desc":	"Northeast of the lake when flooded (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"burntberry",
+		"x":	6760,
+		"y":	3651,
+		"desc":	"Northeast of the Mahogany Town entrance (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"ultraball",
+		"x":	7306,
+		"y":	3608,
+		"desc":	"Northeast of the ponds",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxrepel",
+		"x":	6840,
+		"y":	3723,
+		"desc":	"[Crystal Only] Directly east of the Mahogany Town entrance",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxrevive",
+		"x":	7094,
+		"y":	3705,
+		"desc":	"In the patch of grass in the middle of the lake (requires Surf)",
+		"gfy":	""
+	},
+	{
+		"icon":	"elixir",
+		"x":	7126,
+		"y":	3722,
+		"desc":	"In the patch of grass in the middle of the lake (requires Surf) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"spelltag",
+		"x":	7927,
+		"y":	3610,
+		"desc":	"From Santos on Saturday",
+		"gfy":	""
+	},
+	{
+		"icon":	"berry",
+		"x":	7365,
+		"y":	5096,
+		"desc":	"West of entrance to Dark Cave (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"paralyzecureberry",
+		"x":	7387,
+		"y":	5113,
+		"desc":	"West of entrance to Dark Cave (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"direhit",
+		"x":	7270,
+		"y":	5241,
+		"desc":	"[X Speed in Crystal] West of Camper Ted",
+		"gfy":	""
+	},
+	{
+		"icon":	"ppup",
+		"x":	7783,
+		"y":	5142,
+		"desc":	"In the middle of the pond at the south end of the route (requires Surf) (hidden)",
+		"gfy":	""
+	},
+	{
+		"icon":	"mysteryberry",
+		"x":	7829,
+		"y":	5178,
+		"desc":	"Near the pond at the south end of the route (daily)",
+		"gfy":	""
+	},
+	{
+		"icon":	"revive",
+		"x":	7674,
+		"y":	4683,
+		"desc":	"Left path",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxpotion",
+		"x":	7702,
+		"y":	4393,
+		"desc":	"Center path",
+		"gfy":	""
+	},
+	{
+		"icon":	"xspecial",
+		"x":	7641,
+		"y":	4202,
+		"desc":	"Left path",
+		"gfy":	""
+	},
+	{
+		"icon":	"nugget",
+		"x":	7654,
+		"y":	4921,
+		"desc":	"Left path",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	13889,
+		"y":	2992,
+		"desc":	"TM57 (Charge Beam) - From the Power Plant manager once the Machine Part is recovered",
+		"gfy":	""
+	},
+	{
+		"icon":	"expncard",
+		"x":	14015,
+		"y":	3493,
+		"desc":	"Reward from the Radio Tower manager in Lavender Town for turning the power back on",
+		"gfy":	""
+	},
+	{
+		"icon":	"upgrade",
+		"x":	12817,
+		"y":	3462,
+		"desc":	"From the security guard in Silph Co",
+		"gfy":	""
+	}
+]
