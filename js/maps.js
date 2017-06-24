@@ -84,6 +84,12 @@ function make_map() {
 					'	"gfy":	""\n' + 
 					'},');
     });
+	
+	//Autoplay videos on Chrome
+	m.on('popupopen', function(e) {
+		var video = e.popup._contentNode.getElementsByTagName("video")[0];
+		if(video != null) video.play();
+	});
 					
 	return m;
 }
@@ -316,7 +322,7 @@ function CMMarker(ic, x, y, description, gfycat, id) {
 	popupString += "<b>" + cmmarker.icon.name + "</b><br/>";
 	popupString += "<i>" + cmmarker.description + "</i><br/>";
 	if(cmmarker.gfycat != "") {
-		popupString+= "<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/" + cmmarker.gfycat + "' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0'></iframe></div>";
+		popupString+= "<div style='position:relative;padding-bottom:54%'><video class='help-video' playsinline loop width='100%' height='100%' style='position:absolute;top:0;left:0' autoplay muted><source src='https://thumbs.gfycat.com/" + cmmarker.gfycat + "-mobile.mp4' type='video/mp4'></video></div>";
 		//Non-repsonsive <iframe src='https://gfycat.com/ifr/CourteousColossalAntelope' frameborder='0' scrolling='no' width='640' height='428' allowfullscreen></iframe>
 		cmmarker.marker.on('click', markerClickVid);
 	} else {
@@ -345,6 +351,7 @@ function markerClick(e, offset) {
 	var marker = e.target;
 	var popup = marker.getPopup();
 	var content = popup.getContent();
+	
 	if(!markers[indices[marker._leaflet_id]].found) {
 		popup.setContent(content.replace("checked", ""));
 	} else {
@@ -361,7 +368,6 @@ function markerClick(e, offset) {
 	} else {
 		map.setView(newCenter, clickZoom);
 	}
-	
 }
 
 function fadeMarker(checkbox, id) {
