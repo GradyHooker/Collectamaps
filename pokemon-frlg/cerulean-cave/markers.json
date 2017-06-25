@@ -1,0 +1,65 @@
+[
+	{
+		"icon":	"nugget",
+		"x":	820,
+		"y":	492,
+		"desc":	"In the northwest corner",
+		"gfy":	""
+	},
+	{
+		"icon":	"ultraball",
+		"x":	901,
+		"y":	472,
+		"desc":	"Near the Nugget",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullrestore",
+		"x":	883,
+		"y":	700,
+		"desc":	"On the riverbank near the southwest corner",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxelixir",
+		"x":	1111,
+		"y":	521,
+		"desc":	"Near the center",
+		"gfy":	""
+	},
+	{
+		"icon":	"ppup",
+		"x":	855,
+		"y":	1137,
+		"desc":	"Near the southwest corner (requires Rock Smash)",
+		"gfy":	""
+	},
+	{
+		"icon":	"ultraball",
+		"x":	1178,
+		"y":	1105,
+		"desc":	"Near the southeast corner (requires Rock Smash)",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullrestore",
+		"x":	1240,
+		"y":	1041,
+		"desc":	"Against the eastern edge (requires Rock Smash)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxrevive",
+		"x":	1224,
+		"y":	1284,
+		"desc":	"In the northeast corner",
+		"gfy":	""
+	},
+	{
+		"icon":	"ultraball",
+		"x":	1207,
+		"y":	1394,
+		"desc":	"In the middle of the central rock ledge",
+		"gfy":	""
+	}
+]

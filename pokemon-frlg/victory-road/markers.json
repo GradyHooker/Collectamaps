@@ -1,0 +1,72 @@
+[
+	{
+		"icon":	"ultraball",
+		"x":	1031,
+		"y":	642,
+		"desc":	"In a rock in the center of the room",
+		"gfy":	""
+	},
+	{
+		"icon":	"rarecandy",
+		"x":	1032,
+		"y":	499,
+		"desc":	"Northern wall, west of TM02",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	1064,
+		"y":	469,
+		"desc":	"TM02 (Dragon Claw) - Northern wall, north of Rare Candy",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullrestore",
+		"x":	1113,
+		"y":	469,
+		"desc":	"Northeast corner, in a rock near TM02",
+		"gfy":	""
+	},
+	{
+		"icon":	"guardspec",
+		"x":	721,
+		"y":	1137,
+		"desc":	"In the crater in the northwest segment, accessible from 3F",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	849,
+		"y":	1075,
+		"desc":	"TM37 (Sandstorm) - In the sand near Tamer Vincent",
+		"gfy":	""
+	},
+	{
+		"icon":	"fullheal",
+		"x":	1026,
+		"y":	1074,
+		"desc":	"In the sand near Tamer Vincent",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	1265,
+		"y":	977,
+		"desc":	"TM07 (Hail) - In the northeast area, near Juggler Gregory",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	873,
+		"y":	1415,
+		"desc":	"TM50 (Overheat) - In the northwest area",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxrevive",
+		"x":	1290,
+		"y":	1381,
+		"desc":	"In the northeast area, next to Cooltrainer George",
+		"gfy":	""
+	}
+]

@@ -1,0 +1,51 @@
+[
+	{
+		"icon":	"maxpotion",
+		"x":	752,
+		"y":	1145,
+		"desc":	"Directly north of entrance",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	1377,
+		"y":	1303,
+		"desc":	"TM25 (Thunder) - By some boxes in the northwestern corner of the bottom right room",
+		"gfy":	""
+	},
+	{
+		"icon":	"technicalmachine",
+		"x":	1279,
+		"y":	1064,
+		"desc":	"TM17 (Protect) - In the dead-end room in the middle of the plant",
+		"gfy":	""
+	},
+	{
+		"icon":	"elixir",
+		"x":	1054,
+		"y":	1064,
+		"desc":	"In the same room as TM17 (Protect)",
+		"gfy":	""
+	},
+	{
+		"icon":	"maxelixir",
+		"x":	1105,
+		"y":	966,
+		"desc":	"In middle of the Power Plant",
+		"gfy":	""
+	},
+	{
+		"icon":	"thunderstone",
+		"x":	1360,
+		"y":	775,
+		"desc":	"In the top right room",
+		"gfy":	""
+	},
+	{
+		"icon":	"thunderstone",
+		"x":	769,
+		"y":	903,
+		"desc":	"East of Zapdos",
+		"gfy":	""
+	}
+]
