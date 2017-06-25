@@ -100,9 +100,9 @@ function loadJSON(file, folder, callback) {
 	req.open('GET', folder + '/' + file + '.json', true);
 	req.onreadystatechange = function () {
 		if (req.readyState == 4 && req.status == "200") {
-		callback(req.responseText);
+			callback(req.responseText);
 		} else if (req.status == "404") {
-			sendHome();
+			//sendHome();
 		}
 	};
 	req.send(null); 
@@ -285,6 +285,43 @@ function markersLoaded(response) {
 	}
 	
 	localStorage.setItem(storageID, JSON.stringify(founds));
+	
+	loadJSON("teleports", game + "/" + level, teleportsLoaded);
+}
+
+function teleportsLoaded(response) {
+	var teleportJSON = JSON.parse(response);
+	
+	var options = {
+		color: '#ff00dc',
+		fillColor: '#ff00dc',
+		fillOpacity: 0.2,
+		weight: 2,
+		opacity: 0.4
+	};
+	var polygon;
+	
+	for (var t in teleportJSON) {
+		var teleport = teleportJSON[t];
+		var polygonPoints = [];
+		for(var p in teleport.points) {
+			var point = teleport.points[p];
+			polygonPoints[p] = map.unproject([point.x, point.y], mapMaxZoom);
+		}
+		
+		polygon = L.polygon(polygonPoints, options);
+		polygon.on('click', function() {
+			reset_map(game, teleport.level);
+		});
+		polygon.bindTooltip(stringPresentable(teleport.level), {sticky: true});
+		polygon.addTo(map);
+	}
+}
+
+function stringPresentable(s) {
+	s = s.replace("-", " ");
+	s = s.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+	return s;
 }
 
 function make_icon(name, shortname, filter) {
@@ -323,7 +360,6 @@ function CMMarker(ic, x, y, description, gfycat, id) {
 	popupString += "<i>" + cmmarker.description + "</i><br/>";
 	if(cmmarker.gfycat != "") {
 		popupString+= "<div style='position:relative;padding-bottom:54%'><video class='help-video' playsinline loop width='100%' height='100%' style='position:absolute;top:0;left:0' autoplay muted><source src='https://thumbs.gfycat.com/" + cmmarker.gfycat + "-mobile.mp4' type='video/mp4'></video></div>";
-		//Non-repsonsive <iframe src='https://gfycat.com/ifr/CourteousColossalAntelope' frameborder='0' scrolling='no' width='640' height='428' allowfullscreen></iframe>
 		cmmarker.marker.on('click', markerClickVid);
 	} else {
 		cmmarker.marker.on('click', markerClickNo);
