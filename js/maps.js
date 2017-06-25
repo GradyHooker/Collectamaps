@@ -292,15 +292,6 @@ function markersLoaded(response) {
 function teleportsLoaded(response) {
 	var teleportJSON = JSON.parse(response);
 	
-	var options = {
-		color: '#ff00dc',
-		fillColor: '#ff00dc',
-		fillOpacity: 0.2,
-		weight: 2,
-		opacity: 0.4
-	};
-	var polygon;
-	
 	for (var t in teleportJSON) {
 		var teleport = teleportJSON[t];
 		var polygonPoints = [];
@@ -309,13 +300,26 @@ function teleportsLoaded(response) {
 			polygonPoints[p] = map.unproject([point.x, point.y], mapMaxZoom);
 		}
 		
-		polygon = L.polygon(polygonPoints, options);
-		polygon.on('click', function() {
-			reset_map(game, teleport.level);
-		});
-		polygon.bindTooltip(stringPresentable(teleport.level), {sticky: true});
-		polygon.addTo(map);
+		polygon = make_polygon(polygonPoints, teleport.level);
 	}
+}
+
+function make_polygon(points, level) {
+	var options = {
+		color: '#ff00dc',
+		fillColor: '#ff00dc',
+		fillOpacity: 0.2,
+		weight: 2,
+		opacity: 0.4
+	};
+	
+	var p = L.polygon(points, options);
+	p.on('click', function() {
+		reset_map(game, level);
+	});
+	p.bindTooltip(stringPresentable(level), {sticky: true});
+	p.addTo(map);
+	return p;
 }
 
 function stringPresentable(s) {
