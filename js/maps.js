@@ -97,7 +97,7 @@ function make_map() {
 function loadJSON(file, folder, callback) {   
 	var req = new XMLHttpRequest();
 	req.overrideMimeType("application/json");
-	req.open('GET', folder + '/' + file + '.json', true);
+	req.open('GET', 'maps/' + folder + '/' + file + '.json', true);
 	req.onreadystatechange = function () {
 		if (req.readyState == 4 && req.status == "200") {
 			callback(req.responseText);
