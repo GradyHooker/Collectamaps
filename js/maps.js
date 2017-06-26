@@ -102,7 +102,7 @@ function loadJSON(file, folder, callback) {
 		if (req.readyState == 4 && req.status == "200") {
 			callback(req.responseText);
 		} else if (req.status == "404") {
-			//sendHome();
+			sendHome();
 		}
 	};
 	req.send(null); 
@@ -175,6 +175,7 @@ function infoMapLoaded(response) {
 	}
 	
 	map = make_map();
+	
 	loadJSON("icons", game, iconsLoaded);
 }
 
@@ -184,6 +185,22 @@ function iconsLoaded(response) {
 	var row;
 	var cell;
 	var buttons;
+	
+	//Add the first row
+	if(level != "") {
+		layers["areaHighlights"] = new L.layerGroup().addTo(map);
+		if(!reset) {
+			row = document.createElement("TR");
+			cell = document.createElement("TD");
+			cell.textContent = capitalize("areaHighlights");
+			
+			row.appendChild(cell);
+			buttons = make_FilterButtons("areaHighlights");
+			row.appendChild(buttons[0]);
+			row.appendChild(buttons[1]);
+			table.appendChild(row);
+		}
+	}
 	
 	for (var cat in iconJSON) {
 		layers[cat] = new L.layerGroup().addTo(map);
@@ -286,7 +303,9 @@ function markersLoaded(response) {
 	
 	localStorage.setItem(storageID, JSON.stringify(founds));
 	
-	loadJSON("teleports", game + "/" + level, teleportsLoaded);
+	if(level != "") {
+		loadJSON("teleports", game + "/" + level, teleportsLoaded);
+	}
 }
 
 function teleportsLoaded(response) {
@@ -318,7 +337,7 @@ function make_polygon(points, level) {
 		reset_map(game, level);
 	});
 	p.bindTooltip(stringPresentable(level), {sticky: true});
-	p.addTo(map);
+	layers["areaHighlights"].addLayer(p);
 	return p;
 }
 
