@@ -56,7 +56,7 @@ function make_map() {
 	m.fitBounds(mapBounds);
 	//m.setZoom(mapMinZoom+1);
 	
-	L.tileLayer(game + '/' + level + '/tiles/{z}/map_{x}_{y}.png', {
+	L.tileLayer('maps/' + game + '/' + level + '/tiles/{z}/map_{x}_{y}.png', {
 		maxZoom: mapMaxZoom,
 		minZoom: mapMinZoom,
 		attribution: 'Game Map & Icons &copy; ' + gamePublisher,
@@ -151,7 +151,7 @@ function infoLoaded(response) {
 function make_SelectImage(l) {
 	var ele = document.createElement("IMG");
 	ele.className = "select-img";
-	ele.src = game + "/" + l + "/icon.png";
+	ele.src = 'maps/' + game + "/" + l + "/icon.png";
 	ele.onclick = function() {
 		reset_map(game, l);
 	}
@@ -354,7 +354,7 @@ function make_icon(name, shortname, filter) {
 function CMIcon(name, shortname, filter) {
 	this.name = name;
 	this.icon = L.icon({
-		iconUrl: game + '/markers/' + shortname + '.png',
+		iconUrl: 'maps/' + game + '/markers/' + shortname + '.png',
 		iconSize:   [24, 24],
 		iconAnchor: [12, 12]
 	});
