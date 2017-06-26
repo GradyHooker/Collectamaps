@@ -59,6 +59,9 @@
 		{	"name": "Red Scale"			},
 		{	"name": "Spell Tag"			}
 	],
+	"evolutionItems": [
+	
+	],
 	"miscellaneous": [
 		{	"name": "Technical Machine"	},
 		{	"name": "Hidden Machine"	},

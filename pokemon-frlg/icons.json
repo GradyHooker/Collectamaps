@@ -35,36 +35,43 @@
 		{	"name": "Calcium"		},
 		{	"name": "Protein"		}
 	],
-	"miscellaneous": [
+	"heldItems": [
+		{	"name": "Cleanse Tag"		},
+		{	"name": "Soothe Bell"		},
+		{	"name": "Black Glasses"		},
+		{	"name": "Card Key"			},
+		{	"name": "Gold Teeth"		},
+		{	"name": "Quick Claw"		}
+	],
+	"keyItems": [
 		{	"name": "Old Amber"			},
+		{	"name": "Helix Fossil"		},
+		{	"name": "Dome Fossil"		},
+		{	"name": "Lift Key"			},
+		{	"name": "Silph Scope"		},
+		{	"name": "Secret Key"		}
+	],
+	"evolutionItems": [
+		{	"name": "Moon Stone"		},
+		{	"name": "Leaf Stone"		},
+		{	"name": "Water Stone"		},
+		{	"name": "Thunder Stone"		}
+	],
+	"miscellaneous": [
 		{	"name": "Technical Machine"	},
+		{	"name": "Hidden Machine"	},
+		{	"name": "Nugget"			},		
 		{	"name": "Rare Candy"		},
+		{	"name": "Repel"				},
 		{	"name": "Lava Cookie"		},
 		{	"name": "Escape Rope"		},
-		{	"name": "Repel"				},
-		{	"name": "Nugget"			},
 		{	"name": "Leftovers"			},
 		{	"name": "Stardust"			},
 		{	"name": "Pearl"				},
 		{	"name": "Big Pearl"			},
-		{	"name": "Moon Stone"		},
-		{	"name": "Leaf Stone"		},
-		{	"name": "Water Stone"		},
-		{	"name": "Thunder Stone"		},
 		{	"name": "Big Mushroom"		},
 		{	"name": "Tiny Mushroom"		},
-		{	"name": "Star Piece"		},
-		{	"name": "Helix Fossil"		},
-		{	"name": "Dome Fossil"		},
-		{	"name": "Cleanse Tag"		},
-		{	"name": "Soothe Bell"		},
-		{	"name": "Black Glasses"		},
-		{	"name": "Lift Key"			},
-		{	"name": "Silph Scope"		},
-		{	"name": "Card Key"			},
-		{	"name": "Gold Teeth"		},
-		{	"name": "Quick Claw"		},
-		{	"name": "Secret Key"		}
+		{	"name": "Star Piece"		}
 	],
 	"pokeBalls": [
 		{	"name": "Poke Ball"		},
