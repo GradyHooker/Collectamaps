@@ -87,7 +87,7 @@
 		"icon":	"legendarywing",
 		"x":	10728,
 		"y":	2571,
-		"desc":	"Silver Wing (Gold/Crystal) & Rainbow Wing (Silver)<br/>Received from an old man near the entrance to Route 3",
+		"desc":	"Silver Wing<br/>Received from an old man near the entrance to Route 3",
 		"gfy":	""
 	},
 	{
@@ -155,16 +155,9 @@
 	},
 	{
 		"icon":	"ether",
-		"x":	13302,
-		"y":	2665,
-		"desc":	"[Gold/Silver Only] In leftmost of four trees",
-		"gfy":	""
-	},
-	{
-		"icon":	"ether",
 		"x":	13800,
 		"y":	2824,
-		"desc":	"[Crystal Only] In the right corner of the bottom passage, near Hiker Sidney",
+		"desc":	"In the right corner of the bottom passage, near Hiker Sidney",
 		"gfy":	""
 	},
 	{
@@ -304,14 +297,7 @@
 		"icon":	"maxether",
 		"x":	11367,
 		"y":	4727,
-		"desc":	"[Crystal Only] On west bridge segment (hidden)",
-		"gfy":	""
-	},
-	{
-		"icon":	"maxether",
-		"x":	11416,
-		"y":	3946,
-		"desc":	"[Gold/Silver Only] In the northeastern patch of grass (hidden)",
+		"desc":	"On west bridge segment (hidden)",
 		"gfy":	""
 	},
 	{
@@ -416,7 +402,7 @@
 		"icon":	"antidote",
 		"x":	6583,
 		"y":	5290,
-		"desc":	"[Crystal Only] North of the house near the split in the route",
+		"desc":	"North of the house near the split in the route",
 		"gfy":	""
 	},
 	{
@@ -448,11 +434,11 @@
 		"gfy":	""
 	},
 	{
-		"icon":	"antidote",
+		"icon":	"potion",
 		"x":	6597,
 		"y":	4520,
-		"desc":	"[Potion in Crystal] Left of the entrance to the Dark Cave",
-		"gfy":	"ExemplaryPeacefulFlicker"
+		"desc":	"Left of the entrance to the Dark Cave",
+		"gfy":	""
 	},
 	{
 		"icon":	"bitterberry",
@@ -518,11 +504,11 @@
 		"gfy":	""
 	},
 	{
-		"icon":	"potion",
+		"icon":	"repel",
 		"x":	5541,
 		"y":	5208,
-		"desc":	"[Repel in Crystal] In the tall grass, west of Picnicker Liz",
-		"gfy":	"DeepMiserlyBarracuda"
+		"desc":	"In the tall grass, west of Picnicker Liz",
+		"gfy":	""
 	},
 	{
 		"icon":	"superpotion",
@@ -612,7 +598,7 @@
 		"icon":	"nugget",
 		"x":	4645,
 		"y":	6071,
-		"desc":	"[Crystal Only] In the fenced area west of Picnicker Gina (requires Surf)",
+		"desc":	"In the fenced area west of Picnicker Gina (requires Surf)",
 		"gfy":	""
 	},
 	{
@@ -969,7 +955,7 @@
 		"icon":	"maxrepel",
 		"x":	6840,
 		"y":	3723,
-		"desc":	"[Crystal Only] Directly east of the Mahogany Town entrance",
+		"desc":	"Directly east of the Mahogany Town entrance",
 		"gfy":	""
 	},
 	{
@@ -1008,10 +994,10 @@
 		"gfy":	""
 	},
 	{
-		"icon":	"direhit",
+		"icon":	"xspeed",
 		"x":	7270,
 		"y":	5241,
-		"desc":	"[X Speed in Crystal] West of Camper Ted",
+		"desc":	"West of Camper Ted",
 		"gfy":	""
 	},
 	{
