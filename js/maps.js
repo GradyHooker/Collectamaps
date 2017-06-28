@@ -497,9 +497,11 @@ function toggleFilter(button) {
 		if(button.checked) {
 			button.checked = false;
 			map.removeLayer(layers[cat]);
+			button.parentNode.parentNode.childNodes[0].classList.add("not-applied");
 		} else {
 			button.checked = true;
 			map.addLayer(layers[cat]);
+			button.parentNode.parentNode.childNodes[0].classList.remove("not-applied");
 		}
 	}
 }
@@ -517,9 +519,11 @@ function onlyFilter(button) {
 		}
 		for(var i = 0; i < checks.length; i++) {
 			checks[i].disabled = true;
+			checks[i].parentNode.parentNode.childNodes[0].classList.add("not-applied");
 		}
 		map.addLayer(layers[cat]);
 		button.checked = true;
+		button.parentNode.parentNode.childNodes[0].classList.remove("not-applied");
 	}
 }
 
@@ -532,6 +536,9 @@ function applyToggleFilters() {
 		checks[i].disabled = false;
 		if(checks[i].checked) {
 			map.addLayer(layers[checks[i].value]);
+			checks[i].parentNode.parentNode.childNodes[0].classList.remove("not-applied");
+		} else {
+			checks[i].parentNode.parentNode.childNodes[0].classList.add("not-applied");
 		}
 	}
 }
@@ -546,6 +553,9 @@ function applyOnlyFilters() {
 		if(radios[i].checked) {
 			map.addLayer(layers[radios[i].value]);
 			checked  = true;
+			radios[i].parentNode.parentNode.childNodes[0].classList.remove("not-applied");
+		} else {
+			radios[i].parentNode.parentNode.childNodes[0].classList.add("not-applied");
 		}
 	}
 	return checked;

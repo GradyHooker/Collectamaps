@@ -224,6 +224,10 @@ body, html {
 	cursor: pointer;
 }
 
+.not-applied {
+	color: #BBBBBB;
+}
+
 @media screen and (max-width: 850px) {
     .logo-cont {
 		position: absolute;
