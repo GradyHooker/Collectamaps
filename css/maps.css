@@ -54,6 +54,7 @@ body, html {
 	position: relative;
 	height: 65px;
 	width: 65px;
+	max-height: 65px;
 	max-width: 65px;
 	flex-shrink: 0;
 	margin-top: 10px;
@@ -77,15 +78,8 @@ body, html {
 	width: 280px;
 	max-width: 100%;
 	border-radius: 10px;
-}
-
-.fab {
-    max-height: 65px;
-}
-
-.fab.is-open {
 	height: auto;
-	max-height: calc(100vh - 120px);
+	max-height: calc(100vh - 200px);
 }
 
 .fab.is-open .fab-content {
@@ -271,5 +265,9 @@ body, html {
 		width: 100%;
 		flex-direction: row;
 		align-items: flex-start;
+	}
+	
+	.fab.is-open {
+		max-height: calc(100vh - 100px);
 	}
 }
