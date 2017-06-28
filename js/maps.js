@@ -181,7 +181,7 @@ function infoMapLoaded(response) {
 	
 	if(infoJSON["credit"] != null) {
 		document.getElementById("credit-cont").style.display = "block";
-		document.getElementById("credit-logo").src = "icons/" + infoJSON["credit"] + "-logo.png";
+		document.getElementById("credit-logo").src = "img/" + infoJSON["credit"] + "-logo.png";
 		document.getElementById("credit-link").href = infoJSON["creditURL"];
 	} else {
 		document.getElementById("credit-cont").style.display = "none";

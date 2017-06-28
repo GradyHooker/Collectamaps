@@ -1,5 +1,5 @@
 body {
-    background: #444444;
+    background: url(../img/background.png);
 }
 
 .page-cont {
@@ -18,6 +18,29 @@ body {
 	width: 100%;
 }
 
+.search-box {
+	width: 80%;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.search-box input {
+	outline: none;
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 10px 10px 10px 32px;
+	width: 100%;
+	height: 36px;
+	border-radius: 36px;
+	transition: box-shadow 0.4s;
+}
+
+.search-box input:focus {
+	box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+}
+
 .games-container {
 	width: 100%;
 	display: flex;
@@ -26,44 +49,30 @@ body {
 }
 
 .game {
-	height: calc(100% - 15px);
 	max-width: 240px;
-	background: white;
     border-radius: 10px;
+	padding: 0;
 	margin: 5px;
-    padding-bottom: 5px;
     text-align: center;
     position: relative;
     box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.4);
-	color: #66757f;
-	font-family: 'roboto_condensed', Arial, sans-serif;
 	text-align: center;
 	opacity: 0.8;
-	transition: opacity 0.4s;
-}
-
-.game:hover {
-	opacity: 1;
-}
-
-.games-container a {
+	transition: opacity 0.4s, box-shadow 0.4s;
 	text-decoration: none;
 	flex: 1 1 180px;
 	max-width: 240px;
 }
 
+.game:hover {
+	opacity: 1;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
 .game img {
 	width: 100%;
-	border-radius: 10px 10px 0px 0px;
-}
-
-.game span {
-	padding: 5px;
-}
-
-h1 {
-	font-size: 1em;
-	margin: 0.2em;
+	height: 100%;
+	border-radius: 10px;
 }
 
 @media screen and (max-width: 482px) {
@@ -71,19 +80,7 @@ h1 {
 		width: 100%;
 	}
 	
-	.game-description {
-		display: none;
-	}
-	
 	.game {
-		padding: 0px;
-	}
-	
-	.game img {
-		border-radius: 10px;
-	}
-	
-	.games-container a {
 		flex: 1 1 120px;
 		max-width: 170px;
 	}
