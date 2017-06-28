@@ -355,8 +355,22 @@ function make_polygon(points, level) {
 }
 
 function stringPresentable(s) {
-	s = s.replace("-", " ");
-	s = s.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+	var split = s.split("-");
+	s = "";
+	for(var i = 0; i < split.length; i++) {
+		if(split[i] == "ss") {
+			split[i] = "SS";
+		} else if(split[i] == "mt") {
+			split[i] = "Mt.";
+		} else {
+			split[i] = split[i].charAt(0).toUpperCase() + split[i].substr(1).toLowerCase();
+		}
+		s += split[i];
+		if(i+1 < split.length) {
+			s += " ";
+		}
+	}
+
 	return s;
 }
 

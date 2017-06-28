@@ -9,7 +9,7 @@
 		]
 	},
 	{
-		"level":	"ruins-alph",
+		"level":	"ruins-of-alph",
 		"points":	[
 			{"x": 5232, "y": 4400},
             {"x": 5232, "y": 4432},
@@ -22,7 +22,7 @@
 		]
 	},
 	{
-		"level":	"ruins-alph",
+		"level":	"ruins-of-alph",
 		"points":	[
 			{"x": 5488, "y": 4720},
             {"x": 5488, "y": 4783},
@@ -90,7 +90,7 @@
 		]
 	},
 	{
-		"level":	"goldenrod-store",
+		"level":	"goldenrod-department-store",
 		"points":	[
 			{"x": 4719, "y": 5328},
             {"x": 4719, "y": 5456},
