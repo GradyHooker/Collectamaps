@@ -18,8 +18,10 @@ var storageID;
 var reset = false;
 
 window.onload = init;
+window.onpopstate = popstate_map;
 
 function init() {
+	console.log("OnLoad");
 	game = getQueryVariable("g");
 	level = getQueryVariable("l");
 	if(game == false) {
@@ -33,7 +35,18 @@ function reset_map(newGame, newLevel) {
 	reset = true;
 	game = newGame;
 	level = newLevel;
-	window.history.replaceState({}, game + " ( " + level + ") - Collectamaps", 'maps.html?g=' + game + "&l=" + level);
+	window.history.pushState({}, game + " ( " + level + ") - Collectamaps", 'maps.html?g=' + game + "&l=" + level);
+	map.remove();
+	loadJSON("game_info", game, infoLoaded);
+}
+
+function popstate_map(event) {
+	reset = true;
+	game = getQueryVariable("g");
+	level = getQueryVariable("l");
+	if(level == false) {
+		level = "";
+	}
 	map.remove();
 	loadJSON("game_info", game, infoLoaded);
 }
@@ -54,7 +67,6 @@ function make_map() {
 	m.setMaxBounds(mapBounds);
 	
 	m.fitBounds(mapBounds);
-	//m.setZoom(mapMinZoom+1);
 	
 	L.tileLayer('maps/' + game + '/' + level + '/tiles/{z}/map_{x}_{y}.png', {
 		maxZoom: mapMaxZoom,
@@ -137,14 +149,15 @@ function infoLoaded(response) {
 			levelCont.appendChild(make_SelectImage(lev));
 			storageID = game + "-" + level;
 		}
+		window.document.title = gameFull + " (" + stringPresentable(level) + ") - Collectamaps"
 	} else {
 		levelFab.style.display = "none";
 		storageID = game;
+		window.document.title = gameFull + " - Collectamaps"
 	}
 	
 	founds = JSON.parse(localStorage.getItem(storageID));
-	
-	window.document.title = gameFull + " - Collectamaps"
+
 	loadJSON("map_info", game + "/" + level, infoMapLoaded);
 }
 
