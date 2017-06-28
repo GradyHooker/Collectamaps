@@ -79,13 +79,13 @@ body, html {
 	border-radius: 10px;
 }
 
-#fab-select {
+.fab {
     max-height: 65px;
 }
 
-#fab-select.is-open {
+.fab.is-open {
 	height: auto;
-	max-height: calc(100vh - 100px);
+	max-height: calc(100vh - 120px);
 }
 
 .fab.is-open .fab-content {
@@ -95,9 +95,10 @@ body, html {
 }
 
 .fab-content {
-	display: block;
 	width: 100%;
+	height: 100%;
 	padding-top: 5px !important;
+	padding-right: 0px;
 	transition: 0.15s ease-in-out;
 	opacity: 0;
 	padding: 15px;
@@ -173,11 +174,6 @@ body, html {
 	width: 100%;
 }
 
-#fab-content-select {
-	padding-right: 0px;
-	height: 100%;
-}
-
 .select-img {
 	max-width: 75px;
 	height: 75px;
@@ -187,13 +183,31 @@ body, html {
 	width: 30%;
 }
 
-.select-img-cont {
+.fab-scroll-content {
 	height: calc(100% - 60px);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: center;
+	overflow-y: hidden;
+}
+
+.fab-scroll-content.scrolling {
 	overflow-y: scroll;
+}
+
+.setting-item {
+	height: 25px;
+	line-height: 25px;
+	font-size: 0.8em;
+	width: 90%;
+	background: #EEE;
+	margin: 3px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.setting-item:hover {
+	background: #DDD;
 }
 
 .logo-cont {
@@ -254,10 +268,8 @@ body, html {
 	
 	#fab-cont {
 		top: 60px;
-		max-height: calc(100vh - 70px);
-	}
-	
-	#fab-select.is-open {
-		max-height: calc(100vh - 160px);
+		width: 100%;
+		flex-direction: row;
+		align-items: flex-start;
 	}
 }

@@ -442,40 +442,44 @@ function fadeMarker(checkbox, id) {
 	localStorage.setItem(storageID, JSON.stringify(founds));
 }
 
-function expandFilters() {
-	closeSelect();
-	var content = document.getElementById("fab-content-filter");
+function expandFAB(name) {
+	var height;
+	
+	switch(name) {
+		case "select":
+			closeFAB('filter');
+			closeFAB('settings');
+			height = (Math.ceil(document.getElementById("select-img-cont").childNodes.length/3) * 80) + 70;
+			break;
+		case "filter":
+			closeFAB('select');
+			closeFAB('settings');
+			height = ((document.getElementById("fab-table").childNodes.length - 1) * 22) + 80;
+			break;
+		case "settings":
+			closeFAB('select');
+			closeFAB('filter');
+			height = ((document.getElementsByClassName("setting-item").length) * 31) + 70;
+			break;
+	}
+	
+	var content = document.getElementById("fab-content-" + name);
 	if(content.style.opacity != "1") {
-		var fab = document.getElementById("fab-filter");
+		var fab = document.getElementById("fab-" + name);
 		fab.classList.add("is-open");
-		fab.style.height = (content.clientHeight-5) + "px";
+		fab.style.height = height + "px";
+		if(height > document.body.scrollHeight-120) {
+			fab.getElementsByClassName("fab-scroll-content")[0].classList.add("scrolling");
+		} else {
+			fab.getElementsByClassName("fab-scroll-content")[0].classList.remove("scrolling");
+		}
 	}
 }
 
-function closeFilters() {
-	var content = document.getElementById("fab-content-filter");
+function closeFAB(name) {
+	var content = document.getElementById("fab-content-" + name);
 	if(content.style.opacity != "0") {
-		var fab = document.getElementById("fab-filter");
-		fab.classList.remove("is-open");
-		fab.style.height = "65px";
-	}
-}
-
-function expandSelect() {
-	closeFilters();
-	var content = document.getElementById("fab-content-select");
-	if(content.style.opacity != "1") {
-		var fab = document.getElementById("fab-select");
-		fab.classList.add("is-open");
-		var rows = Math.ceil(document.getElementById("select-img-cont").childNodes.length/3);
-		fab.style.height = (rows*80 + 80) + "px";
-	}
-}
-
-function closeSelect() {
-	var content = document.getElementById("fab-content-select");
-	if(content.style.opacity != "0") {
-		var fab = document.getElementById("fab-select");
+		var fab = document.getElementById("fab-" + name);
 		fab.classList.remove("is-open");
 		fab.style.height = "65px";
 	}
@@ -559,4 +563,25 @@ function applyOnlyFilters() {
 		}
 	}
 	return checked;
+}
+
+function downloadImage() {
+	var a  = document.createElement('a');
+    if(level != "") {
+		a.href = 'maps/' + game + '/' + level + '/map.png';
+		a.download = game + '-' + level + '.png';
+	} else {
+		a.href = 'maps/' + game + '/map.png';
+		a.download = game + '.png';
+	}
+
+    a.click();
+}
+
+function resetMapProgress() {
+
+}
+
+function resetGameProgress() {
+
 }

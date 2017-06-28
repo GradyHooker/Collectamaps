@@ -35,41 +35,40 @@
 		<div id="map"></div>
 		<div id="fab-cont">
 			<div class="fab" id="fab-filter">
-				<img class="fab-icon" id="icon-filter" src="icons/filter.png" onclick="expandFilters()"/>
-				<img class="fab-icon icon-close" id="icon-close-filler" src="icons/cross.png" onclick="closeFilters()"/>
+				<img class="fab-icon" id="icon-filter" src="icons/filter.png" onclick="expandFAB('filter')"/>
+				<img class="fab-icon icon-close" id="icon-close-filler" src="icons/cross.png" onclick="closeFAB('filter')"/>
 				<div class="fab-content" id="fab-content-filter">
 					<h2>Filters:</h2>
-					<table id="fab-table">
-						<tr>
-							<th>Category</th>
-							<th>Incl.</th>
-							<th>Only</th>
-						</tr>
-					</table>
+					<div class="fab-scroll-content" id="filter-table-cont">
+						<table id="fab-table">
+							<tr>
+								<th>Category</th>
+								<th>Incl.</th>
+								<th>Only</th>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</div>
 			<div class="fab" id="fab-select">
-				<img class="fab-icon" id="icon-select" src="icons/select.png" onclick="expandSelect()"/>
-				<img class="fab-icon icon-close" id="icon-close-select" src="icons/cross.png" onclick="closeSelect()"/>
+				<img class="fab-icon" id="icon-select" src="icons/select.png" onclick="expandFAB('select')"/>
+				<img class="fab-icon icon-close" id="icon-close-select" src="icons/cross.png" onclick="closeFAB('select')"/>
 				<div class="fab-content" id="fab-content-select">
 					<h2>Level Select:</h2>
-					<div class="select-img-cont" id="select-img-cont">
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
-						<img class="select-img" src=""/>
+					<div class="fab-scroll-content" id="select-img-cont">
+						&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="fab" id="fab-settings">
+				<img class="fab-icon" id="icon-select" src="icons/settings.png" onclick="expandFAB('settings')"/>
+				<img class="fab-icon icon-close" id="icon-close-select" src="icons/cross.png" onclick="closeFAB('settings')"/>
+				<div class="fab-content" id="fab-content-settings">
+					<h2>Settings:</h2>
+					<div class="fab-scroll-content" id="settings-list-cont">
+						<div class="setting-item" onclick="downloadImage()">Download Map Image</div>
+						<div class="setting-item" onclick="resetMapProgress()">Reset Map Progress</div>
+						<div class="setting-item" onclick="resetGameProgress()">Reset Game Progress</div>
 					</div>
 				</div>
 			</div>
