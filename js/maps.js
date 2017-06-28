@@ -461,18 +461,18 @@ function expandFAB(name) {
 	switch(name) {
 		case "select":
 			closeFAB('filter');
-			closeFAB('settings');
+			closeFAB('options');
 			height = (Math.ceil(document.getElementById("select-img-cont").childNodes.length/3) * 80) + 70;
 			break;
 		case "filter":
 			closeFAB('select');
-			closeFAB('settings');
+			closeFAB('options');
 			height = ((document.getElementById("fab-table").childNodes.length - 1) * 22) + 80;
 			break;
-		case "settings":
+		case "options":
 			closeFAB('select');
 			closeFAB('filter');
-			height = ((document.getElementsByClassName("setting-item").length) * 31) + 70;
+			height = ((document.getElementsByClassName("option-item").length) * 31) + 70;
 			break;
 	}
 	

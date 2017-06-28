@@ -189,7 +189,7 @@ body, html {
 	overflow-y: scroll;
 }
 
-.setting-item {
+.option-item {
 	height: 25px;
 	line-height: 25px;
 	font-size: 0.8em;
@@ -200,7 +200,7 @@ body, html {
 	cursor: pointer;
 }
 
-.setting-item:hover {
+.option-item:hover {
 	background: #DDD;
 }
 
