@@ -99,25 +99,25 @@ body, html {
 	white-space: nowrap;
 }
 
-.fab.is-open #icon-filter, .fab.is-open #icon-select {
+.fab-icon {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	transition: opacity 0.25s;
+}
+
+.fab-main-icon {
+	opacity: 1;
+	z-index: 999;
+	cursor: pointer;
+	transition: opacity 0.38s ease-in-out 0.12s;
+}
+
+.fab.is-open .fab-main-icon {
 	opacity: 0;
 	z-index: 997;
 	cursor: default;
 	transition: opacity 0.38s;
-}
-
-#icon-filter , #icon-select{
-	opacity: 1;
-	z-index: 999;
-	cursor: pointer;
-	transition: opacity 0.38s ease-in-out 0.12s;
-}
-
-.fab.is-open .icon-close {
-	opacity: 1;
-	z-index: 999;
-	cursor: pointer;
-	transition: opacity 0.38s ease-in-out 0.12s;
 }
 
 .icon-close {
@@ -127,11 +127,11 @@ body, html {
 	transition: opacity 0.38s;
 }
 
-.fab-icon {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	transition: opacity 0.25s;
+.fab.is-open .icon-close {
+	opacity: 1;
+	z-index: 999;
+	cursor: pointer;
+	transition: opacity 0.38s ease-in-out 0.12s;
 }
 
 .fab-content h2 {
