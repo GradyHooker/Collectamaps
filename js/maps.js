@@ -26,7 +26,7 @@ function init() {
 	if(game == false) {
 		sendHome();
 	} else {
-		loadJSON("game_info", game, infoLoaded);
+		loadJSON("game_info", game, infoLoaded, true);
 	}
 }
 
@@ -36,7 +36,7 @@ function reset_map(newGame, newLevel) {
 	level = newLevel;
 	window.history.pushState({}, game + " ( " + level + ") - Collectamaps", 'maps.html?g=' + game + "&l=" + level);
 	map.remove();
-	loadJSON("game_info", game, infoLoaded);
+	loadJSON("game_info", game, infoLoaded, true);
 }
 
 function popstate_map(event) {
@@ -47,7 +47,7 @@ function popstate_map(event) {
 		level = "";
 	}
 	map.remove();
-	loadJSON("game_info", game, infoLoaded);
+	loadJSON("game_info", game, infoLoaded, true);
 }
 
 function make_map() {
@@ -104,20 +104,6 @@ function make_map() {
 					
 	return m;
 }
-		
-function loadJSON(file, folder, callback) {   
-	var req = new XMLHttpRequest();
-	req.overrideMimeType("application/json");
-	req.open('GET', 'maps/' + folder + '/' + file + '.json');
-	req.onreadystatechange = function () {
-		if (req.readyState == 4 && req.status == "200") {
-			callback(req.responseText);
-		} else if (req.status == "404") {
-			sendHome();
-		}
-	};
-	req.send(null); 
-}
 
 function infoLoaded(response) {
 	var infoJSON = JSON.parse(response);
@@ -153,7 +139,7 @@ function infoLoaded(response) {
 	
 	founds = JSON.parse(localStorage.getItem(storageID));
 
-	loadJSON("map_info", game + "/" + level, infoMapLoaded);
+	loadJSON("map_info", game + "/" + level, infoMapLoaded, true);
 }
 
 function make_SelectImage(l) {
@@ -184,7 +170,7 @@ function infoMapLoaded(response) {
 	
 	map = make_map();
 	
-	loadJSON("icons", game, iconsLoaded);
+	loadJSON("icons", game, iconsLoaded, true);
 }
 
 function iconsLoaded(response) {
@@ -232,6 +218,9 @@ function iconsLoaded(response) {
 	}
 		
 	loadJSON("markers", game + "/" + level, markersLoaded);
+	if(level != "") {
+		loadJSON("teleports", game + "/" + level, teleportsLoaded);
+	}
 }
 
 function capitalize(string) {
@@ -310,10 +299,6 @@ function markersLoaded(response) {
 	}
 	
 	localStorage.setItem(storageID, JSON.stringify(founds));
-	
-	if(level != "") {
-		loadJSON("teleports", game + "/" + level, teleportsLoaded);
-	}
 }
 
 function teleportsLoaded(response) {

@@ -3,7 +3,7 @@ var gameList = [];
 window.onload = init;
 
 function init() {
-	loadJSON("gameMaps", null, gameListLoaded, true);
+	loadJSON("gameMaps", null, gameListLoaded, false, true);
 	
 	var searchBar = document.getElementById("search-bar");
 	searchBar.oninput = searchGames;

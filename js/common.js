@@ -1,4 +1,4 @@
-function loadJSON(file, folder, callback, index) {   
+function loadJSON(file, folder, callback, critical, index) {   
 	var req = new XMLHttpRequest();
 	req.overrideMimeType("application/json");
 	if(!index) {
@@ -9,7 +9,7 @@ function loadJSON(file, folder, callback, index) {
 	req.onreadystatechange = function () {
 		if (req.readyState == 4 && req.status == "200") {
 			callback(req.responseText);
-		} else if (req.status == "404") {
+		} else if (req.status == "404" && critical) {
 			sendHome();
 		}
 	};
