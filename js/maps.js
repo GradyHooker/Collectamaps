@@ -21,7 +21,6 @@ window.onload = init;
 window.onpopstate = popstate_map;
 
 function init() {
-	console.log("OnLoad");
 	game = getQueryVariable("g");
 	level = getQueryVariable("l");
 	if(game == false) {
@@ -109,7 +108,7 @@ function make_map() {
 function loadJSON(file, folder, callback) {   
 	var req = new XMLHttpRequest();
 	req.overrideMimeType("application/json");
-	req.open('GET', 'maps/' + folder + '/' + file + '.json', true);
+	req.open('GET', 'maps/' + folder + '/' + file + '.json');
 	req.onreadystatechange = function () {
 		if (req.readyState == 4 && req.status == "200") {
 			callback(req.responseText);
@@ -118,10 +117,6 @@ function loadJSON(file, folder, callback) {
 		}
 	};
 	req.send(null); 
-}
-
-function sendHome() {
-	window.location = "./";
 }
 
 function infoLoaded(response) {
@@ -352,26 +347,6 @@ function make_polygon(points, level) {
 	p.bindTooltip(stringPresentable(level), {sticky: true});
 	layers["areaHighlights"].addLayer(p);
 	return p;
-}
-
-function stringPresentable(s) {
-	var split = s.split("-");
-	s = "";
-	for(var i = 0; i < split.length; i++) {
-		if(split[i] == "ss") {
-			split[i] = "SS";
-		} else if(split[i] == "mt") {
-			split[i] = "Mt.";
-		} else {
-			split[i] = split[i].charAt(0).toUpperCase() + split[i].substr(1).toLowerCase();
-		}
-		s += split[i];
-		if(i+1 < split.length) {
-			s += " ";
-		}
-	}
-
-	return s;
 }
 
 function make_icon(name, shortname, filter) {
