@@ -1,0 +1,46 @@
+[
+	{
+		"name":			"Dead Rising 2",
+		"shortName":	"dead-rising-2"
+	},
+	{
+		"name":			"Far Cry 2",
+		"shortName":	"far-cry-2"
+	},
+	{
+		"name":			"Far Cry 3",
+		"shortName":	"far-cry-3"
+	},
+	{
+		"name":			"Pokemon Red/Blue",
+		"shortName":	"pokemon-rb"
+	},
+	{
+		"name":			"Pokemon Gold/Silver",
+		"shortName":	"pokemon-gs"
+	},
+	{
+		"name":			"Pokemon Crystal",
+		"shortName":	"pokemon-c"
+	},
+	{
+		"name":			"Pokemon Ruby/Sapphire",
+		"shortName":	"pokemon-rs"
+	},
+	{
+		"name":			"Pokemon Emerald",
+		"shortName":	"pokemon-e"
+	},
+	{
+		"name":			"Pokemon FireRed/LeafGreen",
+		"shortName":	"pokemon-frlg"
+	},
+	{
+		"name":			"Pokemon Diamond/Pearl",
+		"shortName":	"pokemon-dp"
+	},
+	{
+		"name":			"Pokemon Platinum",
+		"shortName":	"pokemon-p"
+	}
+]
