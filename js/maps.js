@@ -16,7 +16,7 @@ var img_width;
 var img_height;
 var storageID;
 var reset = false;
-var debug = false;
+var debug = true;
 var debug_click;
 
 window.onload = init;
@@ -393,7 +393,9 @@ function CMMarker(ic, x, y, description, gfycat, id) {
 	
 	var popupString = "";
 	popupString += "<b>" + cmmarker.icon.name + "</b><br/>";
-	popupString += "<i>" + cmmarker.description + "</i><br/>";
+	if(cmmarker.description != "") {
+		popupString += "<i>" + cmmarker.description + "</i><br/>";
+	}
 	if(cmmarker.gfycat != "") {
 		popupString+= "<div style='position:relative;padding-bottom:54%'><video class='help-video' playsinline loop width='100%' height='100%' style='position:absolute;top:0;left:0' autoplay muted><source src='https://thumbs.gfycat.com/" + cmmarker.gfycat + "-mobile.mp4' type='video/mp4'></video></div>";
 		cmmarker.marker.on('click', markerClickVid);
