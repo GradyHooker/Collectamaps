@@ -38,6 +38,7 @@ function reset_map(newGame, newLevel) {
 	level = newLevel;
 	window.history.pushState({}, game + " ( " + level + ") - Collectamaps", 'maps.html?g=' + game + "&l=" + level);
 	map.remove();
+	clearMapLayers(layers);
 	loadJSON("game_info", game, infoLoaded, true);
 }
 
@@ -49,7 +50,14 @@ function popstate_map(event) {
 		level = "";
 	}
 	map.remove();
+	clearMapLayers(layers);
 	loadJSON("game_info", game, infoLoaded, true);
+}
+
+function clearMapLayers() {
+	for(l in layers) {
+		layers[l].clearLayers();
+	}
 }
 
 function make_map() {
@@ -299,14 +307,7 @@ function markersLoaded(response) {
 		layers[icons[marker.icon].filter].addLayer(markers[m].marker);
 		indices[markers[m].marker._leaflet_id] = parseInt(m);
 	}
-	
-	if(reset) {
-		if(!applyOnlyFilters()) {
-			applyToggleFilters();
-		}
-		reset = false;
-	}
-	
+
 	localStorage.setItem(storageID, JSON.stringify(founds));
 }
 
@@ -314,20 +315,25 @@ function teleportsLoaded(response) {
 	var teleportJSON = JSON.parse(response);
 	
 	//Add the first row
-	if(level != "") {
-		layers["areaHighlights"] = new L.layerGroup().addTo(map);
-		if(!reset) {
-			var table = document.getElementById("fab-table");
-			var row = document.createElement("TR");
-			var cell = document.createElement("TD");
-			cell.textContent = capitalize("areaHighlights");
-			
-			row.appendChild(cell);
-			var buttons = make_FilterButtons("areaHighlights");
-			row.appendChild(buttons[0]);
-			row.appendChild(buttons[1]);
-			table.insertBefore(row, table.children[1]);
+	layers["areaHighlights"] = new L.layerGroup().addTo(map);
+	if(!reset) {
+		var table = document.getElementById("fab-table");
+		var row = document.createElement("TR");
+		var cell = document.createElement("TD");
+		cell.textContent = capitalize("areaHighlights");
+		
+		row.appendChild(cell);
+		var buttons = make_FilterButtons("areaHighlights");
+		row.appendChild(buttons[0]);
+		row.appendChild(buttons[1]);
+		table.insertBefore(row, table.children[1]);
+	}
+	
+	if(reset) {
+		if(!applyOnlyFilters()) {
+			applyToggleFilters();
 		}
+		reset = false;
 	}
 	
 	for (var t in teleportJSON) {
@@ -338,7 +344,7 @@ function teleportsLoaded(response) {
 			polygonPoints[p] = map.unproject([point.x, point.y], mapMaxZoom);
 		}
 		
-		polygon = make_polygon(polygonPoints, teleport.level);
+		layers["areaHighlights"].addLayer(make_polygon(polygonPoints, teleport.level));
 	}
 }
 
@@ -356,7 +362,6 @@ function make_polygon(points, level) {
 		reset_map(game, level);
 	});
 	p.bindTooltip(stringPresentable(level), {sticky: true});
-	layers["areaHighlights"].addLayer(p);
 	return p;
 }
 
