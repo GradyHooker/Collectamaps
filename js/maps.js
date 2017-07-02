@@ -132,7 +132,11 @@ function infoLoaded(response) {
 		window.document.title = gameFull + " - Collectamaps"
 	}
 	
-	founds = JSON.parse(localStorage.getItem(storageID));
+	if(localStorage.getItem(storageID)) {
+		founds = JSON.parse(localStorage.getItem(storageID));
+	} else {
+		localStorage.setItem(storageID, "[]");
+	}
 
 	loadJSON("map_info", game + "/" + level, infoMapLoaded, true);
 }
@@ -600,9 +604,27 @@ function downloadImage() {
 }
 
 function resetMapProgress() {
-
+	resetProgress(storageID);
 }
 
 function resetGameProgress() {
+	for(var ls in localStorage) {
+		if(ls.includes(game)) {
+			resetProgress(ls);
+		}
+	}
+}
 
+function resetProgress(str) {
+	localStorage.setItem(str, "[]");
+	founds = JSON.parse(localStorage.getItem(str));
+	for(var m in markers) {
+		if(founds[m]) {
+			markers[m].marker.setOpacity(0.4);
+			markers[m].found = true;
+		} else {
+			markers[m].marker.setOpacity(1.0);
+			markers[m].found = false;
+		}
+	}
 }
