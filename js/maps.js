@@ -16,6 +16,8 @@ var img_width;
 var img_height;
 var storageID;
 var reset = false;
+var debug = false;
+var debug_click;
 
 window.onload = init;
 window.onpopstate = popstate_map;
@@ -80,21 +82,6 @@ function make_map() {
 			map.closePopup();
 		}
 	});
-	
-	//DEBUG PRINT ONLY
-	m.on('click', function(e) {  
-		var item = "diamond";
-		var crs = map.options.crs;
-		var zoom = map.getZoom();
-		var layerPoint = crs.latLngToPoint(e.latlng, zoom).floor()
-        console.log('{\n' + 
-					'	"icon":	"' + item + '",\n' + 
-					'	"x":	' + layerPoint.x + ',\n' +  
-					'	"y":	' + layerPoint.y + ',\n' +  
-					'	"desc":	"",\n' + 
-					'	"gfy":	""\n' + 
-					'},');
-    });
 	
 	//Autoplay videos on Chrome
 	m.on('popupopen', function(e) {
@@ -180,22 +167,6 @@ function iconsLoaded(response) {
 	var cell;
 	var buttons;
 	
-	//Add the first row
-	if(level != "") {
-		layers["areaHighlights"] = new L.layerGroup().addTo(map);
-		if(!reset) {
-			row = document.createElement("TR");
-			cell = document.createElement("TD");
-			cell.textContent = capitalize("areaHighlights");
-			
-			row.appendChild(cell);
-			buttons = make_FilterButtons("areaHighlights");
-			row.appendChild(buttons[0]);
-			row.appendChild(buttons[1]);
-			table.appendChild(row);
-		}
-	}
-	
 	for (var cat in iconJSON) {
 		layers[cat] = new L.layerGroup().addTo(map);
 		for (var i = 0; i < iconJSON[cat].length; i++) {
@@ -215,6 +186,44 @@ function iconsLoaded(response) {
 			row.appendChild(buttons[1]);
 			table.appendChild(row);
 		}
+	}
+	
+	//If DEBUG then allow adding of markers
+	if(debug) {
+		var contextDropDown = document.createElement("SELECT");
+		contextDropDown.id = "contextDropDown";
+		
+		var opt;
+		for(i in icons) {
+			opt = document.createElement("option");
+			opt.text = i;
+			contextDropDown.add(opt); 
+		}
+		
+		contextDropDown.onchange = function() {
+			var crs = map.options.crs;
+			var zoom = map.getZoom();
+			var layerPoint = crs.latLngToPoint(debug_click, zoom).floor();
+			var item = this.value;
+			console.log('{\n' + 
+					'	"icon":	"' + item + '",\n' + 
+					'	"x":	' + layerPoint.x + ',\n' +  
+					'	"y":	' + layerPoint.y + ',\n' +  
+					'	"desc":	"",\n' + 
+					'	"gfy":	""\n' + 
+					'},');
+			document.getElementById("contextDropDown").style.display = "none";
+		}
+		
+		document.getElementsByTagName("BODY")[0].appendChild(contextDropDown);
+		
+		map.on('contextmenu', function(e) {
+			debug_click = e.latlng;
+			var dd = document.getElementById("contextDropDown");
+			dd.style.display = "block";
+			dd.style.top = e.containerPoint.y + "px";
+			dd.style.left = e.containerPoint.x + "px";
+		});
 	}
 		
 	loadJSON("markers", game + "/" + level, markersLoaded);
@@ -303,6 +312,23 @@ function markersLoaded(response) {
 
 function teleportsLoaded(response) {
 	var teleportJSON = JSON.parse(response);
+	
+	//Add the first row
+	if(level != "") {
+		layers["areaHighlights"] = new L.layerGroup().addTo(map);
+		if(!reset) {
+			var table = document.getElementById("fab-table");
+			var row = document.createElement("TR");
+			var cell = document.createElement("TD");
+			cell.textContent = capitalize("areaHighlights");
+			
+			row.appendChild(cell);
+			var buttons = make_FilterButtons("areaHighlights");
+			row.appendChild(buttons[0]);
+			row.appendChild(buttons[1]);
+			table.insertBefore(row, table.children[1]);
+		}
+	}
 	
 	for (var t in teleportJSON) {
 		var teleport = teleportJSON[t];

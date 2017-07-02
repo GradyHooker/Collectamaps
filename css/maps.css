@@ -236,6 +236,14 @@ body, html {
 	color: #BBBBBB;
 }
 
+#contextDropDown {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1001;
+	display: none;
+}
+
 @media screen and (max-width: 850px) {
     .logo-cont {
 		position: absolute;
