@@ -1,0 +1,14 @@
+{
+	"magicMushrooms": [
+		{	"name": "Magic Mushroom"}
+	],
+	"coins": [
+		{	"name": "Coin"			}
+	],
+	"oneUps": [
+		{	"name": "One Up"		}
+	],
+	"superStars": [
+		{	"name": "Super Star"	}
+	]
+}

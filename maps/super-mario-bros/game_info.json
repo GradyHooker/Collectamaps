@@ -1,0 +1,15 @@
+{
+	"gameFull": "Super Mario Bros.",
+	"gamePublisher": "Nintendo",
+	"defaultLevel": "world-1",
+	"mapList": [
+		"world-1",
+		"world-2",
+		"world-3",
+		"world-4",
+		"world-5",
+		"world-6",
+		"world-7",
+		"world-8"
+	]
+}
