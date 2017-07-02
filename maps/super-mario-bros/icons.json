@@ -2,7 +2,7 @@
 	"magicMushrooms": [
 		{	"name": "Magic Mushroom"}
 	],
-	"coins": [
+	"hiddenCoins": [
 		{	"name": "Coin"			}
 	],
 	"oneUps": [
