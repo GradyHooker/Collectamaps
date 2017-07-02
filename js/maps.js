@@ -483,7 +483,8 @@ function expandFAB(name) {
 		var fab = document.getElementById("fab-" + name);
 		fab.classList.add("is-open");
 		fab.style.height = height + "px";
-		if(height > document.body.scrollHeight-120) {
+		if((document.body.scrollWidth < 850 && height > document.body.scrollHeight-100) ||
+		(document.body.scrollWidth >= 850 && height > document.body.scrollHeight-160)) {
 			fab.getElementsByClassName("fab-scroll-content")[0].classList.add("scrolling");
 		} else {
 			fab.getElementsByClassName("fab-scroll-content")[0].classList.remove("scrolling");
