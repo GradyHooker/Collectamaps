@@ -1,0 +1,9 @@
+{
+	"gameFull": "The Legend of Zelda: A Link to the Past",
+	"gamePublisher": "Nintendo",
+	"defaultLevel": "light-world",
+	"mapList": [
+		"light-world",
+		"dark-world"
+	]
+}

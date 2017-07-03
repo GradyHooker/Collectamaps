@@ -42,5 +42,13 @@
 	{
 		"name":			"Pokemon Platinum",
 		"shortName":	"pokemon-p"
+	},
+	{
+		"name":			"Super Mario Bros.",
+		"shortName":	"super-mario"
+	},
+	{
+		"name":			"The Legend of Zelda: A Link to the Past",
+		"shortName":	"zelda-link-past"
 	}
 ]
