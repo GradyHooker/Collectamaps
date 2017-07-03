@@ -604,13 +604,17 @@ function downloadImage() {
 }
 
 function resetMapProgress() {
-	resetProgress(storageID);
+	if (confirm("By pressing the 'OK' button, you will clear all of your data for the " + stringPresentable(level) + " map.\n\nThis data includes; Which markers you have found.\n\nThis CANNOT be undone.") == true) {
+        resetProgress(storageID);
+    }
 }
 
 function resetGameProgress() {
-	for(var ls in localStorage) {
-		if(ls.includes(game)) {
-			resetProgress(ls);
+	if (confirm("By pressing the 'OK' button, you will clear all of your data for EVERY map and sub-map for the " + gameFull + " game.\n\nThis data includes; Which markers you have found.\n\nThis CANNOT be undone.") == true) {
+		for(var ls in localStorage) {
+			if(ls.includes(game)) {
+				resetProgress(ls);
+			}
 		}
 	}
 }
