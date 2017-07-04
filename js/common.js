@@ -3,8 +3,10 @@ function loadJSON(file, folder, callback, critical, index) {
 	req.overrideMimeType("application/json");
 	if(!index) {
 		req.open('GET', 'maps/' + folder + '/' + file + '.json', true);
+		console.log("Loading: " + folder + '/' + file + '.json');
 	} else {
 		req.open('GET', file + '.json', true);
+		console.log("Loading: " + file + '.json');
 	}
 	req.onreadystatechange = function () {
 		if (req.readyState == 4 && req.status == "200") {
