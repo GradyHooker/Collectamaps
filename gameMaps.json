@@ -54,5 +54,13 @@
 	{
 		"name":			"7 Days to Die",
 		"shortName":	"7days-to-die"
+	},
+	{
+		"name":			"Just Cause 2",
+		"shortName":	"just-cause-2"
+	},
+	{
+		"name":			"Just Cause 3",
+		"shortName":	"just-cause-3"
 	}
 ]
