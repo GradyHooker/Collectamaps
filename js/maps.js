@@ -130,6 +130,10 @@ function infoLoaded(response) {
 		levelFab.style.display = "none";
 		storageID = game;
 		window.document.title = gameFull + " - Collectamaps"
+		var extraButton = document.getElementById("option-item-game");
+		if(extraButton != null) {
+			extraButton.remove();
+		}
 	}
 	
 	if(localStorage.getItem(storageID)) {
@@ -604,7 +608,14 @@ function downloadImage() {
 }
 
 function resetMapProgress() {
-	if (confirm("By pressing the 'OK' button, you will clear all of your data for the " + stringPresentable(level) + " map.\n\nThis data includes; Which markers you have found.\n\nThis CANNOT be undone.") == true) {
+	var msg;
+	if(level != '') {
+		msg = "By pressing the 'OK' button, you will clear all of your data for the " + stringPresentable(level) + " map.\n\nThis data includes; Which markers you have found.\n\nThis CANNOT be undone.";
+	} else {
+		msg = "By pressing the 'OK' button, you will clear all of your data for the " + gameFull + " map.\n\nThis data includes; Which markers you have found.\n\nThis CANNOT be undone."
+	}
+	
+	if (confirm(msg) == true) {
         resetProgress(storageID);
     }
 }
