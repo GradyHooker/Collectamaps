@@ -1,0 +1,191 @@
+[
+	{
+		"icon":	"shotgunmessiah",
+		"x":	614,
+		"y":	236,
+		"desc":	"Northwest in the city of Perishton",
+		"gfy":	""
+	},
+	{
+		"icon":	"shotgunmessiah",
+		"x":	2663,
+		"y":	211,
+		"desc":	"Northeast in the Snow biome",
+		"gfy":	""
+	},
+	{
+		"icon":	"shotgunmessiah",
+		"x":	1686,
+		"y":	2552,
+		"desc":	"In the city of Gravestown",
+		"gfy":	""
+	},
+	{
+		"icon":	"workingstiffs",
+		"x":	2782,
+		"y":	1324,
+		"desc":	"Maple Rd, between the 2 bridges that lead East to Diersville and North to the large corn farm at 697 N, 720 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"workingstiffs",
+		"x":	614,
+		"y":	293,
+		"desc":	"Small version in Perishton",
+		"gfy":	""
+	},
+	{
+		"icon":	"shamwaygrocery",
+		"x":	3908,
+		"y":	1858,
+		"desc":	"At 177 N, 1833 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"shamwaygrocery",
+		"x":	473,
+		"y":	308,
+		"desc":	"Perishton",
+		"gfy":	""
+	},
+	{
+		"icon":	"crackabook",
+		"x":	573,
+		"y":	289,
+		"desc":	"A two story Book Store can be found in Perishton",
+		"gfy":	""
+	},
+	{
+		"icon":	"crackabook",
+		"x":	1606,
+		"y":	1140,
+		"desc":	"A small Book Store is located on Raner Blvd at coordinates 892 N, 457 W",
+		"gfy":	""
+	},
+	{
+		"icon":	"popnpills",
+		"x":	573,
+		"y":	237,
+		"desc":	"Located in Perishton, includes a Chemistry Station under the stairs",
+		"gfy":	""
+	},
+	{
+		"icon":	"popnpills",
+		"x":	2336,
+		"y":	2716,
+		"desc":	"One is located at the south end of Apache St, 681 S, 271 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"popnpills",
+		"x":	3202,
+		"y":	1434,
+		"desc":	"Hospital in Diersvile",
+		"gfy":	""
+	},
+	{
+		"icon":	"armybase",
+		"x":	1229,
+		"y":	524,
+		"desc":	"In the Plains biome at 1500 N, 850 W",
+		"gfy":	""
+	},
+	{
+		"icon":	"armybase",
+		"x":	3322,
+		"y":	464,
+		"desc":	"In the Snowy Forest biome at 1560 N, 1240 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"armybase",
+		"x":	3546,
+		"y":	2003,
+		"desc":	"In the Burnt Forest biome at 20 N, 1470 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"armybase",
+		"x":	2486,
+		"y":	3624,
+		"desc":	"In the Desert biome at 1600 S, 420 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"trader",
+		"x":	996,
+		"y":	1117,
+		"desc":	"Trader 'Traitor' Joel - 931 N, 1055 W",
+		"gfy":	""
+	},
+	{
+		"icon":	"trader",
+		"x":	3482,
+		"y":	723,
+		"desc":	"Trader Hugh - 1320 N, 1435 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"trader",
+		"x":	2368,
+		"y":	1963,
+		"desc":	"Trader Rekt - 105 N, 320 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"trader",
+		"x":	1254,
+		"y":	3353,
+		"desc":	"Trader Bob - 1320 S, 1035 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"trader",
+		"x":	3080,
+		"y":	3370,
+		"desc":	"Trader Jimmy - 1293 S, 790 W",
+		"gfy":	""
+	},
+	{
+		"icon":	"passngas",
+		"x":	432,
+		"y":	302,
+		"desc":	"In Perishton",
+		"gfy":	""
+	},
+	{
+		"icon":	"passngas",
+		"x":	3005,
+		"y":	293,
+		"desc":	"1731 N, 942 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"passngas",
+		"x":	2839,
+		"y":	2342,
+		"desc":	"322 S, 776 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"passngas",
+		"x":	3564,
+		"y":	1396,
+		"desc":	"619 N, 1486 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"passngas",
+		"x":	3832,
+		"y":	986,
+		"desc":	"1044 N, 1760 E",
+		"gfy":	""
+	},
+	{
+		"icon":	"passngas",
+		"x":	2633,
+		"y":	763,
+		"desc":	"1269 N, 561 E",
+		"gfy":	""
+	}
+]

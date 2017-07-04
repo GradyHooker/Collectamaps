@@ -50,5 +50,9 @@
 	{
 		"name":			"The Legend of Zelda: A Link to the Past",
 		"shortName":	"zelda-link-past"
+	},
+	{
+		"name":			"7 Days to Die",
+		"shortName":	"7days-to-die"
 	}
 ]

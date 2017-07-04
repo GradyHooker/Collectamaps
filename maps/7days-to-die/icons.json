@@ -1,0 +1,16 @@
+{
+	"stores": [
+		{	"name": "Shotgun Messiah"	},
+		{	"name": "Working Stiffs"	},
+		{	"name": "Shamway Grocery"	},
+		{	"name": "Crack a Book"		},
+		{	"name": "Pop N Pills"		},
+		{	"name": "Pass n Gas"		}
+	],
+	"armyBases": [
+		{	"name": "Army Base"			}
+	],
+	"traders": [
+		{	"name": "Trader"			}
+	]
+}
