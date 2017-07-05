@@ -60,7 +60,11 @@
 		"shortName":	"just-cause-2"
 	},
 	{
-		"name":			"Just Cause 3",
-		"shortName":	"just-cause-3"
+		"name":			"Grand Theft Auto 4",
+		"shortName":	"gta-4"
+	},
+	{
+		"name":			"Grand Theft Auto 5",
+		"shortName":	"gta-5"
 	}
 ]
