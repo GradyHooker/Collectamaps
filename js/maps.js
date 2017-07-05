@@ -123,7 +123,7 @@ function infoLoaded(response) {
 		levelFab.style.display = "flex";
 		for(l in levels) {
 			var lev = levels[l];
-			levelCont.appendChild(make_SelectImage(lev));
+			make_SelectImage(lev, levelCont);
 			storageID = game + "-" + level;
 		}
 		window.document.title = gameFull + " (" + stringPresentable(level) + ") - Collectamaps"
@@ -146,14 +146,37 @@ function infoLoaded(response) {
 	loadJSON("map_info", game + "/" + level, infoMapLoaded, true);
 }
 
-function make_SelectImage(l) {
-	var ele = document.createElement("IMG");
-	ele.className = "select-img";
-	ele.src = 'maps/' + game + "/" + l + "/icon.png";
+function make_SelectImage(l, cont) {
+	var ele = document.createElement("DIV");
+	ele.className = "select-div";
 	ele.onclick = function() {
 		reset_map(game, l);
 	}
-	return ele;
+	
+	var img = document.createElement("IMG");
+	img.className = "select-img";
+	img.src = 'maps/' + game + "/" + l + "/icon.png";
+	
+	var txt = document.createElement("DIV");
+	txt.className = "select-txt";
+	txt.innerHTML = stringPresentable(l);
+	
+	ele.appendChild(img);
+	ele.appendChild(txt);
+	
+	cont.appendChild(ele);
+	
+	var txtWidth = txt.clientWidth;
+	var fontSize = 0.8;
+	while(txtWidth > 65) {
+		console.log("Started At: " + txt.clientWidth);
+		fontSize -= 0.05;
+		txt.style.fontSize = fontSize + "em";
+		txtWidth = txt.clientWidth;
+		console.log("Changed To: " + txt.clientWidth);
+	}
+	
+	return;
 }
 
 function infoMapLoaded(response) {

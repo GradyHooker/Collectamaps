@@ -75,7 +75,7 @@ body, html {
 }
 
 .fab.is-open {
-	width: 280px;
+	width: 300px;
 	max-width: 100%;
 	border-radius: 10px;
 	height: auto;
@@ -168,13 +168,49 @@ body, html {
 	width: 100%;
 }
 
-.select-img {
-	max-width: 75px;
+.select-div {
+	width: 75px;
 	height: 75px;
-	padding-top: 5px;
+	margin-top: 5px;
 	cursor: pointer;
 	border-radius: 10px;
-	width: 30%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.select-img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	filter: opacity(.75) blur(1.5px);
+	transition: filter 0.4s;
+}
+
+.select-div:hover .select-img {
+	filter: opacity(.65) blur(2.5px);
+}
+
+.select-txt {
+	z-index: 1000;
+	margin: 5px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 0.8em;
+	white-space: normal;
+    text-shadow: 0px 0px 6px #FFFFFF;
+	transition: text-shadow 0.4s;
+	font-weight: 600;
+}
+
+.select-div:hover .select-txt {
+	 text-shadow: 0px 0px 12px #FFFFFF;
 }
 
 .fab-scroll-content {
