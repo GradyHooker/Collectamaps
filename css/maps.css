@@ -189,12 +189,12 @@ body, html {
 	top: 0;
 	left: 0;
 	z-index: 999;
-	filter: opacity(.75) blur(1.5px);
+	filter: opacity(.75) blur(1px);
 	transition: filter 0.4s;
 }
 
 .select-div:hover .select-img {
-	filter: opacity(.65) blur(2.5px);
+	filter: opacity(.65) blur(2px);
 }
 
 .select-txt {
