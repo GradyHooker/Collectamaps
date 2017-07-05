@@ -4,6 +4,7 @@
 	"clickZoom": 20,
 	"img_width": 6144,
 	"img_height": 4096,
+	"fileType": "jpg",
 	"credit": "achievement-hunter",
 	"creditURL": "http://AchievementHunter.com"
 }
