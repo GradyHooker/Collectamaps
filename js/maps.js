@@ -14,6 +14,7 @@ var mapMaxZoom;
 var clickZoom;
 var img_width;
 var img_height;
+var fileFormat;
 var storageID;
 var reset = false;
 var debug = true;
@@ -77,7 +78,7 @@ function make_map() {
 	
 	m.fitBounds(mapBounds);
 	
-	L.tileLayer('maps/' + game + '/' + level + '/tiles/{z}/map_{x}_{y}.png', {
+	L.tileLayer('maps/' + game + '/' + level + '/tiles/{z}/map_{x}_{y}.' + fileFormat, {
 		maxZoom: mapMaxZoom,
 		minZoom: mapMinZoom,
 		attribution: 'Game Map & Icons &copy; ' + gamePublisher,
@@ -162,6 +163,12 @@ function infoMapLoaded(response) {
 	clickZoom = infoJSON["clickZoom"];
 	img_width = infoJSON["img_width"];
 	img_height = infoJSON["img_height"];
+	
+	if(infoJSON["fileType"] != null) {
+		fileFormat = infoJSON["fileType"];
+	} else {
+		fileFormat = "png";
+	}
 	
 	if(infoJSON["credit"] != null) {
 		document.getElementById("credit-cont").style.display = "block";
