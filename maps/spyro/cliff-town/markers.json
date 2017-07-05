@@ -1,0 +1,23 @@
+[
+	{
+		"icon":	"dragon",
+		"x":	1287,
+		"y":	846,
+		"desc":	"Halvor (Pink) - Over the bridge and to the left",
+		"gfy":	""
+	},
+	{
+		"icon":	"dragon",
+		"x":	1176,
+		"y":	375,
+		"desc":	"Enzo (Pink) - Right at the top of the set of bridges and platforms, just past two large Gnorcs",
+		"gfy":	""
+	},
+	{
+		"icon":	"dragon",
+		"x":	1212,
+		"y":	1129,
+		"desc":	"Marco (Beige) - At the highest point in Cliff Town",
+		"gfy":	""
+	}
+]

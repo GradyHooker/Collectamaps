@@ -1,0 +1,9 @@
+{
+	"gameFull": "Spyro The Dragon",
+	"gamePublisher": "Insomniac Games",
+	"defaultLevel": "artisians-homeworld",
+	"mapList": [
+		"artisians-homeworld",
+		"cliff-town"
+	]
+}
