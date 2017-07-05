@@ -604,11 +604,11 @@ function applyOnlyFilters() {
 function downloadImage() {
 	var a  = document.createElement('a');
     if(level != "") {
-		a.href = 'maps/' + game + '/' + level + '/map.png';
-		a.download = game + '-' + level + '.png';
+		a.href = 'maps/' + game + '/' + level + '/map.' + fileFormat;
+		a.download = game + '-' + level + '.' + fileFormat;
 	} else {
-		a.href = 'maps/' + game + '/map.png';
-		a.download = game + '.png';
+		a.href = 'maps/' + game + '/map.' + fileFormat;
+		a.download = game + '.' + fileFormat;
 	}
 
     a.click();
