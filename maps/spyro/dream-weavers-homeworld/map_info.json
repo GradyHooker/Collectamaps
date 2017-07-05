@@ -1,0 +1,8 @@
+{
+	"mapMinZoom": 18,
+	"mapMaxZoom": 20,
+	"clickZoom": 20,
+	"img_width": 2048,
+	"img_height": 2048,
+	"fileType": "jpg"
+}
