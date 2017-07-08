@@ -1,0 +1,23 @@
+[
+	{
+		"icon":	"dragon",
+		"x":	592,
+		"y":	880,
+		"desc":	"Cosmos (Green) - In a small room filled with Gnorcs",
+		"gfy":	""
+	},
+	{
+		"icon":	"dragon",
+		"x":	1446,
+		"y":	669,
+		"desc":	"Zantor (Orange) - At the top of a super-charge ramp",
+		"gfy":	""
+	},
+	{
+		"icon":	"dragon",
+		"x":	1579,
+		"y":	1406,
+		"desc":	"Boldar (Yellow) - In front of the Crystal Flight portal",
+		"gfy":	""
+	}
+]

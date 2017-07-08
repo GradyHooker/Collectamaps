@@ -1,0 +1,30 @@
+[
+	{
+		"icon":	"dragon",
+		"x":	1399,
+		"y":	836,
+		"desc":	"Zane (Green) - Just after the moving stairs",
+		"gfy":	""
+	},
+	{
+		"icon":	"dragon",
+		"x":	659,
+		"y":	954,
+		"desc":	"Eldrid (Green) - Right after a wizard who raises and lowers his platform",
+		"gfy":	""
+	},
+	{
+		"icon":	"dragon",
+		"x":	884,
+		"y":	768,
+		"desc":	"Zander (Blue) - Right next to the Return Home vortex",
+		"gfy":	""
+	},
+	{
+		"icon":	"dragon",
+		"x":	566,
+		"y":	1170,
+		"desc":	"Kelvin (Green) - In the cave",
+		"gfy":	""
+	}
+]

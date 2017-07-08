@@ -1,0 +1,23 @@
+[
+	{
+		"icon":	"dragon",
+		"x":	447,
+		"y":	561,
+		"desc":	"Cyrus (Yellow) - At the top of the spiral",
+		"gfy":	""
+	},
+	{
+		"icon":	"dragon",
+		"x":	1147,
+		"y":	968,
+		"desc":	"Ajax (Grey) - Just off from that ledge thing",
+		"gfy":	""
+	},
+	{
+		"icon":	"dragon",
+		"x":	1363,
+		"y":	645,
+		"desc":	"Cedric (Orange) - Next to the Return Home vortex",
+		"gfy":	""
+	}
+]
