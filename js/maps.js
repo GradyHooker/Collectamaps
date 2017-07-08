@@ -169,11 +169,9 @@ function make_SelectImage(l, cont) {
 	var txtWidth = txt.clientWidth;
 	var fontSize = 0.8;
 	while(txtWidth > 65) {
-		console.log("Started At: " + txt.clientWidth);
 		fontSize -= 0.05;
 		txt.style.fontSize = fontSize + "em";
 		txtWidth = txt.clientWidth;
-		console.log("Changed To: " + txt.clientWidth);
 	}
 	
 	return;
