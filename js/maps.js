@@ -443,7 +443,7 @@ function CMMarker(ic, x, y, description, gfycat, id) {
 	} else {
 		cmmarker.marker.on('click', markerClickNo);
 	}
-	popupString+= "<div class='found-check'><input type='checkbox' checked id='marker-" + cmmarker.id + "' onclick='fadeMarker(this, " + cmmarker.id + ")'></input><label for='marker-" + cmmarker.id + "'> I have found this</label></div>";
+	popupString+= "<div class='popup-bottom'><div class='found-check'><input type='checkbox' checked id='marker-" + cmmarker.id + "' onclick='fadeMarker(this, " + cmmarker.id + ")'></input><label for='marker-" + cmmarker.id + "'> I have found this</label></div><div class='found-link'><img alt='Link Icon' src='img/link.png'><span>Copy link to marker</span></div></div>";
 	var popup = L.popup({
 		className: "popup-" + cmmarker.id,
 		minWidth : 340
