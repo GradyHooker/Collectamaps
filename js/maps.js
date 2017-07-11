@@ -500,28 +500,41 @@ function fadeMarker(checkbox, id) {
 
 function expandFAB(name) {
 	var height;
+	var fab = document.getElementById("fab-" + name);
 	
 	switch(name) {
 		case "select":
 			closeFAB('filter');
 			closeFAB('options');
+			fab.classList.remove("is-hidden");
+			if(document.body.scrollWidth < 850) {
+				document.getElementById("fab-filter").classList.add("is-hidden");
+				document.getElementById("fab-options").classList.add("is-hidden");
+			}
 			height = (Math.ceil(document.getElementById("select-img-cont").childNodes.length/3) * 80) + 70;
 			break;
 		case "filter":
 			closeFAB('select');
 			closeFAB('options');
-			height = ((document.getElementById("fab-table").childNodes.length - 1) * 22) + 80;
+			if(document.body.scrollWidth < 850) {
+				document.getElementById("fab-select").classList.add("is-hidden");
+				document.getElementById("fab-options").classList.add("is-hidden");
+			}
+			height = ((document.getElementById("fab-table").childNodes.length - 1) * 22) + 70;
 			break;
 		case "options":
 			closeFAB('select');
 			closeFAB('filter');
+			if(document.body.scrollWidth < 850) {
+				document.getElementById("fab-select").classList.add("is-hidden");
+				document.getElementById("fab-filter").classList.add("is-hidden");
+			}
 			height = ((document.getElementsByClassName("option-item").length) * 31) + 70;
 			break;
 	}
 	
 	var content = document.getElementById("fab-content-" + name);
 	if(content.style.opacity != "1") {
-		var fab = document.getElementById("fab-" + name);
 		fab.classList.add("is-open");
 		fab.style.height = height + "px";
 		if((document.body.scrollWidth < 850 && height > document.body.scrollHeight-100) ||
@@ -540,6 +553,9 @@ function closeFAB(name) {
 		fab.classList.remove("is-open");
 		fab.style.height = "65px";
 	}
+	document.getElementById("fab-select").classList.remove("is-hidden");
+	document.getElementById("fab-filter").classList.remove("is-hidden");
+	document.getElementById("fab-options").classList.remove("is-hidden");
 }
 
 function getQueryVariable(variable) {
